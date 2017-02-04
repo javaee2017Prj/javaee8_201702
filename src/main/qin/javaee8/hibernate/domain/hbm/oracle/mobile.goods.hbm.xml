@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" package="qin.mobilegoods.domain" default-lazy="false">
+
+    <class name="MobileGoods" table="tb_mobileGoods8">
+        <id name="id" type="long" column="mobileGoodsId">
+            <generator class="sequence"/>
+        </id>
+
+        <!-- 商品编号 -->
+        <property name="goods_number">
+            <column name="mobile_goodsNumber" sql-type="number(30)" not-null="true">
+                <comment>商品编号</comment>
+            </column>
+        </property>
+        <!-- 名称 -->
+        <property name="goods_name">
+            <column name="mobile_goodsName" sql-type="varchar2(80)" not-null="true">
+                <comment>手机名称</comment>
+            </column>
+        </property>
+        <!-- 价格 -->
+        <property name="goods_price">
+            <column name="mobile_goodsPrice" sql-type="BINARY_DOUBLE" not-null="true">
+                <comment>手机价格</comment>
+            </column>
+        </property>
+        <!-- 描述 -->
+        <property name="goods_description">
+            <column name="mobile_goodsDescription" sql-type="clob">
+                <comment>手机描述</comment>
+            </column>
+        </property>
+
+        <!-- 系统 -->
+        <property name="mobile_os">
+            <column name="mobile_os_" sql-type="varchar2(10)" not-null="true">
+                <comment>手机系统</comment>
+            </column>
+        </property>
+        <!-- 内存 -->
+        <property name="mobile_memory">
+            <column name="mobile_memory_" sql-type="varchar2(20)" not-null="true">
+                <comment>手机内存</comment>
+            </column>
+        </property>
+        <!-- 前置摄像头 -->
+        <property name="mobile_frontCamera">
+            <column name="mobile_frontCamera_" sql-type="varchar2(30)">
+                <comment>前置摄像头</comment>
+            </column>
+        </property>
+        <!-- 热点 -->
+        <property name="mobile_news">
+            <column name="mobile_news_" sql-type="varchar2(3000)">
+                <comment>热点</comment>
+            </column>
+        </property>
+        <!-- 后置摄像头 -->
+        <property name="mobile_backCamera">
+            <column name="mobile_backCamera_" sql-type="varchar2(50)">
+                <comment>后置摄像头</comment>
+            </column>
+        </property>
+        <!-- 电池 -->
+        <property name="mobile_battery">
+            <column name="mobile_battery_" sql-type="varchar2(50)" not-null="true">
+                <comment>电池</comment>
+            </column>
+        </property>
+        <!-- 机身内存 -->
+        <property name="mobile_rom">
+            <column name="mobile_rom_" sql-type="varchar2(40)" not-null="true">
+                <comment>机身内存</comment>
+            </column>
+        </property>
+        <!-- 机身颜色 -->
+        <property name="mobile_color">
+            <column name="mobile_color_" sql-type="varchar2(50)" not-null="true">
+                <comment>机身颜色</comment>
+            </column>
+        </property>
+
+        <map name="imagesMap" table="mobileGoods_imagesMap" cascade="delete">
+            <key column="col_images_mobile" foreign-key="fk_iages_mobile"></key>
+            <index column="col_images_index_mobile" type="integer"/>
+            <element column="element_images_mobile" type="string"/>
+        </map>
+
+        <join table="mobileGoods_goodsType">
+            <key column="col_mobileGoodsType" foreign-key="fk_mobileGoodsType"></key>
+            <many-to-one name="mobileGoodsType" cascade="delete"
+                         column="col_mobileGoodsTypeMany2One" foreign-key="fk_mobileGoodsTypeMany2One"
+                         class="GoodsType"/>
+        </join>
+
+    </class>
+
+</hibernate-mapping>

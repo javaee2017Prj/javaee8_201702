@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品首页</title>
+
+    <!-- easyui -->
+    <script type="text/javascript" src="http://localhost/jsLib/easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="http://localhost/jsLib/easyui/jquery.easyui.min.js"></script>
+    <link rel="stylesheet" href="http://localhost/jsLib/easyui/themes/bootstrap/easyui.css">
+    <link rel="stylesheet" href="http://localhost/jsLib/easyui/themes/color.css">
+    <link rel="stylesheet" href="http://localhost/jsLib/easyui/themes/icon.css">
+    <!-- easyui -->
+
+</head>
+<body class="easyui-layout" style="font-family: 微软雅黑;">
+<div data-options="region:'north',title:'',split:true" style="height:45px; background-color: #2f2f2f;"></div>
+<div data-options="region:'west',title:'',split:true" style="width:150px; background-color: #3A3A40;">
+</div>
+
+<!-- 导入样式 -->
+<link rel="stylesheet" href="goodsIndex.css">
+
+<div data-options="region:'center',title:''" style="padding:5px;background:#DADEE6;">
+
+    <!-- 欢迎界面 -->
+
+    &nbsp;
+    <div class="homeTitle">尊敬的:username, 欢迎来到JavaEE8商城</div>
+
+    <div class="timeTitle">
+        <script type="text/javascript">
+            /** 根据小时的数字判断是早上还是中午 */
+            h = new Date().getHours();
+            if (h >= 12 && h <= 5) document.writeln("凌晨好~");
+            if (h >= 5 && h <= 8) document.writeln("上午好~");
+            if (h >= 8 && h <= 10) document.writeln("早上好~");
+            if (h >= 10 && h <= 13) document.writeln("中午好~");
+            if (h >= 13 && h <= 18) document.writeln("下午好~");
+            else document.writeln("晚上好~");
+        </script>
+    </div>
+
+    <!-- 欢迎界面 -->
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

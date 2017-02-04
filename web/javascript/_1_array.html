@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<script type="text/javascript">
+
+    document.writeln("<font style='font-family: 微软雅黑; font-size: 20px; font-weight: bold;'>");
+
+    /** 定义数组 */
+    apple =
+            [
+                '苹果 Apple iPhone 6s 4.7英寸4G手机 玫瑰金 公开版(16GROM)标配<br>',
+                '苹果Apple iPhone SE (A1723) 玫瑰金 全网通64G ROM 标配<br>',
+                '苹果Apple iPhone 6 Plus 4G手机 深空灰 公开版(16GROM)标配<br>',
+                '苹果(Apple) iPhone SE 4G手机 深空灰 公开版(64G ROM)标配<br>',
+                '苹果 Apple iPhone 6s Plus 4G手机 银色 公开版(16G ROM)<br>'
+            ];
+
+    //region 备份数组
+    apple_backup1 =
+            [
+                '苹果 Apple iPhone 6s 4.7英寸4G手机 玫瑰金 公开版(16GROM)标配<br>',
+                '苹果Apple iPhone SE (A1723) 玫瑰金 全网通64G ROM 标配<br>',
+                '苹果Apple iPhone 6 Plus 4G手机 深空灰 公开版(16GROM)标配<br>',
+                '苹果(Apple) iPhone SE 4G手机 深空灰 公开版(64G ROM)标配<br>',
+                '苹果 Apple iPhone 6s Plus 4G手机 银色 公开版(16G ROM)<br>'
+            ];
+
+    apple_backup2 =
+            [
+                '苹果 Apple iPhone 6s 4.7英寸4G手机 玫瑰金 公开版(16GROM)标配<br>',
+                '苹果Apple iPhone SE (A1723) 玫瑰金 全网通64G ROM 标配<br>',
+                '苹果Apple iPhone 6 Plus 4G手机 深空灰 公开版(16GROM)标配<br>',
+                '苹果(Apple) iPhone SE 4G手机 深空灰 公开版(64G ROM)标配<br>',
+                '苹果 Apple iPhone 6s Plus 4G手机 银色 公开版(16G ROM)<br>'
+            ];
+
+    apple_backup3 =
+            [
+                '苹果 Apple iPhone 6s 4.7英寸4G手机 玫瑰金 公开版(16GROM)标配<br>',
+                '苹果Apple iPhone SE (A1723) 玫瑰金 全网通64G ROM 标配<br>',
+                '苹果Apple iPhone 6 Plus 4G手机 深空灰 公开版(16GROM)标配<br>',
+                '苹果(Apple) iPhone SE 4G手机 深空灰 公开版(64G ROM)标配<br>',
+                '苹果 Apple iPhone 6s Plus 4G手机 银色 公开版(16G ROM)<br>'
+            ];
+    //endregion
+
+    newApple = {};
+
+    document.writeln("================原来的数组================");
+    _br();
+    document.writeln(apple);
+
+    /** 数组实例 */
+    qArray = {
+        //region concat() 	连接两个或更多的数组，并返回结果。
+        _concat: function ()
+        {
+            _br();
+            document.writeln("================concat()后的数组================");
+            _br();
+            document.writeln(apple.concat('童安格'));
+            //定义一个新的数组concat进去
+            t = ['一世情缘', '明天你是否依然爱我', '耶利亚女郎', '跟我来'];
+            _br();
+            _equals();
+            document.writeln(apple.concat(t));
+        },
+        //endregion
+
+        //region join() 	把数组的所有元素放入一个字符串。元素通过指定的分隔符进行分隔。
+        _join: function ()
+        {
+            t = ['一世情缘', '明天你是否依然爱我', '耶利亚女郎', '跟我来'];
+            _br();
+            _br();
+            document.writeln("apple.join(t)执行");
+            _equals();
+            document.writeln(apple.join(t));
+        },
+        //endregion
+
+        //region pop() 	删除并返回数组的最后一个元素
+        _pop: function ()
+        {
+            //新建一个数组赋值
+            newApple = apple;
+            document.writeln("执行pop方法之后:");
+            _equals();
+            document.writeln(newApple.pop());
+        },
+        //endregion
+
+        //region push() 	向数组的末尾添加一个或更多元素，并返回新的长度。
+        _push: function ()
+        {
+            //添加新数组
+            z = ['那一场风花雪月的事', '青梅竹马'];
+            document.writeln("push一个元素后");
+            _equals();
+            document.writeln(apple.push(z[0]) + "<br>" + apple);
+            _br();
+            _equals();
+            document.writeln("添加一个新数组元素后:");
+            _br();
+            document.writeln(apple.push(z) + "<br>" + apple);
+        },
+        //endregion
+
+        //region reverse() 	颠倒数组中元素的顺序。
+        _reverse: function ()
+        {
+            _br();
+            document.writeln("倒序后的数组后:");
+            _equals();
+            document.writeln(apple.reverse());
+        },
+        //endregion
+
+        //region shift() 	删除并返回数组的第一个元素
+        _shift: function ()
+        {
+            //将数组还原
+            _equals();
+            document.writeln("还原原来的数组:<br>");
+            newApple =
+                    [
+                        '苹果 Apple iPhone 6s 4.7英寸4G手机 玫瑰金 公开版(16GROM)标配<br>',
+                        '苹果Apple iPhone SE (A1723) 玫瑰金 全网通64G ROM 标配<br>',
+                        '苹果Apple iPhone 6 Plus 4G手机 深空灰 公开版(16GROM)标配<br>',
+                        '苹果(Apple) iPhone SE 4G手机 深空灰 公开版(64G ROM)标配<br>',
+                        '苹果 Apple iPhone 6s Plus 4G手机 银色 公开版(16G ROM)<br>'
+                    ];
+            _br();
+            document.writeln(newApple);
+            _br();
+            document.writeln("执行shift方法<br>");
+            document.writeln(newApple.push() + "<br>" + newApple);
+        },
+        //endregion
+
+        //region slice() 	从某个已有的数组返回选定的元素
+        //使用备份数组来做
+        /*
+         参数 	描述
+         start 	必需。规定从何处开始选取。如果是负数，那么它规定从数组尾部开始算起的位置。也就是说，-1 指最后一个元素，-2 指倒数第二个元素，以此类推。
+         end 	可选。规定从何处结束选取。该参数是数组片断结束处的数组下标。如果没有指定该参数，那么切分的数组包含从 start 到数组结束的所有元素。如果这个参数是负数，那么它规定的是从数组尾部开始算起的元素。
+         */
+        _slice: function ()
+        {
+            _br();
+            _equals();
+            document.writeln("获取第2个和第4个元素<br>");
+            document.writeln(apple_backup1.slice(2, 4));
+        }
+        //endregion
+
+        //region sort() 	对数组的元素进行排序
+        //endregion
+
+        //region splice() 	删除元素，并向数组添加新元素。
+        //endregion
+
+        //region toSource() 	返回该对象的源代码。
+        //endregion
+
+        //region toString() 	把数组转换为字符串，并返回结果。
+        //endregion
+
+        //region toLocaleString() 	把数组转换为本地数组，并返回结果。
+        //endregion
+
+        //region unshift() 	向数组的开头添加一个或更多元素，并返回新的长度。
+        //endregion
+
+        //region valueOf() 	返回数组对象的原始值
+        //endregion
+    };
+
+    qArray._concat();
+    qArray._join();
+    qArray._pop();
+    qArray._push();
+    qArray._reverse();
+    qArray._shift();
+    qArray._slice();
+
+    document.writeln("</font>");
+
+    function _br()
+    {
+        document.write("<br>");
+    }
+
+    function _equals()
+    {
+        document.writeln("<br>--------------------------<br>");
+    }
+
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+    _br();
+
+</script>
+
+
+</html>

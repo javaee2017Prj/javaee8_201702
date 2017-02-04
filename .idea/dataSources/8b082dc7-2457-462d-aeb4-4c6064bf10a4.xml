@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="javaee8_201702_backup@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="javaee8_201702_backup">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="dbshop"/>
+    <schema id="4" parent="1" name="destoon"/>
+    <schema id="5" parent="1" name="fzdzmh"/>
+    <schema id="6" parent="1" name="information_schema"/>
+    <schema id="7" parent="1" name="java7book"/>
+    <schema id="8" parent="1" name="javaee6"/>
+    <schema id="9" parent="1" name="javaee8_201702"/>
+    <schema id="10" parent="1" name="mem_mgr"/>
+    <schema id="11" parent="1" name="mysql"/>
+    <schema id="12" parent="1" name="performance_schema"/>
+    <schema id="13" parent="1" name="sakila"/>
+    <schema id="14" parent="1" name="sys"/>
+    <schema id="15" parent="1" name="world"/>
+    <table id="16" parent="2" name="goodstype_childrenset"/>
+    <table id="17" parent="2" name="mobilegoods_goodstype"/>
+    <table id="18" parent="2" name="mobilegoods_imagesmap"/>
+    <table id="19" parent="2" name="mobilegoodsset_goodstype"/>
+    <table id="20" parent="2" name="tb_goodstype8"/>
+    <table id="21" parent="2" name="tb_mobilegoods8"/>
+    <table id="22" parent="2" name="testdomain"/>
+    <column id="23" parent="16" name="goodsType_childrenSet">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="16" name="childrenSet_goods_pk">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="25" parent="16" name="UK_ss2tbvpet9mbf1ixaynk9s4lu">
+      <ColNames>childrenSet_goods_pk</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="26" parent="16" name="PRIMARY">
+      <ColNames>goodsType_childrenSet
+childrenSet_goods_pk</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="27" parent="16" name="UK_ss2tbvpet9mbf1ixaynk9s4lu">
+      <ColNames>childrenSet_goods_pk</ColNames>
+      <UnderlyingIndexName>UK_ss2tbvpet9mbf1ixaynk9s4lu</UnderlyingIndexName>
+    </key>
+    <foreign-key id="28" parent="16" name="FK_fytbaqrekke9g6bog589f59p9">
+      <ColNames>goodsType_childrenSet</ColNames>
+      <RefSchemaName>javaee8_201702_backup</RefSchemaName>
+      <RefTableName>tb_goodstype8</RefTableName>
+      <RefColNames>goods_pk</RefColNames>
+    </foreign-key>
+    <foreign-key id="29" parent="16" name="FK_ss2tbvpet9mbf1ixaynk9s4lu">
+      <ColNames>childrenSet_goods_pk</ColNames>
+      <RefSchemaName>javaee8_201702_backup</RefSchemaName>
+      <RefTableName>tb_goodstype8</RefTableName>
+      <RefColNames>goods_pk</RefColNames>
+    </foreign-key>
+    <column id="30" parent="17" name="col_mobileGoodsType">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="17" name="col_mobileGoodsTypeMany2One">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="32" parent="17" name="fk_mobileGoodsTypeMany2One">
+      <ColNames>col_mobileGoodsTypeMany2One</ColNames>
+    </index>
+    <key id="33" parent="17" name="PRIMARY">
+      <ColNames>col_mobileGoodsType</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="34" parent="17" name="fk_mobileGoodsType">
+      <ColNames>col_mobileGoodsType</ColNames>
+      <RefSchemaName>javaee8_201702_backup</RefSchemaName>
+      <RefTableName>tb_mobilegoods8</RefTableName>
+      <RefColNames>mobileGoodsId</RefColNames>
+    </foreign-key>
+    <foreign-key id="35" parent="17" name="fk_mobileGoodsTypeMany2One">
+      <ColNames>col_mobileGoodsTypeMany2One</ColNames>
+      <RefSchemaName>javaee8_201702_backup</RefSchemaName>
+      <RefTableName>tb_goodstype8</RefTableName>
+      <RefColNames>goods_pk</RefColNames>
+    </foreign-key>
+    <column id="36" parent="18" name="col_images_mobile">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="18" name="element_images_mobile">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="38" parent="18" name="col_images_index_mobile">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="39" parent="18" name="PRIMARY">
+      <ColNames>col_images_mobile
+col_images_index_mobile</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="40" parent="18" name="fk_iages_mobile">
+      <ColNames>col_images_mobile</ColNames>
+      <RefSchemaName>javaee8_201702_backup</RefSchemaName>
+      <RefTableName>tb_mobilegoods8</RefTableName>
+      <RefColNames>mobileGoodsId</RefColNames>
+    </foreign-key>
+    <column id="41" parent="19" name="goodsType_mobileSet">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="19" name="mobileGoodsSet_mobileGoodsId">
+      <Position>2</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="43" parent="19" name="UK_iadka9x9ijncaxl5c7mpogf5p">
+      <ColNames>mobileGoodsSet_mobileGoodsId</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="44" parent="19" name="PRIMARY">
+      <ColNames>goodsType_mobileSet
+mobileGoodsSet_mobileGoodsId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="45" parent="19" name="UK_iadka9x9ijncaxl5c7mpogf5p">
+      <ColNames>mobileGoodsSet_mobileGoodsId</ColNames>
+      <UnderlyingIndexName>UK_iadka9x9ijncaxl5c7mpogf5p</UnderlyingIndexName>
+    </key>
+    <foreign-key id="46" parent="19" name="FK_4qmfiqk37g3difsktd9uilt43">
+      <ColNames>goodsType_mobileSet</ColNames>
+      <RefSchemaName>javaee8_201702_backup</RefSchemaName>
+      <RefTableName>tb_goodstype8</RefTableName>
+      <RefColNames>goods_pk</RefColNames>
+    </foreign-key>
+    <foreign-key id="47" parent="19" name="FK_iadka9x9ijncaxl5c7mpogf5p">
+      <ColNames>mobileGoodsSet_mobileGoodsId</ColNames>
+      <RefSchemaName>javaee8_201702_backup</RefSchemaName>
+      <RefTableName>tb_mobilegoods8</RefTableName>
+      <RefColNames>mobileGoodsId</RefColNames>
+    </foreign-key>
+    <column id="48" parent="20" name="goods_pk">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="49" parent="20" name="goods_typeDescription">
+      <Position>2</Position>
+      <DataType>varchar(5000)|0</DataType>
+    </column>
+    <column id="50" parent="20" name="goods_typeName">
+      <Position>3</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="51" parent="20" name="goodsType_parentId">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="52" parent="20" name="fk_parent">
+      <ColNames>goodsType_parentId</ColNames>
+    </index>
+    <index id="53" parent="20" name="UK_ej6kq1490acp6o6xs9yfyni8i">
+      <ColNames>goods_typeName</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="54" parent="20" name="PRIMARY">
+      <ColNames>goods_pk</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="55" parent="20" name="UK_ej6kq1490acp6o6xs9yfyni8i">
+      <ColNames>goods_typeName</ColNames>
+      <UnderlyingIndexName>UK_ej6kq1490acp6o6xs9yfyni8i</UnderlyingIndexName>
+    </key>
+    <foreign-key id="56" parent="20" name="fk_parent">
+      <ColNames>goodsType_parentId</ColNames>
+      <RefSchemaName>javaee8_201702_backup</RefSchemaName>
+      <RefTableName>tb_goodstype8</RefTableName>
+      <RefColNames>goods_pk</RefColNames>
+    </foreign-key>
+    <column id="57" parent="21" name="mobileGoodsId">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="21" name="mobile_goodsNumber">
+      <Position>2</Position>
+      <Comment>商品编号</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="21" name="mobile_goodsName">
+      <Position>3</Position>
+      <Comment>手机名称</Comment>
+      <DataType>varchar(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="21" name="mobile_goodsPrice">
+      <Position>4</Position>
+      <Comment>手机价格</Comment>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="21" name="mobile_goodsDescription">
+      <Position>5</Position>
+      <Comment>手机描述</Comment>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="62" parent="21" name="mobile_os_">
+      <Position>6</Position>
+      <Comment>手机系统</Comment>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="21" name="mobile_memory_">
+      <Position>7</Position>
+      <Comment>手机内存</Comment>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="21" name="mobile_frontCamera_">
+      <Position>8</Position>
+      <Comment>前置摄像头</Comment>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="65" parent="21" name="mobile_news_">
+      <Position>9</Position>
+      <Comment>热点</Comment>
+      <DataType>varchar(3000)|0</DataType>
+    </column>
+    <column id="66" parent="21" name="mobile_backCamera_">
+      <Position>10</Position>
+      <Comment>后置摄像头</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="67" parent="21" name="mobile_battery_">
+      <Position>11</Position>
+      <Comment>电池</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="21" name="mobile_rom_">
+      <Position>12</Position>
+      <Comment>机身内存</Comment>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="21" name="mobile_color_">
+      <Position>13</Position>
+      <Comment>机身颜色</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="70" parent="21" name="PRIMARY">
+      <ColNames>mobileGoodsId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="71" parent="22" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <key id="72" parent="22" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

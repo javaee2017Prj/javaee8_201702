@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/javaee8-core/javaee8-core.iml" filepath="$PROJECT_DIR$/javaee8-core/javaee8-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaee8-core-hibernate/javaee8-core-hibernate.iml" filepath="$PROJECT_DIR$/javaee8-core-hibernate/javaee8-core-hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaee8_201702.iml" filepath="$PROJECT_DIR$/javaee8_201702.iml" />
+    </modules>
+  </component>
+</project>
