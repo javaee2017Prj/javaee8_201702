@@ -240,11 +240,32 @@ public class DAOSupport8Impl<T extends SuperEntity8, ID extends Serializable> im
      * @return
      * @throws IdNULLException 主键为空异常
      */
-    @Deprecated
     @Override
     public Serializable updateEntity(ID id) throws IdNULLException
     {
-        return 0;
+        return doExecute(new DAOCallBack()
+        {
+            @Override
+            public Object doSearch(Session session, Transaction transaction)
+            {
+                //首先获取记录
+                T entity = (T) session.get(getEntityClass(), id);
+                try
+                {
+                    updateEntity(entity);
+                }
+                catch (IdNULLException e)
+                {
+                    e.printStackTrace();
+                }
+                catch (EntityNULLException e)
+                {
+                    e.printStackTrace();
+                }
+
+                return true;
+            }
+        });
     }
     //endregion
 
