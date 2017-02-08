@@ -3,7 +3,7 @@ package qin.hibernate.daotest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import qin.javaee8.exceptions.JavaEE8Exception;
-import qin.javaee8.hibernate.dao.impl.MobileEasyuiDAOImpl;
+import qin.javaee8.hibernate.dao.impl.MobileBSDAOImpl;
 import qin.javaee8.hibernate.domain.MobileGoods;
 
 import java.util.ArrayList;
@@ -49,13 +49,13 @@ import static qin.javaee8.hibernate.domain.MobileProperty.getMobilePrice;
 import static qin.javaee8.hibernate.testing.GoodsImages.images;
 
 @SuppressWarnings("all")
-public class MobileEasyuiDAOImplTest
+public class MobileBSDAOImplTest
 {
     public ApplicationContext applicationContext = new
-            ClassPathXmlApplicationContext("applicationContext.xml");
+              ClassPathXmlApplicationContext("applicationContext.xml");
 
-    private MobileEasyuiDAOImpl mobileDAO = (MobileEasyuiDAOImpl) applicationContext
-            .getBean("JQuery_mobileDAOImpl8");
+    private MobileBSDAOImpl mobileDAO = (MobileBSDAOImpl) applicationContext
+              .getBean("JQuery_mobileDAOImpl8");
     //region 批量新增商品测试
 
     /**
@@ -65,11 +65,11 @@ public class MobileEasyuiDAOImplTest
     public void batchAddMobileGoodsTest() throws JavaEE8Exception
     {
         String[] goodsName = new String[]{
-                "	苗丽珠宝 金丝楠手串 楠木佛珠念珠手链 男女款手珠 ML1122 18mm	",
-                "	苹果 Apple iPhone 6s 4.7英寸4G手机 玫瑰金 公开版(16GROM)标配	",
-                "	苹果Apple iPhone SE (A1723) 玫瑰金 全网通64G ROM 标配	",
-                "	苹果Apple iPhone 6 Plus 4G手机 深空灰 公开版(16GROM)标配	",
-                "	苹果(Apple) iPhone SE 4G手机 深空灰 公开版(64G ROM)标配	"
+                  "	苗丽珠宝 金丝楠手串 楠木佛珠念珠手链 男女款手珠 ML1122 18mm	",
+                  "	苹果 Apple iPhone 6s 4.7英寸4G手机 玫瑰金 公开版(16GROM)标配	",
+                  "	苹果Apple iPhone SE (A1723) 玫瑰金 全网通64G ROM 标配	",
+                  "	苹果Apple iPhone 6 Plus 4G手机 深空灰 公开版(16GROM)标配	",
+                  "	苹果(Apple) iPhone SE 4G手机 深空灰 公开版(64G ROM)标配	"
         };
         //endregion
 
@@ -78,7 +78,7 @@ public class MobileEasyuiDAOImplTest
         for (int i = 0; i < goodsName.length; i++)
         {
             MobileGoods m = new MobileGoods();
-            m.setGoods_name(goodsName[i].trim() + "_DAOTest");
+            m.setGoods_name(goodsName[i].trim());
             m.setGoods_number(i);
             m.setGoods_price(getMobilePrice());
             m.setMobile_os("ios");

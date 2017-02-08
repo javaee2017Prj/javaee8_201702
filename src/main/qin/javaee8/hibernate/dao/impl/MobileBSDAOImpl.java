@@ -3,12 +3,11 @@ package qin.javaee8.hibernate.dao.impl;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Repository;
-import qin.javaee8.core.DAOCallBack;
 import qin.javaee8.core.dao.exceptions.GoodsTypeNULLException;
 import qin.javaee8.core.dao.exceptions.SameResultException;
 import qin.javaee8.core.dao.impl.DAOSupport8Impl;
 import qin.javaee8.exceptions.JavaEE8Exception;
-import qin.javaee8.hibernate.dao.MobileEasyuiDAO;
+import qin.javaee8.hibernate.dao.MobileBSDAO;
 import qin.javaee8.hibernate.domain.GoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 
@@ -20,9 +19,9 @@ import java.util.Set;
 
 @Repository(value = "JQuery_mobileDAOImpl8")
 @SuppressWarnings("all")
-public class MobileEasyuiDAOImpl
-        extends DAOSupport8Impl<MobileGoods, Long>
-        implements MobileEasyuiDAO
+public class MobileBSDAOImpl
+          extends DAOSupport8Impl<MobileGoods, Long>
+          implements MobileBSDAO
 {
     private static final long serialVersionUID = -3780978384906857940L;
 
@@ -31,7 +30,7 @@ public class MobileEasyuiDAOImpl
     @Override
     public Class getLogClass()
     {
-        return MobileEasyuiDAOImpl.class;
+        return MobileBSDAOImpl.class;
     }
 
     @Override
@@ -57,7 +56,7 @@ public class MobileEasyuiDAOImpl
      */
     @Override
     public Object batchAddMobileGoods(String goodsType, MobileGoods... goods)
-            throws SameResultException, GoodsTypeNULLException
+              throws SameResultException, GoodsTypeNULLException
     {
         Object result = 0;
 
@@ -67,8 +66,8 @@ public class MobileEasyuiDAOImpl
             Transaction transaction = session.beginTransaction();
 
             GoodsType myGoodsType = (GoodsType) session
-                    .createQuery("from GoodsType where goods_typeName='" + goodsType + "'")
-                    .list().get(0);
+                      .createQuery("from GoodsType where goods_typeName='" + goodsType + "'")
+                      .list().get(0);
 
             //1.在新增前必须要检查一下商品类型是否为空, 如果商品类型为空抛出异常
             if (goodsType == null) throw new GoodsTypeNULLException("商品类型为空!无法新增!");
@@ -134,38 +133,30 @@ public class MobileEasyuiDAOImpl
     @Override
     public Object batchDeleteMobileGoods(MobileGoods... mobileGoods)
     {
-        return doExecute(new DAOCallBack()
-                         {
-                             @Override
-                             public Object doDelete(Session session, Transaction transaction)
-                             {
-                                 Object resultObj = "";
+        Object resultObj = "";
 
-                                 session = getSessionFactory().openSession();
-                                 transaction = session.beginTransaction();
+        Session session = getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
 
-                                 try
-                                 {
-                                     //1.实现批量删除
-                                     for (int i = 0; i < mobileGoods.length; i++)
-                                     {
-                                         session.delete(mobileGoods[i]);
-                                     }
-                                     transaction.commit();
-                                     resultObj = 1;
-                                 }
-                                 catch (Exception ex)
-                                 {
-                                     resultObj = 0;
-                                     superInfo_logger_expection("批量删除手机商品失败" + ex);
-                                 }
-                                 finally
-                                 {
-                                     return resultObj;
-                                 }
-                             }
-                         }
-        );
+        try
+        {
+            //1.实现批量删除
+            for (int i = 0; i < mobileGoods.length; i++)
+            {
+                session.delete(mobileGoods[i]);
+            }
+            transaction.commit();
+            resultObj = 1;
+        }
+        catch (Exception ex)
+        {
+            resultObj = 0;
+            superInfo_logger_expection("批量删除手机商品失败" + ex);
+        }
+        finally
+        {
+            return resultObj;
+        }
     }
     //endregion
 
@@ -181,44 +172,36 @@ public class MobileEasyuiDAOImpl
      */
     @Override
     public Object batchUpdateMobileGoodsType(GoodsType type, MobileGoods... mobileGoods)
-            throws JavaEE8Exception
+              throws JavaEE8Exception
     {
-        return doExecute(new DAOCallBack()
-                         {
-                             @Override
-                             public Object doUpdate(Session session, Transaction transaction)
-                             {
-                                 Object resultObj = "";
+        Object resultObj = "";
 
-                                 try
-                                 {
-                                     session = getSessionFactory().openSession();
-                                     transaction = session.beginTransaction();
+        try
+        {
+            Session session = getSessionFactory().openSession();
+            Transaction transaction = session.beginTransaction();
 
-                                     for (int i = 0; i < mobileGoods.length; i++)
-                                     {
-                                         mobileGoods[i].setMobileGoodsType(type);
-                                         type.getMobileGoodsSet().add(mobileGoods[i]);
+            for (int i = 0; i < mobileGoods.length; i++)
+            {
+                mobileGoods[i].setMobileGoodsType(type);
+                type.getMobileGoodsSet().add(mobileGoods[i]);
 
-                                         session.update(mobileGoods[i]);
-                                     }
+                session.update(mobileGoods[i]);
+            }
 
-                                     session.update(type);
+            session.update(type);
 
-                                     transaction.commit();
-                                     resultObj = 1;
-                                 }
-                                 catch (Exception ex)
-                                 {
-                                     resultObj = 0;
-                                 }
-                                 finally
-                                 {
-                                     return resultObj;
-                                 }
-                             }
-                         }
-        );
+            transaction.commit();
+            resultObj = 1;
+        }
+        catch (Exception ex)
+        {
+            resultObj = 0;
+        }
+        finally
+        {
+            return resultObj;
+        }
     }
     //endregion
 
@@ -236,8 +219,8 @@ public class MobileEasyuiDAOImpl
         Map<List<MobileGoods>, Integer> resultMap = new HashMap<>();
 
         List<MobileGoods> mobileGoodsList = getSessionFactory().openSession()
-                .createQuery("from MobileGoods where goods_name='" + goods_name + "'")
-                .list();
+                  .createQuery("from MobileGoods where goods_name='" + goods_name + "'")
+                  .list();
 
         resultMap.put(mobileGoodsList, mobileGoodsList.size());
 

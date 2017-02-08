@@ -18,7 +18,7 @@ import java.util.Map;
  * @since 1.8 2017 2017/2/4
  */
 @SuppressWarnings("all")
-public interface MobileEasyuiDAO extends DAOSupport8<MobileGoods, Long>
+public interface MobileBSDAO extends DAOSupport8<MobileGoods, Long>
 {
     //region 一期功能
 
