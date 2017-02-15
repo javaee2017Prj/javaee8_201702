@@ -25,8 +25,8 @@ import java.util.Set;
 @Table(name = "tb_goodsType8")
 @SuppressWarnings("all")
 public class GoodsType
-        extends JavaEE8BaseSupportImpl
-        implements SuperEntity8<Integer>
+          extends JavaEE8BaseSupportImpl
+          implements SuperEntity8<Integer>
 {
     private static final long serialVersionUID = 8691972996048790501L;
 
@@ -112,10 +112,10 @@ public class GoodsType
 
     @OneToMany(targetEntity = GoodsType.class, cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     @JoinTable
-            (
-                    name = "goodstype_childrenSet",
-                    joinColumns = @JoinColumn(name = "goodsType_childrenSet", foreignKey = @ForeignKey(name = "fk_children"))
-            )
+              (
+                        name = "goodstype_childrenSet",
+                        joinColumns = @JoinColumn(name = "goodsType_childrenSet", foreignKey = @ForeignKey(name = "fk_children"))
+              )
     public Set<GoodsType> getChildrenSet()
     {
         return childrenSet;
@@ -171,10 +171,10 @@ public class GoodsType
 
     @OneToMany(targetEntity = MobileGoods.class, cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     @JoinTable
-            (
-                    name = "mobileGoodsSet_goodsType",
-                    joinColumns = @JoinColumn(name = "goodsType_mobileSet", foreignKey = @ForeignKey(name = "fk_mobileGoodsSet"))
-            )
+              (
+                        name = "mobileGoodsSet_goodsType",
+                        joinColumns = @JoinColumn(name = "goodsType_mobileSet", foreignKey = @ForeignKey(name = "fk_mobileGoodsSet"))
+              )
     public Set<MobileGoods> getMobileGoodsSet()
     {
         return mobileGoodsSet;

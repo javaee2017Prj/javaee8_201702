@@ -11,13 +11,15 @@ import qin.javaee8.hibernate.dao.MobileBSDAO;
 import qin.javaee8.hibernate.domain.GoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-@Repository(value = "JQuery_mobileDAOImpl8")
+@Repository(value = "bsMobileDAOImpl8")
 @SuppressWarnings("all")
 public class MobileBSDAOImpl
           extends DAOSupport8Impl<MobileGoods, Long>
@@ -229,4 +231,342 @@ public class MobileBSDAOImpl
     //endregion
 
     //endregion
+
+    //region 二期功能
+
+    @Override
+    public List<GoodsType> getAllMobileGoodsType()
+    {
+        return getSessionFactory().openSession()
+                  .createQuery("select goods_typeName from GoodsType")
+                  .list();
+    }
+
+    //region 新增商品类型
+
+    /**
+     * 新增商品类型(第一版, 第二版为接收多个商品类型, 这里并没有实现)<br>
+     * 实现思路而是根据类型名称里的html分隔符进行切割然后循环添加
+     *
+     * @param htmlGoodsTypeParent       商品上级分类select下拉框
+     * @param htmlGoodsTypeName_        商品上级分类名称
+     * @param htmlGoodsTypeDescription_ 商品上级描述
+     * @return 新增结果
+     * @throws SameResultException    如果类型存在抛出异常
+     * @throws GoodsTypeNULLException 如果上级商品类型为空则抛出异常
+     */
+    @Deprecated
+    @Override
+    public Serializable addGoodsType(String htmlGoodsTypeParent, String htmlGoodsTypeName_,
+                                     String htmlGoodsTypeDescription_) throws JavaEE8Exception
+    {
+        Serializable result = 0;
+
+        try
+        {
+            Session session = getSessionFactory().openSession();
+            Transaction transaction = session.beginTransaction();
+
+            //如果接收的上级类型不为空则查找上级类型
+            GoodsType parent = new GoodsType();
+            if (htmlGoodsTypeParent.length() > 0)
+            {
+                parent = (GoodsType) session
+                          .createQuery(new StringBuilder().append("from GoodsType where goods_typeName='").append(htmlGoodsTypeParent).append("'").toString())
+                          .list().get(0);
+            }
+
+            //1.首先比对如果商品名称在表中已有重复则报错不添加
+            Integer searchSize = 0;
+            List<GoodsType> goodsTypeList = session
+                      .createQuery(new StringBuilder().append("from GoodsType where goods_typeName='")
+                                             .append(htmlGoodsTypeName_).append("'").toString())
+                      .list();
+
+            if (goodsTypeList.size() > 0)
+            {
+                searchSize = goodsTypeList.size();
+            }
+            else
+            {
+                searchSize = 0;
+            }
+
+            List<String> goodsTypeNamesList = new ArrayList<>();
+            boolean isHasManyGoodsTypeNames = false;
+
+            if (htmlGoodsTypeName_.contains("<br>"))
+            {
+                isHasManyGoodsTypeNames = true;
+
+                String[] splitTypeNames = htmlGoodsTypeName_.split("<br>");
+                for (int i = 0; i < splitTypeNames.length; i++)
+                {
+                    goodsTypeNamesList.add(splitTypeNames[i]);
+                }
+            }
+
+            boolean isHasParent = false;
+
+            if (htmlGoodsTypeParent.length() > 0) isHasParent = true;
+
+            if (searchSize == 0)
+            {
+                //2.要判断是否接收多个商品类型名称只需要判断接收的名称中是否有<br>
+                //3.如果有则分割, 如果没有就是一个.
+                //4.接下来判断是否有上级类型, 有为true, 无为false, 将boolean判断结果变量传递到已封装的方法中
+                //进行添加操作
+
+                //上级不为空并且有多个商品类型
+                if (isHasParent && isHasManyGoodsTypeNames)
+                {
+                    for (int i = 0; i < goodsTypeNamesList.size(); i++)
+                    {
+                        String _names = goodsTypeNamesList.get(i);
+                        save(true, parent, session, htmlGoodsTypeDescription_, _names);
+                    }
+                }
+                //上级为空并且有多个商品类型
+                if (isHasParent == false && isHasManyGoodsTypeNames)
+                {
+                    for (int i = 0; i < goodsTypeNamesList.size(); i++)
+                    {
+                        String _names = goodsTypeNamesList.get(i);
+                        save(false, parent, session, htmlGoodsTypeDescription_, _names);
+                    }
+                }
+                //上级不为空并且只有一个商品类型
+                if (isHasParent && (isHasManyGoodsTypeNames == false))
+                {
+                    save(true, parent, session, htmlGoodsTypeDescription_, htmlGoodsTypeName_);
+                }
+                //上级为空并且只有一个商品类型
+                if (isHasParent == false && (isHasManyGoodsTypeNames == false))
+                {
+                    save(false, parent, session, htmlGoodsTypeDescription_, htmlGoodsTypeName_);
+                }
+            }
+            else
+            {
+                throw new SameResultException("发现了相同的商品类型异常!");
+            }
+
+            transaction.commit();
+
+            return STR_SUCCESS;
+        }
+        catch (Exception ex)
+        {
+            superInfo_logger_normal("=======================================\n");
+            superInfo_logger_expection(ex);
+            superInfo_logger_normal("=======================================\n");
+
+            return ex;
+        }
+    }
+
+    //endregion
+
+    //region 二期添加商品类型封装功能
+    @Deprecated
+    private void save(boolean goodsTypeIsHasParent,
+                      GoodsType parent, Session session, String description,
+                      String... goodsTypeNames)
+    {
+        if (goodsTypeIsHasParent)
+        {
+            saveOrUpdate(true, parent, session, description, goodsTypeNames);
+        }
+        else
+        {
+            saveOrUpdate(false, null, session, description, goodsTypeNames);
+        }
+    }
+
+    @Deprecated
+    private void saveOrUpdate(boolean goodsTypeIsHasParent,
+                              GoodsType parent, Session session, String description,
+                              String... goodsTypeNames)
+    {
+        for (int i = 0; i < goodsTypeNames.length; i++)
+        {
+            GoodsType childrenGoodsTypeSet = new GoodsType(goodsTypeNames[i]);
+
+            if (goodsTypeIsHasParent)
+            {
+                childrenGoodsTypeSet.setParentGoodsType(parent);
+                parent.getChildrenSet().add(childrenGoodsTypeSet);
+                session.save(childrenGoodsTypeSet);
+                session.update(parent);
+            }
+            else
+            {
+                session.save(childrenGoodsTypeSet);
+            }
+        }
+    }
+    //endregion
+
+    //region 改善版的新增商品类型
+
+    /**
+     * 改善版的新增商品类型
+     *
+     * @param isHasParent               此商品类型是否具有上级类型
+     * @param htmlGoodsTypeParent       如果有则接收此上级类型
+     * @param htmlGoodsTypeDescription_ 上级类型描述
+     * @param htmlGoodsTypeName_        上级类型名称添加
+     *                                  z @return 添加结果类型
+     * @throws JavaEE8Exception 如果添加失败抛出大异常
+     */
+    @Override
+    public Serializable addGoodsType(Boolean isHasParent, String htmlGoodsTypeParent,
+                                     String htmlGoodsTypeDescription_, String htmlGoodsTypeName_) throws JavaEE8Exception
+    {
+        Serializable result = 0;
+
+        try
+        {
+            Session session = getSessionFactory().openSession();
+            Transaction transaction = session.beginTransaction();
+
+            GoodsType childrenTypes = new GoodsType(htmlGoodsTypeName_);
+
+            //比对如果商品名称在表中已有重复则报错不添加
+            Integer searchSize = 0;
+            List<GoodsType> goodsTypeList = session
+                      .createQuery(new StringBuilder().append("from GoodsType where goods_typeName='")
+                                             .append(htmlGoodsTypeName_).append("'").toString())
+                      .list();
+
+            if (goodsTypeList.size() > 0)
+            {
+                searchSize = goodsTypeList.size();
+                throw new SameResultException("已在表中查询到了相同的商品类型记录!");
+            }
+            else
+            {
+                searchSize = 0;
+                childrenTypes.setGoods_typeName(htmlGoodsTypeName_);
+                childrenTypes.setGoods_typeDescription(htmlGoodsTypeDescription_);
+            }
+
+            GoodsType parent = new GoodsType();
+
+            //获取上级类型
+            if (isHasParent)
+            {
+                parent = (GoodsType) session
+                          .createQuery(new StringBuilder()
+                                                 .append("from GoodsType where goods_typeName='")
+                                                 .append(htmlGoodsTypeParent).append("'").toString())
+                          .list().get(0);
+                childrenTypes.setParentGoodsType(parent);
+                parent.getChildrenSet().add(childrenTypes);
+                session.save(childrenTypes);
+                session.update(parent);
+            }
+            else
+            {
+                //没有上级类型
+                session.save(childrenTypes);
+            }
+
+            transaction.commit();
+            result = 1;
+
+            return result;
+        }
+        catch (Exception ex)
+        {
+            superInfo_logger_expection("数据访问层添加商品类型失败!");
+            return ex;
+        }
+    }
+    //endregion
+
+    /**
+     * 获取所有名字下拉框数据
+     *
+     * @return
+     */
+    @Override
+    public String getAllGoodsTypeSelect()
+    {
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("<option value=\"\">请选择</option>");
+
+        List<GoodsType> goodsTypeList = getSessionFactory().openSession()
+                  .createQuery("from GoodsType ")
+                  .list();
+
+        for (int i = 0; i < goodsTypeList.size(); i++)
+        {
+            GoodsType goodsType = goodsTypeList.get(i);
+            sb.append("<option value=\"\">" + goodsType.getGoods_typeName() + "</option>");
+        }
+
+        return sb.toString();
+    }
+
+//endregion
 }
+
+//region 逻辑类测试
+/*
+
+
+@SuppressWarnings("all")
+class Test
+{
+    Session session = null;
+
+    //假设有一个上级类型
+    GoodsType parent = null;
+
+    */
+/*
+    有这么几种情况
+1.上级为空并且新增多个类型名称
+2.上级为空并且新增一个类型名称
+3.上级不为空并且新增多个类型名称
+4.上级不为空并且新增一个类型名称
+
+     *//*
+
+    void save(boolean goodsTypeIsHasParent, String... goodsTypeNames)
+    {
+        if (goodsTypeIsHasParent)
+        {
+            saveOrUpdate(true, goodsTypeNames);
+        }
+        else
+        {
+            saveOrUpdate(false, goodsTypeNames);
+        }
+    }
+
+    private void saveOrUpdate(boolean goodsTypeIsHasParent, String... goodsTypeNames)
+    {
+        for (int i = 0; i < goodsTypeNames.length; i++)
+        {
+            GoodsType childrenGoodsTypeSet = new GoodsType(goodsTypeNames[i]);
+
+            if (goodsTypeIsHasParent)
+            {
+                childrenGoodsTypeSet.setParentGoodsType(parent);
+                parent.getChildrenSet().add(childrenGoodsTypeSet);
+                session.save(childrenGoodsTypeSet);
+                session.update(parent);
+            }
+            else
+            {
+                session.save(childrenGoodsTypeSet);
+            }
+        }
+    }
+}
+
+*/
+//endregion

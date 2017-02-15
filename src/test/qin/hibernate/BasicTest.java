@@ -7,5 +7,5 @@ import qin.javaee8.hibernate.testing.MyTest;
 public class BasicTest extends MyTest
 {
     public ApplicationContext applicationContext = new
-            ClassPathXmlApplicationContext("applicationContext.xml");
+              ClassPathXmlApplicationContext("applicationContext.xml");
 }

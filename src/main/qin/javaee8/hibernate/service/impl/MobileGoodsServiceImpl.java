@@ -1,6 +1,5 @@
 package qin.javaee8.hibernate.service.impl;
 
-import org.springframework.stereotype.Service;
 import qin.javaee8.hibernate.dao.MobileGoodsDAO;
 import qin.javaee8.hibernate.domain.GoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
@@ -17,7 +16,7 @@ import java.util.List;
  * @author qinzhengying
  * @since 1.8 2017 2017/1/31
  */
-@Service
+//@Service
 @Transactional
 public class MobileGoodsServiceImpl implements MobileGoodsService
 {

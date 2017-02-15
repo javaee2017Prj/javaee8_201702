@@ -3,7 +3,7 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
-<hibernate-mapping auto-import="true" package="qin.mobilegoods.domain" default-lazy="false">
+<hibernate-mapping auto-import="true" package="qin.javaee8.hibernate.domain" default-lazy="false">
 
     <class name="MobileGoods" table="tb_mobileGoods8">
         <id name="id" type="long" column="mobileGoodsId">

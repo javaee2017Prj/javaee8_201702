@@ -51,10 +51,10 @@ import static qin.javaee8.hibernate.domain.MobileProperty.getMobilePrice;
 
 @SuppressWarnings("all")
 public class SaveMobileGoods extends MyTest
-        implements OppoGoodsNames, OppoGoodsImages,
-        HuaWeiNames, HuaWeiImages,
-        MeiZuNames, MeiZuImages,
-        XiaoMiNamesI, XiaoMiImagesI
+          implements OppoGoodsNames, OppoGoodsImages,
+          HuaWeiNames, HuaWeiImages,
+          MeiZuNames, MeiZuImages,
+          XiaoMiNamesI, XiaoMiImagesI
 {
     /*
     //@Test
@@ -493,8 +493,8 @@ public class SaveMobileGoods extends MyTest
     public void saveHuaWei()
     {
         GoodsType apple = (GoodsType) session
-                .createQuery("from GoodsType where goods_typeName='华为'")
-                .list().get(0);
+                  .createQuery("from GoodsType where goods_typeName='华为'")
+                  .list().get(0);
 
         for (int i = 0; i < meiZuNamess.length; i++)
         {
@@ -605,8 +605,8 @@ public class SaveMobileGoods extends MyTest
     {
         GoodsType oppo = new GoodsType("魅族");
         GoodsType parent = (GoodsType) session
-                .createQuery("from GoodsType where id=149")
-                .list().get(0);
+                  .createQuery("from GoodsType where id=149")
+                  .list().get(0);
         parent.getChildrenSet().add(oppo);
         oppo.setParentGoodsType(parent);
 
@@ -620,8 +620,8 @@ public class SaveMobileGoods extends MyTest
     public void saveMeiZu()
     {
         GoodsType apple = (GoodsType) session
-                .createQuery("from GoodsType where goods_typeName='魅族'")
-                .list().get(0);
+                  .createQuery("from GoodsType where goods_typeName='魅族'")
+                  .list().get(0);
 
         for (int i = 0; i < meiZuNamess.length; i++)
         {
@@ -731,8 +731,8 @@ public class SaveMobileGoods extends MyTest
     public void save_小米()
     {
         GoodsType apple = (GoodsType) session
-                .createQuery("from GoodsType where goods_typeName='魅族'")
-                .list().get(0);
+                  .createQuery("from GoodsType where goods_typeName='魅族'")
+                  .list().get(0);
 
         for (int i = 0; i < xiaomiNames.length; i++)
         {

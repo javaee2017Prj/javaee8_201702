@@ -7,7 +7,9 @@ import java.util.Set;
 
 public class Java8Test
 {
-    @org.junit.Test public void mapTest() {
+    @org.junit.Test
+    public void mapTest()
+    {
         Map<Integer, Integer> map = new HashMap<>();
 
         map.put(1, 1);
@@ -15,7 +17,8 @@ public class Java8Test
 
         Set<Integer> key = map.keySet();
 
-        for (Iterator<Integer> it = key.iterator(); it.hasNext(); ) {
+        for (Iterator<Integer> it = key.iterator(); it.hasNext(); )
+        {
             System.out.println(map.get(it.next()));
         }
 

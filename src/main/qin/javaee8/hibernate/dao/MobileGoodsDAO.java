@@ -76,7 +76,7 @@ public interface MobileGoodsDAO extends DAOSupport8<MobileGoods, Long>
      */
     @Deprecated
     List<MobileGoods> search_mobileGoodsStart(String mobileGoodsStart, String jspOperator)
-            throws Exception;
+              throws Exception;
     //endregion
 
     //region 查询苹果

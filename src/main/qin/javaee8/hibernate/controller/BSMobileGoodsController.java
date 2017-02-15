@@ -1,5 +1,49 @@
 /*
 
+---------------------------------------------------------------------
+
+页面jsp控件及表单所在行数
+
+方法名称或控件名称                                   所在行数
+_cleanDivAndAppend                                 54
+MobileUtils
+    |--doWrongEvent                                107
+    |--checkNotNULL                                126
+    |--checkOthers                                 247
+$(function())
+    |--btn_addMobileGoods按钮添加事件               288
+    |--ajax实现新增手机商品                          354
+    |--弹出新增商品类型对话框                        365
+    |--添加商品类型                                 374
+
+控件id                                       描述
+myModal                                 错误信息提示框
+modal_addGoodsType                      新增手机类型弹出框
+frm_addGoodsType                        新增手机类型的表单
+HTMLGoodsTypeParent                     上级手机类型下拉框控件
+HTMLGoodsTypeName_                      商品类型名称text
+HTMLGoodsTypeDescription_               商品类型描述textarea
+btn_addGoodsType                        确定添加商品类型
+frm_addMobileGoods                      新增手机商品的表单
+HTMLGoodsType                           商品类型下拉框
+btn_openAddGoodsTypeModal               如果下拉框中没有合适的分类就弹出一个对话框新建一个自己想要的商品类型
+HTMLGoodsColor                          手机的机身颜色
+HTMLGoodsROM                            手机机身内存
+HTMLGoodsBattery                        手机电池
+HTMLGoodsBackCamera                     后置摄像头
+HTMLGoodsNews                           手机资讯
+HTMLGoodsFrontCamera                    前置摄像头
+HTMLGoodsMemory                         手机内存
+HTMLGoodsNumber                         手机编号
+HTMLGoodsPrice                          手机价格
+HTMLGoodsName                           手机名称
+HTMLGoodsDescription                    手机描述
+HTMLGoodsOS                             手机系统
+btn_addMobileGoods                      添加手机商品信息
+
+---------------------------------------------------------------------
+
+
     手机控制层
 
     1.新增手机记录
@@ -16,13 +60,16 @@ package qin.javaee8.hibernate.controller;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 import qin.javaee8.core.JavaEE8BaseSupportImpl;
 import qin.javaee8.exceptions.JavaEE8Exception;
+import qin.javaee8.hibernate.dao.MobileBatchAddGoodsTypeDAO;
 import qin.javaee8.hibernate.domain.MobileGoods;
-import qin.javaee8.hibernate.service.BSMobileService;
+import qin.javaee8.hibernate.service.MobileBSService;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
+import java.io.Serializable;
 
 /**
  * 手机商品控制层
@@ -49,19 +96,21 @@ public class BSMobileGoodsController extends JavaEE8BaseSupportImpl
     //endregion
 
     //region 注入服务层
-    private BSMobileService bsMobileService;
+    private MobileBSService mobileBSService;
 
-    public BSMobileService getBsMobileService()
+    public MobileBSService getMobileBSService()
     {
-        return bsMobileService;
+        return mobileBSService;
     }
 
     @Resource
-    public void setBsMobileService(BSMobileService bsMobileService)
+    public void setMobileBSService(MobileBSService mobileBSService)
     {
-        this.bsMobileService = bsMobileService;
+        this.mobileBSService = mobileBSService;
     }
     //endregion
+
+    //region 一期功能
 
     //region 新增手机记录
 
@@ -206,23 +255,23 @@ public class BSMobileGoodsController extends JavaEE8BaseSupportImpl
                     else
                     {
                         //实现批量保存
-                        bsMobileService.save
-                                (
-                                        brGoodsName[i], Integer.valueOf(goodsNumber), Double.valueOf(goodsPrice),
-                                        goodsDescription, goodsOS, goodsMemory, goodsFrontCamera, goodsNews,
-                                        goodsBackCamera, goodsBattery, goodsROM, goodsColor, goodsType
-                                );
+                        mobileBSService.save
+                                  (
+                                            brGoodsName[i], Integer.valueOf(goodsNumber), Double.valueOf(goodsPrice),
+                                            goodsDescription, goodsOS, goodsMemory, goodsFrontCamera, goodsNews,
+                                            goodsBackCamera, goodsBattery, goodsROM, goodsColor, goodsType
+                                  );
                     }
                 }
             }
             else
             {
-                bsMobileService.save
-                        (
-                                goodsName, Integer.valueOf(goodsNumber), Double.valueOf(goodsPrice),
-                                goodsDescription, goodsOS, goodsMemory, goodsFrontCamera, goodsNews,
-                                goodsBackCamera, goodsBattery, goodsROM, goodsColor, goodsType
-                        );
+                mobileBSService.save
+                          (
+                                    goodsName, Integer.valueOf(goodsNumber), Double.valueOf(goodsPrice),
+                                    goodsDescription, goodsOS, goodsMemory, goodsFrontCamera, goodsNews,
+                                    goodsBackCamera, goodsBattery, goodsROM, goodsColor, goodsType
+                          );
             }
 
             //endregion
@@ -321,26 +370,87 @@ public class BSMobileGoodsController extends JavaEE8BaseSupportImpl
         }
     }
     //endregion
+
+    //endregion
+
+    //region 二期功能
+
+    //region 注入改善版的商品类型添加数据访问层
+    private MobileBatchAddGoodsTypeDAO mobileBatchAddGoodsTypeDAO;
+
+    public MobileBatchAddGoodsTypeDAO getMobileBatchAddGoodsTypeDAO()
+    {
+        return mobileBatchAddGoodsTypeDAO;
+    }
+
+    @Resource
+    public void setMobileBatchAddGoodsTypeDAO(MobileBatchAddGoodsTypeDAO mobileBatchAddGoodsTypeDAO)
+    {
+        this.mobileBatchAddGoodsTypeDAO = mobileBatchAddGoodsTypeDAO;
+    }
+    //endregion
+
+    //region 添加商品类型
+    @RequestMapping(value = "/addGoodsType")
+    public void addGoodsType(BSHTMLMobile mobile, HttpServletResponse response) throws Exception
+    {
+        Serializable addResult = 0;
+
+        try
+        {
+            //接收手机商品类型
+            //1.上级类型
+            String HTMLGoodsTypeParent = mobile.getHTMLGoodsTypeParent().trim();
+            //2.类型名称
+            String HTMLGoodsTypeName_ = mobile.getHTMLGoodsTypeName_().trim();
+            //3.类型描述
+            String HTMLGoodsTypeDescription_ = mobile.getHTMLGoodsTypeDescription_().trim();
+
+            //addResult = mobileBSService.addGoodsType(HTMLGoodsTypeParent, HTMLGoodsTypeName_, HTMLGoodsTypeDescription_);
+
+            addResult = mobileBatchAddGoodsTypeDAO
+                      .addGoodsType(HTMLGoodsTypeParent, HTMLGoodsTypeName_, HTMLGoodsTypeDescription_);
+
+            returnJson(addResult, response);
+
+            superInfo_logger_normal("添加结果为:" + addResult);
+        }
+        catch (Exception ex)
+        {
+            superInfo_logger_expection(ex);
+        }
+    }
+    //endregion
+
+    //region 获取所有的手机类型
+    @RequestMapping(value = "/getMobileGoodsType")
+    public void getMobileGoodsType(HttpServletResponse response)
+    {
+        try
+        {
+            returnJson(mobileBSService.getAllGoodsTypeSelect(), response);
+        }
+        catch (Exception ex)
+        {
+            System.out.println(ex);
+        }
+    }
+    //endregion
+
+    //region 返回新增手机页面
+
+    /**
+     * 返回新增手机页面
+     *
+     * @return
+     */
+    @RequestMapping(value = "/returnAddMobileGoodsPage")
+    public ModelAndView returnAddMobileGoodsPage()
+    {
+        return new ModelAndView("/bsMobileGoods8/addMobileGoods");
+    }
+    //endregion
+
+
+    //endregion
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

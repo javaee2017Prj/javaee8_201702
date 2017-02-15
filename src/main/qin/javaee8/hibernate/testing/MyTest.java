@@ -28,22 +28,22 @@ WHERE goods_pk = (
 */
 public class MyTest
 {
+
     public
     Session session =
-            (
-                    (SessionFactory) new
-                            ClassPathXmlApplicationContext("applicationContext.xml")
-                            .getBean("sessionFactory")
-            ).openSession();
+              (
+                        (SessionFactory) new
+                                  ClassPathXmlApplicationContext("applicationContext.xml")
+                                  .getBean("sessionFactory")
+              ).openSession();
 
     /**
      * 开启事务
      */
     public Transaction transaction = session.beginTransaction();
 
-    //@Test
+    @org.junit.Test
     public void make()
     {
-
     }
 }

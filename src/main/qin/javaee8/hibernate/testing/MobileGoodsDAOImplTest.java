@@ -23,17 +23,17 @@ import static qin.javaee8.hibernate.dao.MobileGoodsDAO.doNotSearchWhatStart;
 public class MobileGoodsDAOImplTest
 {
     ApplicationContext applicationContext = new
-            ClassPathXmlApplicationContext("applicationContext.xml");
+              ClassPathXmlApplicationContext("applicationContext.xml");
     SessionFactory sessionFactory = (SessionFactory)
-            applicationContext.getBean("sessionFactory");
+              applicationContext.getBean("sessionFactory");
     Session session = sessionFactory.openSession();
 
     //@Test
     public void searachNames()
     {
         List<MobileGoods> mobileGoodsList = session
-                .createQuery("from MobileGoods ")
-                .list();
+                  .createQuery("from MobileGoods ")
+                  .list();
         StringBuilder sb = new StringBuilder();
 
         for (Iterator<MobileGoods> it = mobileGoodsList.iterator(); it.hasNext(); )
@@ -58,7 +58,7 @@ public class MobileGoodsDAOImplTest
     {
         MobileGoodsDAOImpl m = (MobileGoodsDAOImpl) applicationContext.getBean("mobileGoodsDAOImpl");
         String[] mobileIds = new String[]{
-                "1", "39", "40", "46"
+                  "1", "39", "40", "46"
         };
         m.batchUpdateGoodsType(mobileIds, "苹果");
     }
@@ -74,8 +74,8 @@ public class MobileGoodsDAOImplTest
     public void batchUpdate2()
     {
         List<MobileGoods> mobileGoodsList = session
-                .createQuery("from MobileGoods ")
-                .list();
+                  .createQuery("from MobileGoods ")
+                  .list();
         for (Iterator<MobileGoods> it = mobileGoodsList.iterator(); it.hasNext(); )
         {
             MobileGoods m = it.next();
@@ -90,8 +90,8 @@ public class MobileGoodsDAOImplTest
     public void searchTest()
     {
         List<MobileGoods> mobileGoodsList = session
-                .createQuery("from MobileGoods ")
-                .list();
+                  .createQuery("from MobileGoods ")
+                  .list();
         for (int i = 0; i < mobileGoodsList.size(); i++)
         {
             MobileGoods m = mobileGoodsList.get(i);
@@ -115,13 +115,13 @@ public class MobileGoodsDAOImplTest
     {
         String s = "-----------";
         MobileGoodsDAOImpl m = (MobileGoodsDAOImpl)
-                applicationContext.getBean("mobileGoodsDAOImpl");
+                  applicationContext.getBean("mobileGoodsDAOImpl");
         List<MobileGoods> mobileGoodsList = m.search_mobileGoodsStart("苹果", doNotSearchWhatStart);
         for (Iterator<MobileGoods> it = mobileGoodsList.iterator(); it.hasNext(); )
         {
             MobileGoods mobileGoods = it.next();
             System.out.println(mobileGoods.getId() + s + mobileGoods.getGoods_name() +
-                                       s + mobileGoods.getMobileGoodsType().getGoods_typeName());
+                                         s + mobileGoods.getMobileGoodsType().getGoods_typeName());
         }
     }
 
@@ -129,8 +129,8 @@ public class MobileGoodsDAOImplTest
     public void jspTest1()
     {
         List<GoodsType> goodsTypeList = session
-                .createQuery("from GoodsType where parentGoodsType.id=149")
-                .list();
+                  .createQuery("from GoodsType where parentGoodsType.id=149")
+                  .list();
         Object obj = 0;
     }
 
@@ -138,9 +138,9 @@ public class MobileGoodsDAOImplTest
     public void saveType1()
     {
         GoodsType goodsType = (GoodsType)
-                session.get(GoodsType.class, new Integer(1326));
+                  session.get(GoodsType.class, new Integer(1326));
         GoodsType parent = (GoodsType)
-                session.get(GoodsType.class, new Integer(149));
+                  session.get(GoodsType.class, new Integer(149));
         goodsType.setParentGoodsType(parent);
         parent.getChildrenSet().add(goodsType);
 

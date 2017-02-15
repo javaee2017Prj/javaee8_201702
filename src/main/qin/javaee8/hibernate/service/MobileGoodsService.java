@@ -33,7 +33,7 @@ public interface MobileGoodsService
     //region 根据jsp页面传回来的操作来查找
     @Deprecated
     List<MobileGoods> search_mobileGoodsStart(String mobileGoodsStart, String jspOperator)
-            throws Exception;
+              throws Exception;
     //endregion
 
 }

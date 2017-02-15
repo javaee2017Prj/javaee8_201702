@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="orcl12">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="C##ZHOUJIELUN">
+      <ObjectId>110</ObjectId>
+      <IntrospectionTimestamp>2017-02-13.10:40:54</IntrospectionTimestamp>
+      <CreatedTimestamp>2017-01-20.17:52:23</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <CommentsHash>108693480699679</CommentsHash>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="AUDSYS">
+      <ObjectId>7</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="SYSTEM">
+      <ObjectId>8</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="OUTLN">
+      <ObjectId>13</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="GSMADMIN_INTERNAL">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="GSMUSER">
+      <ObjectId>22</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="DIP">
+      <ObjectId>23</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="ORACLE_OCM">
+      <ObjectId>36</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="DBSNMP">
+      <ObjectId>48</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="APPQOSSYS">
+      <ObjectId>49</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="XDB">
+      <ObjectId>50</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="ANONYMOUS">
+      <ObjectId>51</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="GSMCATUSER">
+      <ObjectId>61</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="WMSYS">
+      <ObjectId>62</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="OJVMSYS">
+      <ObjectId>70</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="CTXSYS">
+      <ObjectId>73</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="ORDSYS">
+      <ObjectId>75</ObjectId>
+    </schema>
+    <schema id="21" parent="1" name="ORDDATA">
+      <ObjectId>76</ObjectId>
+    </schema>
+    <schema id="22" parent="1" name="ORDPLUGINS">
+      <ObjectId>77</ObjectId>
+    </schema>
+    <schema id="23" parent="1" name="SI_INFORMTN_SCHEMA">
+      <ObjectId>78</ObjectId>
+    </schema>
+    <schema id="24" parent="1" name="MDSYS">
+      <ObjectId>79</ObjectId>
+    </schema>
+    <schema id="25" parent="1" name="OLAPSYS">
+      <ObjectId>82</ObjectId>
+    </schema>
+    <schema id="26" parent="1" name="MDDATA">
+      <ObjectId>85</ObjectId>
+    </schema>
+    <schema id="27" parent="1" name="SPATIAL_WFS_ADMIN_USR">
+      <ObjectId>87</ObjectId>
+    </schema>
+    <schema id="28" parent="1" name="SPATIAL_CSW_ADMIN_USR">
+      <ObjectId>90</ObjectId>
+    </schema>
+    <schema id="29" parent="1" name="LBACSYS">
+      <ObjectId>92</ObjectId>
+    </schema>
+    <schema id="30" parent="1" name="FLOWS_FILES">
+      <ObjectId>94</ObjectId>
+    </schema>
+    <schema id="31" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>95</ObjectId>
+    </schema>
+    <schema id="32" parent="1" name="APEX_040200">
+      <ObjectId>98</ObjectId>
+    </schema>
+    <schema id="33" parent="1" name="DVF">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="34" parent="1" name="C##ORACLE12">
+      <ObjectId>111</ObjectId>
+    </schema>
+    <schema id="35" parent="1" name="DVSYS">
+      <ObjectId>1279990</ObjectId>
+    </schema>
+    <schema id="36" parent="1" name="SYSBACKUP">
+      <ObjectId>2147483617</ObjectId>
+    </schema>
+    <schema id="37" parent="1" name="SYSDG">
+      <ObjectId>2147483618</ObjectId>
+    </schema>
+    <schema id="38" parent="1" name="SYSKM">
+      <ObjectId>2147483619</ObjectId>
+    </schema>
+    <schema id="39" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <sequence id="40" parent="2" name="HIBERNATE_SEQUENCE">
+      <ObjectId>93371</ObjectId>
+      <CreatedTimestamp>2017-01-20.17:52:23</CreatedTimestamp>
+      <ModifiedTimestamp>2017-01-20.17:52:23</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="41" parent="2" name="GOODSTYPE_CHILDRENSET">
+      <ObjectId>93910</ObjectId>
+      <CreatedTimestamp>2017-02-11.19:54:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+    </table>
+    <table id="42" parent="2" name="MOBILEGOODSSET_GOODSTYPE">
+      <ObjectId>93912</ObjectId>
+      <CreatedTimestamp>2017-02-11.19:54:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+    </table>
+    <table id="43" parent="2" name="MOBILEGOODS_GOODSTYPE">
+      <ObjectId>93914</ObjectId>
+      <CreatedTimestamp>2017-02-11.19:54:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+    </table>
+    <table id="44" parent="2" name="MOBILEGOODS_IMAGESMAP">
+      <ObjectId>93916</ObjectId>
+      <CreatedTimestamp>2017-02-11.19:54:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+    </table>
+    <table id="45" parent="2" name="TB_GOODSTYPE8">
+      <ObjectId>93918</ObjectId>
+      <CreatedTimestamp>2017-02-11.19:54:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+    </table>
+    <table id="46" parent="2" name="TB_MOBILEGOODS8">
+      <ObjectId>93920</ObjectId>
+      <CreatedTimestamp>2017-02-11.19:54:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:00</ModifiedTimestamp>
+    </table>
+    <column id="47" parent="41" name="GOODSTYPE_CHILDRENSET">
+      <Position>1</Position>
+      <DataType>NUMBER(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="41" name="CHILDRENSET_GOODS_PK">
+      <Position>2</Position>
+      <DataType>NUMBER(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="49" parent="41" name="SYS_C0011197">
+      <ObjectId>93911</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-02-11.19:54:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>GOODSTYPE_CHILDRENSET
+CHILDRENSET_GOODS_PK</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="50" parent="41" name="UK_SS2TBVPET9MBF1IXAYNK9S4LU">
+      <ObjectId>93924</ObjectId>
+      <CreatedTimestamp>2017-02-11.19:54:01</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CHILDRENSET_GOODS_PK</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="51" parent="41" name="SYS_C0011197">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-02-11.19:54:00</ModifiedTimestamp>
+      <ColNames>GOODSTYPE_CHILDRENSET
+CHILDRENSET_GOODS_PK</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0011197</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="52" parent="41" name="UK_SS2TBVPET9MBF1IXAYNK9S4LU">
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <ColNames>CHILDRENSET_GOODS_PK</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UK_SS2TBVPET9MBF1IXAYNK9S4LU</UnderlyingIndexName>
+    </key>
+    <foreign-key id="53" parent="41" name="FK_FYTBAQREKKE9G6BOG589F59P9">
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <ColNames>GOODSTYPE_CHILDRENSET</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>TB_GOODSTYPE8</RefTableName>
+      <RefKeyName>SYS_C0011207</RefKeyName>
+    </foreign-key>
+    <foreign-key id="54" parent="41" name="FK_SS2TBVPET9MBF1IXAYNK9S4LU">
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <ColNames>CHILDRENSET_GOODS_PK</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>TB_GOODSTYPE8</RefTableName>
+      <RefKeyName>SYS_C0011207</RefKeyName>
+    </foreign-key>
+    <column id="55" parent="42" name="GOODSTYPE_MOBILESET">
+      <Position>1</Position>
+      <DataType>NUMBER(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="42" name="MOBILEGOODSSET_MOBILEGOODSID">
+      <Position>2</Position>
+      <DataType>NUMBER(19)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="57" parent="42" name="SYS_C0011200">
+      <ObjectId>93913</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-02-11.19:54:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>GOODSTYPE_MOBILESET
+MOBILEGOODSSET_MOBILEGOODSID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="58" parent="42" name="UK_IADKA9X9IJNCAXL5C7MPOGF5P">
+      <ObjectId>93925</ObjectId>
+      <CreatedTimestamp>2017-02-11.19:54:01</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>MOBILEGOODSSET_MOBILEGOODSID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="59" parent="42" name="SYS_C0011200">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-02-11.19:54:00</ModifiedTimestamp>
+      <ColNames>GOODSTYPE_MOBILESET
+MOBILEGOODSSET_MOBILEGOODSID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0011200</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="60" parent="42" name="UK_IADKA9X9IJNCAXL5C7MPOGF5P">
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <ColNames>MOBILEGOODSSET_MOBILEGOODSID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UK_IADKA9X9IJNCAXL5C7MPOGF5P</UnderlyingIndexName>
+    </key>
+    <foreign-key id="61" parent="42" name="FK_4QMFIQK37G3DIFSKTD9UILT43">
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <ColNames>GOODSTYPE_MOBILESET</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>TB_GOODSTYPE8</RefTableName>
+      <RefKeyName>SYS_C0011207</RefKeyName>
+    </foreign-key>
+    <foreign-key id="62" parent="42" name="FK_IADKA9X9IJNCAXL5C7MPOGF5P">
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <ColNames>MOBILEGOODSSET_MOBILEGOODSID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>TB_MOBILEGOODS8</RefTableName>
+      <RefKeyName>SYS_C0011217</RefKeyName>
+    </foreign-key>
+    <column id="63" parent="43" name="COL_MOBILEGOODSTYPE">
+      <Position>1</Position>
+      <DataType>NUMBER(19)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="43" name="COL_MOBILEGOODSTYPEMANY2ONE">
+      <Position>2</Position>
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <index id="65" parent="43" name="SYS_C0011202">
+      <ObjectId>93915</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-02-11.19:54:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>COL_MOBILEGOODSTYPE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="66" parent="43" name="SYS_C0011202">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-02-11.19:54:00</ModifiedTimestamp>
+      <ColNames>COL_MOBILEGOODSTYPE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0011202</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="67" parent="43" name="FK_MOBILEGOODSTYPE">
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <ColNames>COL_MOBILEGOODSTYPE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>TB_MOBILEGOODS8</RefTableName>
+      <RefKeyName>SYS_C0011217</RefKeyName>
+    </foreign-key>
+    <foreign-key id="68" parent="43" name="FK_MOBILEGOODSTYPEMANY2ONE">
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <ColNames>COL_MOBILEGOODSTYPEMANY2ONE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>TB_GOODSTYPE8</RefTableName>
+      <RefKeyName>SYS_C0011207</RefKeyName>
+    </foreign-key>
+    <column id="69" parent="44" name="COL_IMAGES_MOBILE">
+      <Position>1</Position>
+      <DataType>NUMBER(19)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="44" name="ELEMENT_IMAGES_MOBILE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(255)|0</DataType>
+    </column>
+    <column id="71" parent="44" name="COL_IMAGES_INDEX_MOBILE">
+      <Position>3</Position>
+      <DataType>NUMBER(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="72" parent="44" name="SYS_C0011205">
+      <ObjectId>93917</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-02-11.19:54:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>COL_IMAGES_MOBILE
+COL_IMAGES_INDEX_MOBILE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="73" parent="44" name="SYS_C0011205">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-02-11.19:54:00</ModifiedTimestamp>
+      <ColNames>COL_IMAGES_MOBILE
+COL_IMAGES_INDEX_MOBILE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0011205</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="74" parent="44" name="FK_IAGES_MOBILE">
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <ColNames>COL_IMAGES_MOBILE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>TB_MOBILEGOODS8</RefTableName>
+      <RefKeyName>SYS_C0011217</RefKeyName>
+    </foreign-key>
+    <column id="75" parent="45" name="GOODS_PK">
+      <Position>1</Position>
+      <DataType>NUMBER(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="45" name="GOODS_TYPEDESCRIPTION">
+      <Position>2</Position>
+      <DataType>LONG|0</DataType>
+    </column>
+    <column id="77" parent="45" name="GOODS_TYPENAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(40)|0</DataType>
+    </column>
+    <column id="78" parent="45" name="GOODSTYPE_PARENTID">
+      <Position>4</Position>
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <index id="79" parent="45" name="SYS_C0011207">
+      <ObjectId>93919</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-02-11.19:54:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>GOODS_PK</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="80" parent="45" name="UK_EJ6KQ1490ACP6O6XS9YFYNI8I">
+      <ObjectId>93926</ObjectId>
+      <CreatedTimestamp>2017-02-11.19:54:01</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>GOODS_TYPENAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="81" parent="45" name="SYS_C0011207">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-02-11.19:54:00</ModifiedTimestamp>
+      <ColNames>GOODS_PK</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0011207</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="82" parent="45" name="UK_EJ6KQ1490ACP6O6XS9YFYNI8I">
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <ColNames>GOODS_TYPENAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UK_EJ6KQ1490ACP6O6XS9YFYNI8I</UnderlyingIndexName>
+    </key>
+    <foreign-key id="83" parent="45" name="FK_PARENT">
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <ColNames>GOODSTYPE_PARENTID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>TB_GOODSTYPE8</RefTableName>
+      <RefKeyName>SYS_C0011207</RefKeyName>
+    </foreign-key>
+    <column id="84" parent="46" name="MOBILEGOODSID">
+      <Position>1</Position>
+      <DataType>NUMBER(19)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="46" name="MOBILE_GOODSNUMBER">
+      <Position>2</Position>
+      <Comment>商品编号</Comment>
+      <DataType>NUMBER(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="46" name="MOBILE_GOODSNAME">
+      <Position>3</Position>
+      <Comment>手机名称</Comment>
+      <DataType>VARCHAR2(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="87" parent="46" name="MOBILE_GOODSPRICE">
+      <Position>4</Position>
+      <Comment>手机价格</Comment>
+      <DataType>BINARY_DOUBLE|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="46" name="MOBILE_GOODSDESCRIPTION">
+      <Position>5</Position>
+      <Comment>手机描述</Comment>
+      <DataType>CLOB|0</DataType>
+    </column>
+    <column id="89" parent="46" name="MOBILE_OS_">
+      <Position>6</Position>
+      <Comment>手机系统</Comment>
+      <DataType>VARCHAR2(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="46" name="MOBILE_MEMORY_">
+      <Position>7</Position>
+      <Comment>手机内存</Comment>
+      <DataType>VARCHAR2(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="91" parent="46" name="MOBILE_FRONTCAMERA_">
+      <Position>8</Position>
+      <Comment>前置摄像头</Comment>
+      <DataType>VARCHAR2(30)|0</DataType>
+    </column>
+    <column id="92" parent="46" name="MOBILE_NEWS_">
+      <Position>9</Position>
+      <Comment>热点</Comment>
+      <DataType>VARCHAR2(3000)|0</DataType>
+    </column>
+    <column id="93" parent="46" name="MOBILE_BACKCAMERA_">
+      <Position>10</Position>
+      <Comment>后置摄像头</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="94" parent="46" name="MOBILE_BATTERY_">
+      <Position>11</Position>
+      <Comment>电池</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="95" parent="46" name="MOBILE_ROM_">
+      <Position>12</Position>
+      <Comment>机身内存</Comment>
+      <DataType>VARCHAR2(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="96" parent="46" name="MOBILE_COLOR_">
+      <Position>13</Position>
+      <Comment>机身颜色</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="97" parent="46" name="SYS_C0011217">
+      <ObjectId>93923</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-02-11.19:54:01</CreatedTimestamp>
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>MOBILEGOODSID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="98" parent="46" name="SYS_C0011217">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-02-11.19:54:01</ModifiedTimestamp>
+      <ColNames>MOBILEGOODSID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0011217</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

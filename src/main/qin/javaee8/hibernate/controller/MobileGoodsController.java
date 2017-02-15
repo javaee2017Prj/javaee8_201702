@@ -3,7 +3,6 @@ package qin.javaee8.hibernate.controller;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import qin.javaee8.core.JavaEE8BaseSupport;
@@ -19,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Iterator;
 import java.util.List;
 
-@Controller
+//@Controller
 @Scope("prototype")
 @RequestMapping(value = "/mobileGoods8")
 @SuppressWarnings("all")

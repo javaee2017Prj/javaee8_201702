@@ -1,0 +1,697 @@
+19:44:52,924  INFO ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ba23b66: startup date [Sat Feb 11 19:44:52 CST 2017]; root of context hierarchy
+19:44:53,052  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+19:44:54,305  INFO PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [oracle.jdbc.properties]
+19:44:54,425  INFO DAOSupport8Impl:186 - 正在初始化最父级的数据访问层==========
+
+19:44:54,797  INFO DriverManagerDataSource:133 - Loaded JDBC driver: oracle.jdbc.OracleDriver
+19:44:54,973 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -> org.hibernate.type.BooleanType@7c83dc97
+19:44:54,975 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -> org.hibernate.type.BooleanType@7c83dc97
+19:44:54,976 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@7c83dc97
+19:44:54,978 DEBUG BasicTypeRegistry:146 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@60015ef5
+19:44:54,982 DEBUG BasicTypeRegistry:146 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2a266d09
+19:44:54,984 DEBUG BasicTypeRegistry:146 - Adding type registration yes_no -> org.hibernate.type.YesNoType@1d8bd0de
+19:44:54,988 DEBUG BasicTypeRegistry:146 - Adding type registration byte -> org.hibernate.type.ByteType@28975c28
+19:44:54,989 DEBUG BasicTypeRegistry:146 - Adding type registration byte -> org.hibernate.type.ByteType@28975c28
+19:44:54,989 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@28975c28
+19:44:54,993 DEBUG BasicTypeRegistry:146 - Adding type registration character -> org.hibernate.type.CharacterType@236e3f4e
+19:44:54,994 DEBUG BasicTypeRegistry:146 - Adding type registration char -> org.hibernate.type.CharacterType@236e3f4e
+19:44:54,998 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@236e3f4e
+19:44:55,003 DEBUG BasicTypeRegistry:146 - Adding type registration short -> org.hibernate.type.ShortType@609db43b
+19:44:55,003 DEBUG BasicTypeRegistry:146 - Adding type registration short -> org.hibernate.type.ShortType@609db43b
+19:44:55,004 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@609db43b
+19:44:55,007 DEBUG BasicTypeRegistry:146 - Adding type registration integer -> org.hibernate.type.IntegerType@6497b078
+19:44:55,008 DEBUG BasicTypeRegistry:146 - Adding type registration int -> org.hibernate.type.IntegerType@6497b078
+19:44:55,009 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6497b078
+19:44:55,013 DEBUG BasicTypeRegistry:146 - Adding type registration long -> org.hibernate.type.LongType@5f683daf
+19:44:55,013 DEBUG BasicTypeRegistry:146 - Adding type registration long -> org.hibernate.type.LongType@5f683daf
+19:44:55,014 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@5f683daf
+19:44:55,017 DEBUG BasicTypeRegistry:146 - Adding type registration float -> org.hibernate.type.FloatType@7e9131d5
+19:44:55,018 DEBUG BasicTypeRegistry:146 - Adding type registration float -> org.hibernate.type.FloatType@7e9131d5
+19:44:55,018 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7e9131d5
+19:44:55,021 DEBUG BasicTypeRegistry:146 - Adding type registration double -> org.hibernate.type.DoubleType@4ef37659
+19:44:55,022 DEBUG BasicTypeRegistry:146 - Adding type registration double -> org.hibernate.type.DoubleType@4ef37659
+19:44:55,023 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@4ef37659
+19:44:55,027 DEBUG BasicTypeRegistry:146 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@e1de817
+19:44:55,027 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@e1de817
+19:44:55,030 DEBUG BasicTypeRegistry:146 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@13b13b5d
+19:44:55,031 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@13b13b5d
+19:44:55,033 DEBUG BasicTypeRegistry:146 - Adding type registration string -> org.hibernate.type.StringType@d6e7bab
+19:44:55,034 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.String -> org.hibernate.type.StringType@d6e7bab
+19:44:55,037 DEBUG BasicTypeRegistry:146 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@6a6afff2
+19:44:55,040 DEBUG BasicTypeRegistry:146 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@62e7f11d
+19:44:55,044 DEBUG BasicTypeRegistry:146 - Adding type registration url -> org.hibernate.type.UrlType@4cc8eb05
+19:44:55,045 DEBUG BasicTypeRegistry:146 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@4cc8eb05
+19:44:55,049 DEBUG BasicTypeRegistry:146 - Adding type registration date -> org.hibernate.type.DateType@3246fb96
+19:44:55,050 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@3246fb96
+19:44:55,054 DEBUG BasicTypeRegistry:146 - Adding type registration time -> org.hibernate.type.TimeType@68c72235
+19:44:55,054 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@68c72235
+19:44:55,060 DEBUG BasicTypeRegistry:146 - Adding type registration timestamp -> org.hibernate.type.TimestampType@346d61be
+19:44:55,060 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@346d61be
+19:44:55,061 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@346d61be
+19:44:55,065 DEBUG BasicTypeRegistry:146 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@3d1cfad4
+19:44:55,068 DEBUG BasicTypeRegistry:146 - Adding type registration calendar -> org.hibernate.type.CalendarType@e7edb54
+19:44:55,069 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@e7edb54
+19:44:55,070 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@e7edb54
+19:44:55,072 DEBUG BasicTypeRegistry:146 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@69e1dd28
+19:44:55,075 DEBUG BasicTypeRegistry:146 - Adding type registration locale -> org.hibernate.type.LocaleType@67080771
+19:44:55,076 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@67080771
+19:44:55,078 DEBUG BasicTypeRegistry:146 - Adding type registration currency -> org.hibernate.type.CurrencyType@2bfc268b
+19:44:55,079 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@2bfc268b
+19:44:55,081 DEBUG BasicTypeRegistry:146 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@4944252c
+19:44:55,082 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4944252c
+19:44:55,084 DEBUG BasicTypeRegistry:146 - Adding type registration class -> org.hibernate.type.ClassType@272ed83b
+19:44:55,085 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@272ed83b
+19:44:55,088 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@b62d79
+19:44:55,089 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@b62d79
+19:44:55,092 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@1613674b
+19:44:55,096 DEBUG BasicTypeRegistry:146 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@34f5090e
+19:44:55,099 DEBUG BasicTypeRegistry:146 - Adding type registration binary -> org.hibernate.type.BinaryType@1b6e1eff
+19:44:55,100 DEBUG BasicTypeRegistry:146 - Adding type registration byte[] -> org.hibernate.type.BinaryType@1b6e1eff
+19:44:55,100 DEBUG BasicTypeRegistry:146 - Adding type registration [B -> org.hibernate.type.BinaryType@1b6e1eff
+19:44:55,103 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@2dde1bff
+19:44:55,104 DEBUG BasicTypeRegistry:146 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@2dde1bff
+19:44:55,104 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@2dde1bff
+19:44:55,118 DEBUG BasicTypeRegistry:146 - Adding type registration image -> org.hibernate.type.ImageType@48974e45
+19:44:55,122 DEBUG BasicTypeRegistry:146 - Adding type registration characters -> org.hibernate.type.CharArrayType@6d3a388c
+19:44:55,122 DEBUG BasicTypeRegistry:146 - Adding type registration char[] -> org.hibernate.type.CharArrayType@6d3a388c
+19:44:55,123 DEBUG BasicTypeRegistry:146 - Adding type registration [C -> org.hibernate.type.CharArrayType@6d3a388c
+19:44:55,126 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@d29f28
+19:44:55,127 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@d29f28
+19:44:55,127 DEBUG BasicTypeRegistry:146 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@d29f28
+19:44:55,130 DEBUG BasicTypeRegistry:146 - Adding type registration text -> org.hibernate.type.TextType@446293d
+19:44:55,132 DEBUG BasicTypeRegistry:146 - Adding type registration ntext -> org.hibernate.type.NTextType@15aab8c6
+19:44:55,144 DEBUG BasicTypeRegistry:146 - Adding type registration blob -> org.hibernate.type.BlobType@4a7f959b
+19:44:55,145 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4a7f959b
+19:44:55,146 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@483f6d77
+19:44:55,153 DEBUG BasicTypeRegistry:146 - Adding type registration clob -> org.hibernate.type.ClobType@16610890
+19:44:55,153 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@16610890
+19:44:55,163 DEBUG BasicTypeRegistry:146 - Adding type registration nclob -> org.hibernate.type.NClobType@35aea049
+19:44:55,164 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@35aea049
+19:44:55,165 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@22ef9844
+19:44:55,168 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@3f6b0be5
+19:44:55,171 DEBUG BasicTypeRegistry:146 - Adding type registration serializable -> org.hibernate.type.SerializableType@a530d0a
+19:44:55,178 DEBUG BasicTypeRegistry:146 - Adding type registration object -> org.hibernate.type.ObjectType@543588e6
+19:44:55,181 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@543588e6
+19:44:55,182 DEBUG BasicTypeRegistry:146 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5d7148e2
+19:44:55,183 DEBUG BasicTypeRegistry:146 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@25fb8912
+19:44:55,183 DEBUG BasicTypeRegistry:146 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7c24b813
+19:44:55,183 DEBUG BasicTypeRegistry:146 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@2c35e847
+19:44:55,184 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7bd4937b
+19:44:55,184 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@21e360a
+19:44:55,185 DEBUG BasicTypeRegistry:146 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@5ba3f27a
+19:44:55,186 DEBUG BasicTypeRegistry:146 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@58d75e99
+19:44:55,223  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+19:44:55,237  INFO Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+19:44:55,241  INFO Environment:239 - HHH000206: hibernate.properties not found
+19:44:55,245  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+19:44:55,269 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+19:44:55,270 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+19:44:55,272 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+19:44:55,273 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+19:44:55,275 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+19:44:55,277 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+19:44:55,279 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+19:44:55,281 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+19:44:55,282 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+19:44:55,284 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+19:44:55,285 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+19:44:55,287 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+19:44:55,288 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+19:44:55,289 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+19:44:55,291 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+19:44:55,297  INFO Configuration:2109 - HHH000044: Configuring from URL: file:/D:/idea2016WK/out/javaee8/default/production/javaee8_201702/hibernate.cfg.xml
+19:44:55,356 DEBUG DTDEntityResolver:69 - Trying to resolve system-id [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+19:44:55,356 DEBUG DTDEntityResolver:71 - Recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+19:44:55,356 DEBUG DTDEntityResolver:108 - Located [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd] in classpath
+19:44:55,403 DEBUG Configuration:2274 - Session-factory config [null] named class [qin.javaee8.hibernate.testing.TestDomain] for mapping
+19:44:55,420 DEBUG Configuration:2274 - Session-factory config [null] named class [qin.javaee8.hibernate.domain.GoodsType] for mapping
+19:44:55,422 DEBUG Configuration:2254 - Session-factory config [null] named resource [qin/javaee8/hibernate/domain/hbm/oracle/mobile.goods.hbm.xml] for mapping
+19:44:55,423  INFO Configuration:757 - HHH000221: Reading mappings from resource: qin/javaee8/hibernate/domain/hbm/oracle/mobile.goods.hbm.xml
+19:44:55,435 DEBUG DTDEntityResolver:69 - Trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+19:44:55,436  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+19:44:55,437 DEBUG DTDEntityResolver:76 - Attempting to resolve on classpath under org/hibernate/
+19:44:55,438 DEBUG DTDEntityResolver:108 - Located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+19:44:55,485  INFO Configuration:2214 - HHH000041: Configured SessionFactory: null
+19:44:55,533 DEBUG Configuration:2215 - Properties: {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=E:\software\jdk1.8x64\jdk\jre\bin, java.vm.version=25.0-b70, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, idea.launcher.port=7534, user.script=, user.country=CN, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=Service Pack 1, java.vm.specification.name=Java Virtual Machine Specification, user.dir=D:\idea2016WK\github2017\javaee8_201702, java.runtime.version=1.8.0-b132, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, hibernate.current_session_context_class=org.springframework.orm.hibernate4.SpringSessionContext, java.endorsed.dirs=E:\software\jdk1.8x64\jdk\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 7, sun.jnu.encoding=GBK, hibernate.connection.datasource=org.springframework.jdbc.datasource.DriverManagerDataSource@52f27fbd, java.library.path=E:\software\jdk1.8x64\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;e:\software\project-open\bin;e:\software\project-open\pgsql\bin;C:\Windows\System32;E:\software\jdk1.8x64\jdk\bin;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;E:\xampps\mysql\bin;C:\Users\Administrator\AppData\Local\atom\bin;E:\software\搜狐影音\5.0.2.23;e:\software\Microsoft VS Code\bin;E:\software\ssh;E:\software\sshclient;., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.1, user.home=C:\Users\Administrator, user.timezone=Asia/Shanghai, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=UTF-8, idea.launcher.bin.path=E:\software\jetbrains\idea2016.3\bin, java.specification.version=1.8, java.class.path=E:\software\jetbrains\idea2016.3\lib\idea_rt.jar;E:\software\jetbrains\idea2016.3\plugins\junit\lib\junit-rt.jar;E:\software\jdk1.8x64\jdk\jre\lib\charsets.jar;E:\software\jdk1.8x64\jdk\jre\lib\deploy.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\access-bridge-64.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\cldrdata.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\dnsns.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\jaccess.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\jfxrt.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\localedata.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\nashorn.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\sunec.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\sunjce_provider.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\sunmscapi.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\sunpkcs11.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\zipfs.jar;E:\software\jdk1.8x64\jdk\jre\lib\javaws.jar;E:\software\jdk1.8x64\jdk\jre\lib\jce.jar;E:\software\jdk1.8x64\jdk\jre\lib\jfr.jar;E:\software\jdk1.8x64\jdk\jre\lib\jfxswt.jar;E:\software\jdk1.8x64\jdk\jre\lib\jsse.jar;E:\software\jdk1.8x64\jdk\jre\lib\management-agent.jar;E:\software\jdk1.8x64\jdk\jre\lib\plugin.jar;E:\software\jdk1.8x64\jdk\jre\lib\resources.jar;E:\software\jdk1.8x64\jdk\jre\lib\rt.jar;D:\idea2016WK\out\javaee8\default\test\javaee8_201702;D:\idea2016WK\out\javaee8\default\production\javaee8_201702;D:\idea2016WK\libs\antlr-2.7.7.jar;D:\idea2016WK\libs\aopalliance-1.0.jar;D:\idea2016WK\libs\asm-3.3.jar;D:\idea2016WK\libs\asm-commons-3.3.jar;D:\idea2016WK\libs\asm-tree-3.3.jar;D:\idea2016WK\libs\aspectjweaver-1.8.5.jar;D:\idea2016WK\libs\commons-beanutils-1.8.0.jar;D:\idea2016WK\libs\commons-collections-3.2.1.jar;D:\idea2016WK\libs\commons-fileupload-1.3.jar;D:\idea2016WK\libs\commons-io-2.2.jar;D:\idea2016WK\libs\commons-lang-2.5.jar;D:\idea2016WK\libs\commons-logging-1.2.jar;D:\idea2016WK\libs\dom4j-1.6.1.jar;D:\idea2016WK\libs\ezmorph-1.0.6.jar;D:\idea2016WK\libs\freemarker-2.3.19.jar;D:\idea2016WK\libs\hamcrest-all-1.3.jar;D:\idea2016WK\libs\hibernate-commons-annotations-4.0.4.Final.jar;D:\idea2016WK\libs\hibernate-core-4.3.1.Final.jar;D:\idea2016WK\libs\hibernate-jpa-2.1-api-1.0.0.Draft-16.jar;D:\idea2016WK\libs\jandex-1.1.0.Final.jar;D:\idea2016WK\libs\javassist-3.18.1-GA.jar;D:\idea2016WK\libs\jboss-logging-3.1.3.GA.jar;D:\idea2016WK\libs\jboss-logging-annotations-1.2.0.Beta1.jar;D:\idea2016WK\libs\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;D:\idea2016WK\libs\json-lib-2.4-jdk15.jar;D:\idea2016WK\libs\jstl-1.2.jar;D:\idea2016WK\libs\junit-4.11.jar;D:\idea2016WK\libs\log4j-1.2.17.jar;D:\idea2016WK\libs\mysql-connector-java-5.1.35-bin.jar;D:\idea2016WK\libs\ognl-3.0.6.jar;D:\idea2016WK\libs\oracle-driver-ojdbc-12.1.0.2.jar;D:\idea2016WK\libs\slf4j-api-1.7.10.jar;D:\idea2016WK\libs\slf4j-log4j12-1.7.10.jar;D:\idea2016WK\libs\spring-aop-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-aspects-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-beans-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-context-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-context-support-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-core-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-expression-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-instrument-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-instrument-tomcat-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-jdbc-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-jms-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-messaging-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-orm-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-oxm-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-test-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-tx-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-web-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-webmvc-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-webmvc-portlet-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-websocket-4.1.6.RELEASE.jar;D:\idea2016WK\libs\struts2-core-2.3.16.jar;D:\idea2016WK\libs\struts2-json-plugin-2.3.16.jar;D:\idea2016WK\libs\struts2-spring-plugin-2.3.16.jar;D:\idea2016WK\libs\xml-apis-1.0.b2.jar;D:\idea2016WK\libs\xwork-core-2.3.16.jar;D:\idea2016WK\tomcat8x64\lib\jsp-api.jar;D:\idea2016WK\tomcat8x64\lib\servlet-api.jar;D:\idea2016WK\out\javaee8\default\production\javaee8-core;D:\idea2016WK\out\javaee8\default\production\javaee8-core-hibernate, user.name=Administrator, hibernate.bytecode.use_reflection_optimizer=false, hibernate.classLoader.application=sun.misc.Launcher$AppClassLoader@6d06d69c, java.vm.specification.version=1.8, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 qin.javaee8.hibernate.testing.SaveGoodsType,makeGoodsType_allParent, java.home=E:\software\jdk1.8x64\jdk\jre, sun.arch.data.model=64, user.language=zh, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0, java.ext.dirs=E:\software\jdk1.8x64\jdk\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=E:\software\jdk1.8x64\jdk\jre\lib\resources.jar;E:\software\jdk1.8x64\jdk\jre\lib\rt.jar;E:\software\jdk1.8x64\jdk\jre\lib\sunrsasign.jar;E:\software\jdk1.8x64\jdk\jre\lib\jsse.jar;E:\software\jdk1.8x64\jdk\jre\lib\jce.jar;E:\software\jdk1.8x64\jdk\jre\lib\charsets.jar;E:\software\jdk1.8x64\jdk\jre\lib\jfr.jar;E:\software\jdk1.8x64\jdk\jre\classes, java.vendor=Oracle Corporation, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}
+19:44:55,560 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+19:44:55,566 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+19:44:55,569 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+19:44:55,607 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect] (replacing [org.hibernate.dialect.MySQL5Dialect])
+19:44:55,608 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect] (replacing [org.hibernate.dialect.MySQL5InnoDBDialect])
+19:44:55,701 DEBUG ServiceBinding:85 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+19:44:55,702 DEBUG Configuration:1841 - Preparing to build session factory with filters : {}
+19:44:56,697 DEBUG JdbcServicesImpl:128 - Database ->
+       name : Oracle
+    version : Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+      major : 12
+      minor : 1
+19:44:56,698 DEBUG JdbcServicesImpl:139 - Driver ->
+       name : Oracle JDBC driver
+    version : 12.1.0.2.0
+      major : 12
+      minor : 1
+19:44:56,698 DEBUG JdbcServicesImpl:150 - JDBC version : 4.1
+19:44:56,702 DEBUG StandardRefCursorSupport:187 - Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
+19:44:57,053  WARN ClassPathXmlApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DAOSupport8Impl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle12cDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at qin.javaee8.hibernate.testing.MyTest.<init>(MyTest.java:31)
+	at qin.javaee8.hibernate.testing.SaveGoodsType.<init>(SaveGoodsType.java:7)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle12cDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:435)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:559)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:178)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 40 more
+Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle12cDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:128)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:155)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:136)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:78)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:68)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:165)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:89)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:178)
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 52 more
+19:45:51,726  INFO ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ba23b66: startup date [Sat Feb 11 19:45:51 CST 2017]; root of context hierarchy
+19:45:51,888  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+19:45:52,980  INFO PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [oracle.jdbc.properties]
+19:45:53,212  INFO DAOSupport8Impl:186 - 正在初始化最父级的数据访问层==========
+
+19:45:53,554  INFO DriverManagerDataSource:133 - Loaded JDBC driver: oracle.jdbc.OracleDriver
+19:45:53,789 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -> org.hibernate.type.BooleanType@7c83dc97
+19:45:53,790 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -> org.hibernate.type.BooleanType@7c83dc97
+19:45:53,790 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@7c83dc97
+19:45:53,793 DEBUG BasicTypeRegistry:146 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@60015ef5
+19:45:53,796 DEBUG BasicTypeRegistry:146 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2a266d09
+19:45:53,798 DEBUG BasicTypeRegistry:146 - Adding type registration yes_no -> org.hibernate.type.YesNoType@1d8bd0de
+19:45:53,802 DEBUG BasicTypeRegistry:146 - Adding type registration byte -> org.hibernate.type.ByteType@28975c28
+19:45:53,803 DEBUG BasicTypeRegistry:146 - Adding type registration byte -> org.hibernate.type.ByteType@28975c28
+19:45:53,803 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@28975c28
+19:45:53,806 DEBUG BasicTypeRegistry:146 - Adding type registration character -> org.hibernate.type.CharacterType@236e3f4e
+19:45:53,807 DEBUG BasicTypeRegistry:146 - Adding type registration char -> org.hibernate.type.CharacterType@236e3f4e
+19:45:53,812 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@236e3f4e
+19:45:53,816 DEBUG BasicTypeRegistry:146 - Adding type registration short -> org.hibernate.type.ShortType@609db43b
+19:45:53,817 DEBUG BasicTypeRegistry:146 - Adding type registration short -> org.hibernate.type.ShortType@609db43b
+19:45:53,817 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@609db43b
+19:45:53,819 DEBUG BasicTypeRegistry:146 - Adding type registration integer -> org.hibernate.type.IntegerType@6497b078
+19:45:53,820 DEBUG BasicTypeRegistry:146 - Adding type registration int -> org.hibernate.type.IntegerType@6497b078
+19:45:53,821 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6497b078
+19:45:53,825 DEBUG BasicTypeRegistry:146 - Adding type registration long -> org.hibernate.type.LongType@5f683daf
+19:45:53,826 DEBUG BasicTypeRegistry:146 - Adding type registration long -> org.hibernate.type.LongType@5f683daf
+19:45:53,826 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@5f683daf
+19:45:53,845 DEBUG BasicTypeRegistry:146 - Adding type registration float -> org.hibernate.type.FloatType@7e9131d5
+19:45:53,846 DEBUG BasicTypeRegistry:146 - Adding type registration float -> org.hibernate.type.FloatType@7e9131d5
+19:45:53,846 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7e9131d5
+19:45:53,850 DEBUG BasicTypeRegistry:146 - Adding type registration double -> org.hibernate.type.DoubleType@4ef37659
+19:45:53,851 DEBUG BasicTypeRegistry:146 - Adding type registration double -> org.hibernate.type.DoubleType@4ef37659
+19:45:53,851 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@4ef37659
+19:45:53,855 DEBUG BasicTypeRegistry:146 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@e1de817
+19:45:53,856 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@e1de817
+19:45:53,859 DEBUG BasicTypeRegistry:146 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@13b13b5d
+19:45:53,859 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@13b13b5d
+19:45:53,862 DEBUG BasicTypeRegistry:146 - Adding type registration string -> org.hibernate.type.StringType@d6e7bab
+19:45:53,862 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.String -> org.hibernate.type.StringType@d6e7bab
+19:45:53,865 DEBUG BasicTypeRegistry:146 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@6a6afff2
+19:45:53,868 DEBUG BasicTypeRegistry:146 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@62e7f11d
+19:45:53,871 DEBUG BasicTypeRegistry:146 - Adding type registration url -> org.hibernate.type.UrlType@4cc8eb05
+19:45:53,872 DEBUG BasicTypeRegistry:146 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@4cc8eb05
+19:45:53,877 DEBUG BasicTypeRegistry:146 - Adding type registration date -> org.hibernate.type.DateType@3246fb96
+19:45:53,878 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@3246fb96
+19:45:53,882 DEBUG BasicTypeRegistry:146 - Adding type registration time -> org.hibernate.type.TimeType@68c72235
+19:45:53,883 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@68c72235
+19:45:53,887 DEBUG BasicTypeRegistry:146 - Adding type registration timestamp -> org.hibernate.type.TimestampType@346d61be
+19:45:53,888 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@346d61be
+19:45:53,888 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@346d61be
+19:45:53,901 DEBUG BasicTypeRegistry:146 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@3d1cfad4
+19:45:53,905 DEBUG BasicTypeRegistry:146 - Adding type registration calendar -> org.hibernate.type.CalendarType@e7edb54
+19:45:53,911 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@e7edb54
+19:45:53,911 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@e7edb54
+19:45:53,914 DEBUG BasicTypeRegistry:146 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@69e1dd28
+19:45:53,916 DEBUG BasicTypeRegistry:146 - Adding type registration locale -> org.hibernate.type.LocaleType@67080771
+19:45:53,917 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@67080771
+19:45:53,920 DEBUG BasicTypeRegistry:146 - Adding type registration currency -> org.hibernate.type.CurrencyType@2bfc268b
+19:45:53,920 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@2bfc268b
+19:45:53,924 DEBUG BasicTypeRegistry:146 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@4944252c
+19:45:53,925 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4944252c
+19:45:53,927 DEBUG BasicTypeRegistry:146 - Adding type registration class -> org.hibernate.type.ClassType@272ed83b
+19:45:53,928 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@272ed83b
+19:45:53,934 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@b62d79
+19:45:53,935 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@b62d79
+19:45:53,938 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@1613674b
+19:45:53,940 DEBUG BasicTypeRegistry:146 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@34f5090e
+19:45:53,943 DEBUG BasicTypeRegistry:146 - Adding type registration binary -> org.hibernate.type.BinaryType@1b6e1eff
+19:45:53,944 DEBUG BasicTypeRegistry:146 - Adding type registration byte[] -> org.hibernate.type.BinaryType@1b6e1eff
+19:45:53,944 DEBUG BasicTypeRegistry:146 - Adding type registration [B -> org.hibernate.type.BinaryType@1b6e1eff
+19:45:53,947 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@2dde1bff
+19:45:53,948 DEBUG BasicTypeRegistry:146 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@2dde1bff
+19:45:53,948 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@2dde1bff
+19:45:53,951 DEBUG BasicTypeRegistry:146 - Adding type registration image -> org.hibernate.type.ImageType@48974e45
+19:45:53,955 DEBUG BasicTypeRegistry:146 - Adding type registration characters -> org.hibernate.type.CharArrayType@6d3a388c
+19:45:53,956 DEBUG BasicTypeRegistry:146 - Adding type registration char[] -> org.hibernate.type.CharArrayType@6d3a388c
+19:45:53,956 DEBUG BasicTypeRegistry:146 - Adding type registration [C -> org.hibernate.type.CharArrayType@6d3a388c
+19:45:53,959 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@d29f28
+19:45:53,959 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@d29f28
+19:45:53,960 DEBUG BasicTypeRegistry:146 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@d29f28
+19:45:53,962 DEBUG BasicTypeRegistry:146 - Adding type registration text -> org.hibernate.type.TextType@446293d
+19:45:53,965 DEBUG BasicTypeRegistry:146 - Adding type registration ntext -> org.hibernate.type.NTextType@15aab8c6
+19:45:53,975 DEBUG BasicTypeRegistry:146 - Adding type registration blob -> org.hibernate.type.BlobType@4a7f959b
+19:45:53,977 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4a7f959b
+19:45:53,978 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@483f6d77
+19:45:53,988 DEBUG BasicTypeRegistry:146 - Adding type registration clob -> org.hibernate.type.ClobType@16610890
+19:45:53,989 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@16610890
+19:45:53,999 DEBUG BasicTypeRegistry:146 - Adding type registration nclob -> org.hibernate.type.NClobType@35aea049
+19:45:54,000 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@35aea049
+19:45:54,002 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@22ef9844
+19:45:54,006 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@3f6b0be5
+19:45:54,009 DEBUG BasicTypeRegistry:146 - Adding type registration serializable -> org.hibernate.type.SerializableType@a530d0a
+19:45:54,016 DEBUG BasicTypeRegistry:146 - Adding type registration object -> org.hibernate.type.ObjectType@543588e6
+19:45:54,019 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@543588e6
+19:45:54,021 DEBUG BasicTypeRegistry:146 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5d7148e2
+19:45:54,022 DEBUG BasicTypeRegistry:146 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@25fb8912
+19:45:54,023 DEBUG BasicTypeRegistry:146 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7c24b813
+19:45:54,025 DEBUG BasicTypeRegistry:146 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@2c35e847
+19:45:54,026 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7bd4937b
+19:45:54,026 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@21e360a
+19:45:54,027 DEBUG BasicTypeRegistry:146 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@5ba3f27a
+19:45:54,027 DEBUG BasicTypeRegistry:146 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@58d75e99
+19:45:54,065  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+19:45:54,082  INFO Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+19:45:54,088  INFO Environment:239 - HHH000206: hibernate.properties not found
+19:45:54,092  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+19:45:54,206 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+19:45:54,208 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+19:45:54,210 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+19:45:54,211 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+19:45:54,214 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+19:45:54,215 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+19:45:54,219 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+19:45:54,220 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+19:45:54,222 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+19:45:54,223 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+19:45:54,225 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+19:45:54,227 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+19:45:54,228 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+19:45:54,230 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+19:45:54,233 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+19:45:54,240  INFO Configuration:2109 - HHH000044: Configuring from URL: file:/D:/idea2016WK/out/javaee8/default/production/javaee8_201702/hibernate.cfg.xml
+19:45:54,314 DEBUG DTDEntityResolver:69 - Trying to resolve system-id [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+19:45:54,315 DEBUG DTDEntityResolver:71 - Recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+19:45:54,317 DEBUG DTDEntityResolver:108 - Located [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd] in classpath
+19:45:54,351 DEBUG Configuration:2274 - Session-factory config [null] named class [qin.javaee8.hibernate.testing.TestDomain] for mapping
+19:45:54,368 DEBUG Configuration:2274 - Session-factory config [null] named class [qin.javaee8.hibernate.domain.GoodsType] for mapping
+19:45:54,370 DEBUG Configuration:2254 - Session-factory config [null] named resource [qin/javaee8/hibernate/domain/hbm/oracle/mobile.goods.hbm.xml] for mapping
+19:45:54,370  INFO Configuration:757 - HHH000221: Reading mappings from resource: qin/javaee8/hibernate/domain/hbm/oracle/mobile.goods.hbm.xml
+19:45:54,381 DEBUG DTDEntityResolver:69 - Trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+19:45:54,382  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+19:45:54,383 DEBUG DTDEntityResolver:76 - Attempting to resolve on classpath under org/hibernate/
+19:45:54,384 DEBUG DTDEntityResolver:108 - Located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+19:45:54,452  INFO Configuration:2214 - HHH000041: Configured SessionFactory: null
+19:45:54,471 DEBUG Configuration:2215 - Properties: {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=E:\software\jdk1.8x64\jdk\jre\bin, java.vm.version=25.0-b70, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, idea.launcher.port=7535, user.script=, user.country=CN, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=Service Pack 1, java.vm.specification.name=Java Virtual Machine Specification, user.dir=D:\idea2016WK\github2017\javaee8_201702, java.runtime.version=1.8.0-b132, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, hibernate.current_session_context_class=org.springframework.orm.hibernate4.SpringSessionContext, java.endorsed.dirs=E:\software\jdk1.8x64\jdk\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 7, sun.jnu.encoding=GBK, hibernate.connection.datasource=org.springframework.jdbc.datasource.DriverManagerDataSource@52f27fbd, java.library.path=E:\software\jdk1.8x64\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;e:\software\project-open\bin;e:\software\project-open\pgsql\bin;C:\Windows\System32;E:\software\jdk1.8x64\jdk\bin;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;E:\xampps\mysql\bin;C:\Users\Administrator\AppData\Local\atom\bin;E:\software\搜狐影音\5.0.2.23;e:\software\Microsoft VS Code\bin;E:\software\ssh;E:\software\sshclient;., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.1, user.home=C:\Users\Administrator, user.timezone=Asia/Shanghai, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=UTF-8, idea.launcher.bin.path=E:\software\jetbrains\idea2016.3\bin, java.specification.version=1.8, java.class.path=E:\software\jetbrains\idea2016.3\lib\idea_rt.jar;E:\software\jetbrains\idea2016.3\plugins\junit\lib\junit-rt.jar;E:\software\jdk1.8x64\jdk\jre\lib\charsets.jar;E:\software\jdk1.8x64\jdk\jre\lib\deploy.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\access-bridge-64.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\cldrdata.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\dnsns.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\jaccess.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\jfxrt.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\localedata.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\nashorn.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\sunec.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\sunjce_provider.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\sunmscapi.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\sunpkcs11.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\zipfs.jar;E:\software\jdk1.8x64\jdk\jre\lib\javaws.jar;E:\software\jdk1.8x64\jdk\jre\lib\jce.jar;E:\software\jdk1.8x64\jdk\jre\lib\jfr.jar;E:\software\jdk1.8x64\jdk\jre\lib\jfxswt.jar;E:\software\jdk1.8x64\jdk\jre\lib\jsse.jar;E:\software\jdk1.8x64\jdk\jre\lib\management-agent.jar;E:\software\jdk1.8x64\jdk\jre\lib\plugin.jar;E:\software\jdk1.8x64\jdk\jre\lib\resources.jar;E:\software\jdk1.8x64\jdk\jre\lib\rt.jar;D:\idea2016WK\out\javaee8\default\test\javaee8_201702;D:\idea2016WK\out\javaee8\default\production\javaee8_201702;D:\idea2016WK\libs\antlr-2.7.7.jar;D:\idea2016WK\libs\aopalliance-1.0.jar;D:\idea2016WK\libs\asm-3.3.jar;D:\idea2016WK\libs\asm-commons-3.3.jar;D:\idea2016WK\libs\asm-tree-3.3.jar;D:\idea2016WK\libs\aspectjweaver-1.8.5.jar;D:\idea2016WK\libs\commons-beanutils-1.8.0.jar;D:\idea2016WK\libs\commons-collections-3.2.1.jar;D:\idea2016WK\libs\commons-fileupload-1.3.jar;D:\idea2016WK\libs\commons-io-2.2.jar;D:\idea2016WK\libs\commons-lang-2.5.jar;D:\idea2016WK\libs\commons-logging-1.2.jar;D:\idea2016WK\libs\dom4j-1.6.1.jar;D:\idea2016WK\libs\ezmorph-1.0.6.jar;D:\idea2016WK\libs\freemarker-2.3.19.jar;D:\idea2016WK\libs\hamcrest-all-1.3.jar;D:\idea2016WK\libs\hibernate-commons-annotations-4.0.4.Final.jar;D:\idea2016WK\libs\hibernate-core-4.3.1.Final.jar;D:\idea2016WK\libs\hibernate-jpa-2.1-api-1.0.0.Draft-16.jar;D:\idea2016WK\libs\jandex-1.1.0.Final.jar;D:\idea2016WK\libs\javassist-3.18.1-GA.jar;D:\idea2016WK\libs\jboss-logging-3.1.3.GA.jar;D:\idea2016WK\libs\jboss-logging-annotations-1.2.0.Beta1.jar;D:\idea2016WK\libs\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;D:\idea2016WK\libs\json-lib-2.4-jdk15.jar;D:\idea2016WK\libs\jstl-1.2.jar;D:\idea2016WK\libs\junit-4.11.jar;D:\idea2016WK\libs\log4j-1.2.17.jar;D:\idea2016WK\libs\mysql-connector-java-5.1.35-bin.jar;D:\idea2016WK\libs\ognl-3.0.6.jar;D:\idea2016WK\libs\oracle-driver-ojdbc-12.1.0.2.jar;D:\idea2016WK\libs\slf4j-api-1.7.10.jar;D:\idea2016WK\libs\slf4j-log4j12-1.7.10.jar;D:\idea2016WK\libs\spring-aop-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-aspects-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-beans-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-context-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-context-support-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-core-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-expression-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-instrument-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-instrument-tomcat-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-jdbc-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-jms-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-messaging-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-orm-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-oxm-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-test-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-tx-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-web-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-webmvc-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-webmvc-portlet-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-websocket-4.1.6.RELEASE.jar;D:\idea2016WK\libs\struts2-core-2.3.16.jar;D:\idea2016WK\libs\struts2-json-plugin-2.3.16.jar;D:\idea2016WK\libs\struts2-spring-plugin-2.3.16.jar;D:\idea2016WK\libs\xml-apis-1.0.b2.jar;D:\idea2016WK\libs\xwork-core-2.3.16.jar;D:\idea2016WK\tomcat8x64\lib\jsp-api.jar;D:\idea2016WK\tomcat8x64\lib\servlet-api.jar;D:\idea2016WK\out\javaee8\default\production\javaee8-core;D:\idea2016WK\out\javaee8\default\production\javaee8-core-hibernate, user.name=Administrator, hibernate.bytecode.use_reflection_optimizer=false, hibernate.classLoader.application=sun.misc.Launcher$AppClassLoader@6d06d69c, java.vm.specification.version=1.8, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 qin.javaee8.hibernate.testing.SaveGoodsType,makeGoodsType_allParent, java.home=E:\software\jdk1.8x64\jdk\jre, sun.arch.data.model=64, user.language=zh, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0, java.ext.dirs=E:\software\jdk1.8x64\jdk\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=E:\software\jdk1.8x64\jdk\jre\lib\resources.jar;E:\software\jdk1.8x64\jdk\jre\lib\rt.jar;E:\software\jdk1.8x64\jdk\jre\lib\sunrsasign.jar;E:\software\jdk1.8x64\jdk\jre\lib\jsse.jar;E:\software\jdk1.8x64\jdk\jre\lib\jce.jar;E:\software\jdk1.8x64\jdk\jre\lib\charsets.jar;E:\software\jdk1.8x64\jdk\jre\lib\jfr.jar;E:\software\jdk1.8x64\jdk\jre\classes, java.vendor=Oracle Corporation, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}
+19:45:54,505 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+19:45:54,508 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+19:45:54,511 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+19:45:54,535 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect] (replacing [org.hibernate.dialect.MySQL5Dialect])
+19:45:54,535 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect] (replacing [org.hibernate.dialect.MySQL5InnoDBDialect])
+19:45:54,611 DEBUG ServiceBinding:85 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+19:45:54,613 DEBUG Configuration:1841 - Preparing to build session factory with filters : {}
+19:45:55,536 DEBUG JdbcServicesImpl:128 - Database ->
+       name : Oracle
+    version : Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+      major : 12
+      minor : 1
+19:45:55,537 DEBUG JdbcServicesImpl:139 - Driver ->
+       name : Oracle JDBC driver
+    version : 12.1.0.2.0
+      major : 12
+      minor : 1
+19:45:55,537 DEBUG JdbcServicesImpl:150 - JDBC version : 4.1
+19:45:55,541 DEBUG StandardRefCursorSupport:187 - Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
+19:45:55,867  WARN ClassPathXmlApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DAOSupport8Impl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle12cDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at qin.javaee8.hibernate.testing.MyTest.<init>(MyTest.java:31)
+	at qin.javaee8.hibernate.testing.SaveGoodsType.<init>(SaveGoodsType.java:7)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle12cDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:435)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:559)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:178)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 40 more
+Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle12cDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:128)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:155)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:136)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:78)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:68)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:165)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:89)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:178)
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 52 more
+19:48:08,987  INFO ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7cf10a6f: startup date [Sat Feb 11 19:48:08 CST 2017]; root of context hierarchy
+19:48:09,106  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+19:48:10,186  INFO PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [oracle.jdbc.properties]
+19:48:10,344  INFO DAOSupport8Impl:186 - 正在初始化最父级的数据访问层==========
+
+19:48:10,800  INFO DriverManagerDataSource:133 - Loaded JDBC driver: oracle.jdbc.OracleDriver
+19:48:10,996 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -> org.hibernate.type.BooleanType@484970b0
+19:48:10,996 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -> org.hibernate.type.BooleanType@484970b0
+19:48:10,998 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@484970b0
+19:48:11,000 DEBUG BasicTypeRegistry:146 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@37f1104d
+19:48:11,007 DEBUG BasicTypeRegistry:146 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@568ff82
+19:48:11,105 DEBUG BasicTypeRegistry:146 - Adding type registration yes_no -> org.hibernate.type.YesNoType@5ab9e72c
+19:48:11,111 DEBUG BasicTypeRegistry:146 - Adding type registration byte -> org.hibernate.type.ByteType@574b560f
+19:48:11,113 DEBUG BasicTypeRegistry:146 - Adding type registration byte -> org.hibernate.type.ByteType@574b560f
+19:48:11,114 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@574b560f
+19:48:11,136 DEBUG BasicTypeRegistry:146 - Adding type registration character -> org.hibernate.type.CharacterType@157853da
+19:48:11,137 DEBUG BasicTypeRegistry:146 - Adding type registration char -> org.hibernate.type.CharacterType@157853da
+19:48:11,140 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@157853da
+19:48:11,146 DEBUG BasicTypeRegistry:146 - Adding type registration short -> org.hibernate.type.ShortType@5552768b
+19:48:11,149 DEBUG BasicTypeRegistry:146 - Adding type registration short -> org.hibernate.type.ShortType@5552768b
+19:48:11,150 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5552768b
+19:48:11,153 DEBUG BasicTypeRegistry:146 - Adding type registration integer -> org.hibernate.type.IntegerType@c03cf28
+19:48:11,153 DEBUG BasicTypeRegistry:146 - Adding type registration int -> org.hibernate.type.IntegerType@c03cf28
+19:48:11,155 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@c03cf28
+19:48:11,159 DEBUG BasicTypeRegistry:146 - Adding type registration long -> org.hibernate.type.LongType@4f67eb2a
+19:48:11,160 DEBUG BasicTypeRegistry:146 - Adding type registration long -> org.hibernate.type.LongType@4f67eb2a
+19:48:11,161 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@4f67eb2a
+19:48:11,164 DEBUG BasicTypeRegistry:146 - Adding type registration float -> org.hibernate.type.FloatType@f381794
+19:48:11,165 DEBUG BasicTypeRegistry:146 - Adding type registration float -> org.hibernate.type.FloatType@f381794
+19:48:11,165 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@f381794
+19:48:11,170 DEBUG BasicTypeRegistry:146 - Adding type registration double -> org.hibernate.type.DoubleType@152aa092
+19:48:11,172 DEBUG BasicTypeRegistry:146 - Adding type registration double -> org.hibernate.type.DoubleType@152aa092
+19:48:11,173 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@152aa092
+19:48:11,180 DEBUG BasicTypeRegistry:146 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@5136d012
+19:48:11,181 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@5136d012
+19:48:11,183 DEBUG BasicTypeRegistry:146 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2177849e
+19:48:11,184 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2177849e
+19:48:11,187 DEBUG BasicTypeRegistry:146 - Adding type registration string -> org.hibernate.type.StringType@29647f75
+19:48:11,187 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.String -> org.hibernate.type.StringType@29647f75
+19:48:11,189 DEBUG BasicTypeRegistry:146 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@482bce4f
+19:48:11,192 DEBUG BasicTypeRegistry:146 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4da4253
+19:48:11,194 DEBUG BasicTypeRegistry:146 - Adding type registration url -> org.hibernate.type.UrlType@2abf4075
+19:48:11,195 DEBUG BasicTypeRegistry:146 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@2abf4075
+19:48:11,199 DEBUG BasicTypeRegistry:146 - Adding type registration date -> org.hibernate.type.DateType@7690781
+19:48:11,201 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@7690781
+19:48:11,210 DEBUG BasicTypeRegistry:146 - Adding type registration time -> org.hibernate.type.TimeType@49dc7102
+19:48:11,210 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@49dc7102
+19:48:11,214 DEBUG BasicTypeRegistry:146 - Adding type registration timestamp -> org.hibernate.type.TimestampType@59af0466
+19:48:11,214 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@59af0466
+19:48:11,215 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@59af0466
+19:48:11,219 DEBUG BasicTypeRegistry:146 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@55536d9e
+19:48:11,222 DEBUG BasicTypeRegistry:146 - Adding type registration calendar -> org.hibernate.type.CalendarType@2e55dd0c
+19:48:11,222 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2e55dd0c
+19:48:11,223 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2e55dd0c
+19:48:11,225 DEBUG BasicTypeRegistry:146 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@378542de
+19:48:11,228 DEBUG BasicTypeRegistry:146 - Adding type registration locale -> org.hibernate.type.LocaleType@79da8dc5
+19:48:11,228 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@79da8dc5
+19:48:11,231 DEBUG BasicTypeRegistry:146 - Adding type registration currency -> org.hibernate.type.CurrencyType@4e7912d8
+19:48:11,232 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4e7912d8
+19:48:11,234 DEBUG BasicTypeRegistry:146 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@41e1e210
+19:48:11,235 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@41e1e210
+19:48:11,238 DEBUG BasicTypeRegistry:146 - Adding type registration class -> org.hibernate.type.ClassType@1ba9117e
+19:48:11,240 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1ba9117e
+19:48:11,244 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1e6454ec
+19:48:11,244 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1e6454ec
+19:48:11,247 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6631f5ca
+19:48:11,250 DEBUG BasicTypeRegistry:146 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@649bec2e
+19:48:11,253 DEBUG BasicTypeRegistry:146 - Adding type registration binary -> org.hibernate.type.BinaryType@1cbb87f3
+19:48:11,253 DEBUG BasicTypeRegistry:146 - Adding type registration byte[] -> org.hibernate.type.BinaryType@1cbb87f3
+19:48:11,254 DEBUG BasicTypeRegistry:146 - Adding type registration [B -> org.hibernate.type.BinaryType@1cbb87f3
+19:48:11,257 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@49912c99
+19:48:11,257 DEBUG BasicTypeRegistry:146 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@49912c99
+19:48:11,258 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@49912c99
+19:48:11,260 DEBUG BasicTypeRegistry:146 - Adding type registration image -> org.hibernate.type.ImageType@5f9b2141
+19:48:11,264 DEBUG BasicTypeRegistry:146 - Adding type registration characters -> org.hibernate.type.CharArrayType@50ad3bc1
+19:48:11,264 DEBUG BasicTypeRegistry:146 - Adding type registration char[] -> org.hibernate.type.CharArrayType@50ad3bc1
+19:48:11,265 DEBUG BasicTypeRegistry:146 - Adding type registration [C -> org.hibernate.type.CharArrayType@50ad3bc1
+19:48:11,267 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6bedbc4d
+19:48:11,268 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6bedbc4d
+19:48:11,269 DEBUG BasicTypeRegistry:146 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6bedbc4d
+19:48:11,271 DEBUG BasicTypeRegistry:146 - Adding type registration text -> org.hibernate.type.TextType@3514a4c0
+19:48:11,273 DEBUG BasicTypeRegistry:146 - Adding type registration ntext -> org.hibernate.type.NTextType@2df9b86
+19:48:11,283 DEBUG BasicTypeRegistry:146 - Adding type registration blob -> org.hibernate.type.BlobType@4d5b6aac
+19:48:11,284 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4d5b6aac
+19:48:11,285 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@429bffaa
+19:48:11,295 DEBUG BasicTypeRegistry:146 - Adding type registration clob -> org.hibernate.type.ClobType@156b88f5
+19:48:11,295 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@156b88f5
+19:48:11,303 DEBUG BasicTypeRegistry:146 - Adding type registration nclob -> org.hibernate.type.NClobType@2fb3536e
+19:48:11,303 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2fb3536e
+19:48:11,307 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@7205765b
+19:48:11,308 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@6283d8b8
+19:48:11,314 DEBUG BasicTypeRegistry:146 - Adding type registration serializable -> org.hibernate.type.SerializableType@48f278eb
+19:48:11,320 DEBUG BasicTypeRegistry:146 - Adding type registration object -> org.hibernate.type.ObjectType@618425b5
+19:48:11,323 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@618425b5
+19:48:11,325 DEBUG BasicTypeRegistry:146 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@f5acb9d
+19:48:11,327 DEBUG BasicTypeRegistry:146 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4fb3ee4e
+19:48:11,328 DEBUG BasicTypeRegistry:146 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5d7148e2
+19:48:11,328 DEBUG BasicTypeRegistry:146 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@25fb8912
+19:48:11,329 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7c24b813
+19:48:11,329 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@2c35e847
+19:48:11,330 DEBUG BasicTypeRegistry:146 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@7bd4937b
+19:48:11,330 DEBUG BasicTypeRegistry:146 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@21e360a
+19:48:11,373  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+19:48:11,383  INFO Version:54 - HHH000412: Hibernate Core {4.3.1.Final}
+19:48:11,387  INFO Environment:239 - HHH000206: hibernate.properties not found
+19:48:11,390  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+19:48:11,408 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+19:48:11,409 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+19:48:11,410 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+19:48:11,411 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+19:48:11,413 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+19:48:11,413 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+19:48:11,415 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+19:48:11,416 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+19:48:11,416 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+19:48:11,417 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+19:48:11,418 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+19:48:11,419 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+19:48:11,420 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+19:48:11,421 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+19:48:11,422 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+19:48:11,426  INFO Configuration:2109 - HHH000044: Configuring from URL: file:/D:/idea2016WK/out/javaee8/default/production/javaee8_201702/hibernate.cfg.xml
+19:48:11,470 DEBUG DTDEntityResolver:69 - Trying to resolve system-id [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+19:48:11,471 DEBUG DTDEntityResolver:71 - Recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+19:48:11,473 DEBUG DTDEntityResolver:108 - Located [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd] in classpath
+19:48:11,506 DEBUG Configuration:2274 - Session-factory config [null] named class [qin.javaee8.hibernate.domain.GoodsType] for mapping
+19:48:11,526 DEBUG Configuration:2254 - Session-factory config [null] named resource [qin/javaee8/hibernate/domain/hbm/oracle/mobile.goods.hbm.xml] for mapping
+19:48:11,527  INFO Configuration:757 - HHH000221: Reading mappings from resource: qin/javaee8/hibernate/domain/hbm/oracle/mobile.goods.hbm.xml
+19:48:11,538 DEBUG DTDEntityResolver:69 - Trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+19:48:11,539  WARN DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+19:48:11,540 DEBUG DTDEntityResolver:76 - Attempting to resolve on classpath under org/hibernate/
+19:48:11,541 DEBUG DTDEntityResolver:108 - Located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+19:48:11,594  INFO Configuration:2214 - HHH000041: Configured SessionFactory: null
+19:48:11,596 DEBUG Configuration:2215 - Properties: {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=E:\software\jdk1.8x64\jdk\jre\bin, java.vm.version=25.0-b70, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, idea.launcher.port=7532, user.script=, user.country=CN, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=Service Pack 1, java.vm.specification.name=Java Virtual Machine Specification, user.dir=D:\idea2016WK\github2017\javaee8_201702, java.runtime.version=1.8.0-b132, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, hibernate.current_session_context_class=org.springframework.orm.hibernate4.SpringSessionContext, java.endorsed.dirs=E:\software\jdk1.8x64\jdk\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 7, sun.jnu.encoding=GBK, hibernate.connection.datasource=org.springframework.jdbc.datasource.DriverManagerDataSource@25be7b63, java.library.path=E:\software\jdk1.8x64\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;e:\software\project-open\bin;e:\software\project-open\pgsql\bin;C:\Windows\System32;E:\software\jdk1.8x64\jdk\bin;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;E:\xampps\mysql\bin;C:\Users\Administrator\AppData\Local\atom\bin;E:\software\搜狐影音\5.0.2.23;e:\software\Microsoft VS Code\bin;E:\software\ssh;E:\software\sshclient;., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.1, user.home=C:\Users\Administrator, user.timezone=Asia/Shanghai, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=UTF-8, idea.launcher.bin.path=E:\software\jetbrains\idea2016.3\bin, java.specification.version=1.8, java.class.path=E:\software\jetbrains\idea2016.3\lib\idea_rt.jar;E:\software\jetbrains\idea2016.3\plugins\junit\lib\junit-rt.jar;E:\software\jdk1.8x64\jdk\jre\lib\charsets.jar;E:\software\jdk1.8x64\jdk\jre\lib\deploy.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\access-bridge-64.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\cldrdata.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\dnsns.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\jaccess.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\jfxrt.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\localedata.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\nashorn.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\sunec.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\sunjce_provider.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\sunmscapi.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\sunpkcs11.jar;E:\software\jdk1.8x64\jdk\jre\lib\ext\zipfs.jar;E:\software\jdk1.8x64\jdk\jre\lib\javaws.jar;E:\software\jdk1.8x64\jdk\jre\lib\jce.jar;E:\software\jdk1.8x64\jdk\jre\lib\jfr.jar;E:\software\jdk1.8x64\jdk\jre\lib\jfxswt.jar;E:\software\jdk1.8x64\jdk\jre\lib\jsse.jar;E:\software\jdk1.8x64\jdk\jre\lib\management-agent.jar;E:\software\jdk1.8x64\jdk\jre\lib\plugin.jar;E:\software\jdk1.8x64\jdk\jre\lib\resources.jar;E:\software\jdk1.8x64\jdk\jre\lib\rt.jar;D:\idea2016WK\out\javaee8\default\test\javaee8_201702;D:\idea2016WK\out\javaee8\default\production\javaee8_201702;D:\idea2016WK\libs\antlr-2.7.7.jar;D:\idea2016WK\libs\aopalliance-1.0.jar;D:\idea2016WK\libs\asm-3.3.jar;D:\idea2016WK\libs\asm-commons-3.3.jar;D:\idea2016WK\libs\asm-tree-3.3.jar;D:\idea2016WK\libs\aspectjweaver-1.8.5.jar;D:\idea2016WK\libs\commons-beanutils-1.8.0.jar;D:\idea2016WK\libs\commons-collections-3.2.1.jar;D:\idea2016WK\libs\commons-fileupload-1.3.jar;D:\idea2016WK\libs\commons-io-2.2.jar;D:\idea2016WK\libs\commons-lang-2.5.jar;D:\idea2016WK\libs\commons-logging-1.2.jar;D:\idea2016WK\libs\dom4j-1.6.1.jar;D:\idea2016WK\libs\ezmorph-1.0.6.jar;D:\idea2016WK\libs\freemarker-2.3.19.jar;D:\idea2016WK\libs\hamcrest-all-1.3.jar;D:\idea2016WK\libs\hibernate-commons-annotations-4.0.4.Final.jar;D:\idea2016WK\libs\hibernate-core-4.3.1.Final.jar;D:\idea2016WK\libs\hibernate-jpa-2.1-api-1.0.0.Draft-16.jar;D:\idea2016WK\libs\jandex-1.1.0.Final.jar;D:\idea2016WK\libs\javassist-3.18.1-GA.jar;D:\idea2016WK\libs\jboss-logging-3.1.3.GA.jar;D:\idea2016WK\libs\jboss-logging-annotations-1.2.0.Beta1.jar;D:\idea2016WK\libs\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;D:\idea2016WK\libs\json-lib-2.4-jdk15.jar;D:\idea2016WK\libs\jstl-1.2.jar;D:\idea2016WK\libs\junit-4.11.jar;D:\idea2016WK\libs\log4j-1.2.17.jar;D:\idea2016WK\libs\mysql-connector-java-5.1.35-bin.jar;D:\idea2016WK\libs\ognl-3.0.6.jar;D:\idea2016WK\libs\oracle-driver-ojdbc-12.1.0.2.jar;D:\idea2016WK\libs\slf4j-api-1.7.10.jar;D:\idea2016WK\libs\slf4j-log4j12-1.7.10.jar;D:\idea2016WK\libs\spring-aop-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-aspects-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-beans-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-context-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-context-support-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-core-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-expression-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-instrument-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-instrument-tomcat-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-jdbc-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-jms-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-messaging-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-orm-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-oxm-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-test-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-tx-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-web-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-webmvc-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-webmvc-portlet-4.1.6.RELEASE.jar;D:\idea2016WK\libs\spring-websocket-4.1.6.RELEASE.jar;D:\idea2016WK\libs\struts2-core-2.3.16.jar;D:\idea2016WK\libs\struts2-json-plugin-2.3.16.jar;D:\idea2016WK\libs\struts2-spring-plugin-2.3.16.jar;D:\idea2016WK\libs\xml-apis-1.0.b2.jar;D:\idea2016WK\libs\xwork-core-2.3.16.jar;D:\idea2016WK\tomcat8x64\lib\jsp-api.jar;D:\idea2016WK\tomcat8x64\lib\servlet-api.jar;D:\idea2016WK\out\javaee8\default\production\javaee8-core;D:\idea2016WK\out\javaee8\default\production\javaee8-core-hibernate, user.name=Administrator, hibernate.bytecode.use_reflection_optimizer=false, hibernate.classLoader.application=sun.misc.Launcher$AppClassLoader@6d06d69c, java.vm.specification.version=1.8, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 qin.javaee8.hibernate.testing.MyTest,make, java.home=E:\software\jdk1.8x64\jdk\jre, sun.arch.data.model=64, user.language=zh, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0, java.ext.dirs=E:\software\jdk1.8x64\jdk\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=E:\software\jdk1.8x64\jdk\jre\lib\resources.jar;E:\software\jdk1.8x64\jdk\jre\lib\rt.jar;E:\software\jdk1.8x64\jdk\jre\lib\sunrsasign.jar;E:\software\jdk1.8x64\jdk\jre\lib\jsse.jar;E:\software\jdk1.8x64\jdk\jre\lib\jce.jar;E:\software\jdk1.8x64\jdk\jre\lib\charsets.jar;E:\software\jdk1.8x64\jdk\jre\lib\jfr.jar;E:\software\jdk1.8x64\jdk\jre\classes, java.vendor=Oracle Corporation, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}
+19:48:11,643 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+19:48:11,648 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+19:48:11,651 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+19:48:11,674 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect] (replacing [org.hibernate.dialect.MySQL5Dialect])
+19:48:11,675 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect] (replacing [org.hibernate.dialect.MySQL5InnoDBDialect])
+19:48:11,752 DEBUG ServiceBinding:85 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+19:48:11,754 DEBUG Configuration:1841 - Preparing to build session factory with filters : {}
+19:48:12,642 DEBUG JdbcServicesImpl:128 - Database ->
+       name : Oracle
+    version : Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+      major : 12
+      minor : 1
+19:48:12,643 DEBUG JdbcServicesImpl:139 - Driver ->
+       name : Oracle JDBC driver
+    version : 12.1.0.2.0
+      major : 12
+      minor : 1
+19:48:12,643 DEBUG JdbcServicesImpl:150 - JDBC version : 4.1
+19:48:12,648 DEBUG StandardRefCursorSupport:187 - Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
+19:48:12,996  WARN ClassPathXmlApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DAOSupport8Impl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle12cDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at qin.javaee8.hibernate.testing.MyTest.<init>(MyTest.java:31)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle12cDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:435)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:559)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:178)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 39 more
+Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle12cDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:128)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:155)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:136)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:78)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:68)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:165)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:89)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:178)
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 51 more

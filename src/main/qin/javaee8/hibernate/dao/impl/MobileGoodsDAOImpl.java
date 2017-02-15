@@ -2,7 +2,6 @@ package qin.javaee8.hibernate.dao.impl;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.springframework.stereotype.Repository;
 import qin.javaee8.core.dao.impl.DAOSupport8Impl;
 import qin.javaee8.exceptions.JavaEE8Exception;
 import qin.javaee8.exceptions.LogClassException;
@@ -21,11 +20,11 @@ import java.util.List;
  * @author qinzhengying
  * @since 1.8 2017 2017/1/31
  */
-@Repository
+//@Repository
 @SuppressWarnings("all")
 public class MobileGoodsDAOImpl
-        extends DAOSupport8Impl<MobileGoods, Long>
-        implements MobileGoodsDAO
+          extends DAOSupport8Impl<MobileGoods, Long>
+          implements MobileGoodsDAO
 {
     private static final long serialVersionUID = -1692140088652296430L;
 
@@ -134,14 +133,14 @@ public class MobileGoodsDAOImpl
             Transaction transaction = session.beginTransaction();
             //1.查询商品类型
             GoodsType mobileType = (GoodsType) session
-                    .createQuery
-                            (
-                                    new StringBuilder()
-                                            .append("from GoodsType where goods_typeName='")
-                                            .append(html_mobileGoodsType)
-                                            .append("'").toString()
-                            )
-                    .list().get(0);
+                      .createQuery
+                                (
+                                          new StringBuilder()
+                                                    .append("from GoodsType where goods_typeName='")
+                                                    .append(html_mobileGoodsType)
+                                                    .append("'").toString()
+                                )
+                      .list().get(0);
             //2.设置商品类型(首先获取手机商品)
             for (int i = 0; i < mobileGoodsIds.length; i++)
             {
@@ -173,7 +172,7 @@ public class MobileGoodsDAOImpl
 
     @Override
     public List<MobileGoods> search_mobileGoodsStart(String mobileGoodsStart, String jspOperator)
-            throws Exception
+              throws Exception
     {
         //首先新建一个集合查询出手机商品信息里的所有记录
         //然后建立一个新的集合用于存放开头信息含有这指定字符的手机商品信息

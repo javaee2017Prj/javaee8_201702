@@ -8,11 +8,13 @@ import qin.javaee8.exceptions.JavaEE8Exception;
 import qin.javaee8.hibernate.domain.GoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 /**
- * 改进版的手机商品数据访问层(easyui版的)
+ * 改进版的手机商品数据访问层(bootstrap版本的)
  *
  * @author qinzhengying
  * @since 1.8 2017 2017/2/4
@@ -91,6 +93,99 @@ public interface MobileBSDAO extends DAOSupport8<MobileGoods, Long>
     //endregion
 
     //-------------------------------------------since 2017/2/5
+
+    //endregion
+
+    //region 二期功能
+
+    //region 查询所有手机商品类型
+
+    /**
+     * 查询所有手机商品类型
+     *
+     * @return 类型集合
+     */
+    List<GoodsType> getAllMobileGoodsType();
+    //endregion
+
+    //region 获取所有手机类型名字
+
+    /**
+     * 获取所有手机类型名字
+     *
+     * @return
+     */
+    default List<String> getAllMobileGoodsTypeNames()
+    {
+        List<String> resultList = new ArrayList<>();
+
+        getAllMobileGoodsType().forEach
+                  (
+                            e ->
+                            {
+                                resultList.add(e.getGoods_typeName());
+                            }
+                  );
+
+        return resultList;
+    }
+
+    //endregion
+
+    //region 新增商品类型
+
+    /**
+     * 新增商品类型
+     *
+     * @param htmlGoodsTypeParent       商品上级分类select下拉框
+     * @param htmlGoodsTypeName_        商品上级分类名称
+     * @param htmlGoodsTypeDescription_ 商品上级描述
+     * @return 新增结果
+     * @throws SameResultException    如果类型存在抛出异常
+     * @throws GoodsTypeNULLException 如果上级商品类型为空则抛出异常
+     */
+    @Deprecated
+    Serializable addGoodsType(String htmlGoodsTypeParent, String htmlGoodsTypeName_,
+                              String htmlGoodsTypeDescription_) throws JavaEE8Exception;
+
+    /**
+     * 改善版的新增商品类型
+     *
+     * @param isHasParent               此商品类型是否具有上级类型
+     * @param htmlGoodsTypeParent       如果有则接收此上级类型
+     * @param htmlGoodsTypeDescription_ 上级类型描述
+     * @param htmlGoodsTypeName_        上级类型名称添加
+     * @return 添加结果类型
+     * @throws JavaEE8Exception 如果添加失败抛出大异常
+     */
+    Serializable addGoodsType(Boolean isHasParent, String htmlGoodsTypeParent, String htmlGoodsTypeDescription_,
+                              String htmlGoodsTypeName_) throws JavaEE8Exception;
+    //endregion
+
+    //region 获取所有名字下拉框数据
+
+    /**
+     * 获取所有名字下拉框数据
+     *
+     * @return
+     */
+    default String getAllGoodsTypeSelect()
+    {
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("<option value=\"\">请选择</option>");
+
+        List<GoodsType> goodsTypeList = getAllMobileGoodsType();
+
+        for (int i = 0; i < goodsTypeList.size(); i++)
+        {
+            GoodsType goodsType = goodsTypeList.get(i);
+            sb.append("<option value=\"\">" + goodsType.getGoods_typeName() + "</option>");
+        }
+
+        return sb.toString();
+    }
+    //endregion
 
     //endregion
 }

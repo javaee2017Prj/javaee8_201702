@@ -22,6 +22,7 @@
     <!-- (in this case, JDBC-related settings for the dataSource definition below) -->
     <!-- read oracle.jdbc.properties -->
     <context:property-placeholder location="classpath:mysql.jdbc.properties"/>
+    <!--<context:property-placeholder location="classpath:oracle.jdbc.properties"/>-->
 
     <!-- Local C3P0 DataSource that works in any environment -->
     <!-- See JPetStore for an example of using Apache Commons DBCP as alternative -->

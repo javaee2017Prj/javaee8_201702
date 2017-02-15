@@ -8,6 +8,52 @@ package qin.javaee8.hibernate.controller;
  */
 public class BSHTMLMobile
 {
+    //region 二期功能字段接收
+    /**
+     * 上级分类
+     */
+    private String HTMLGoodsTypeParent;
+
+    public String getHTMLGoodsTypeParent()
+    {
+        return HTMLGoodsTypeParent;
+    }
+
+    public void setHTMLGoodsTypeParent(String HTMLGoodsTypeParent)
+    {
+        this.HTMLGoodsTypeParent = HTMLGoodsTypeParent;
+    }
+
+    /**
+     * 上级商品名称
+     */
+    private String HTMLGoodsTypeName_;
+
+    public String getHTMLGoodsTypeName_()
+    {
+        return HTMLGoodsTypeName_;
+    }
+
+    public void setHTMLGoodsTypeName_(String HTMLGoodsTypeName_)
+    {
+        this.HTMLGoodsTypeName_ = HTMLGoodsTypeName_;
+    }
+
+    /**
+     * 上级商品描述
+     */
+    private String HTMLGoodsTypeDescription_;
+
+    public String getHTMLGoodsTypeDescription_()
+    {
+        return HTMLGoodsTypeDescription_;
+    }
+
+    public void setHTMLGoodsTypeDescription_(String HTMLGoodsTypeDescription_)
+    {
+        this.HTMLGoodsTypeDescription_ = HTMLGoodsTypeDescription_;
+    }
+    //endregion
 
     //region 手机类型
     private String HTMLGoodsType;

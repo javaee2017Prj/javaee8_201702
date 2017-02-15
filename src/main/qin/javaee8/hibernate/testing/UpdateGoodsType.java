@@ -9,8 +9,8 @@ public class UpdateGoodsType extends MyTest
     public void update85()
     {
         GoodsType goodsType = (GoodsType)
-                session.createQuery("from GoodsType where id=1097")
-                        .list().get(0);
+                  session.createQuery("from GoodsType where id=1097")
+                            .list().get(0);
         goodsType.setGoods_typeName("面部护肤\\卸妆");
         session.update(goodsType);
 

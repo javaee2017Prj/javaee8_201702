@@ -1,36 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/SaveGoodsType.java" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/SaveGoodsType.java" line="560" />
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="javaee8_201702:war exploded" />
+    </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="287eff4c-00fe-481b-8ba4-ec7b85a121b0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/findbugs-idea.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BSHTMLMobile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/BSMobileService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/impl/BSMobileServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/old/BSMobileGoodsController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/nicetest/NiceJavaTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/nicetest/guiyuan.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/mobileHTMLBSPage/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/mobileHTMLBSPage/index.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrapDemo/bootstrap-index-layout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/easyui_goods/goodsIndex.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/easyui_goods/goods_index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/nicebox/qiandao.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/exceptions/GoodsTypeParentNULLException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileBatchAddGoodsTypeDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileBatchAddGoodsTypeDAOImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/MobileBSService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/TestSessionFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/qin/hibernate/MobileBSDAOImplTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/qin/javaee8/Java8HTMLTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/qin/javaee8/hibernate/test/MobileBSDAOImplTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/qin/javaee8/hibernate/testing/MobilePropertyTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/bsMobileGoods8/addMobileGoods.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/bsMobileGoods8/css/addMobileGoodsCSS.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/bsMobileGoods8/js/addMobileGoodsJS.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/html/addMobileGoods.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/html/addMobileGoods.old.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/javascript/bootstrapTest.old.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/javascript/stringtest.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/BSMobileService.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/96926a01-26f4-4549-a13f-13cf4ec42354.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/96926a01-26f4-4549-a13f-13cf4ec42354.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javaee8-core-hibernate/javaee8-core-hibernate.iml" afterPath="$PROJECT_DIR$/javaee8-core-hibernate/javaee8-core-hibernate.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javaee8-core/javaee8-core.iml" afterPath="$PROJECT_DIR$/javaee8-core/javaee8-core.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javaee8_201702.iml" afterPath="$PROJECT_DIR$/javaee8_201702.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BSHTMLMobile.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BSHTMLMobile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BSMobileGoodsController.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BSMobileGoodsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/MobileGoodsController.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/MobileGoodsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileBSDAO.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileBSDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileGoodsDAO.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileGoodsDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileBSDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileBSDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileGoodsDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileGoodsDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/domain/GoodsType.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/domain/GoodsType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/domain/hbm/oracle/mobile.goods.hbm.xml" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/domain/hbm/oracle/mobile.goods.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/MobileGoodsService.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/MobileGoodsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/impl/MobileGoodsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/impl/MobileGoodsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/test/TestT.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/test/TestT.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/BackUpTest.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/BackUpTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/GoodsImages.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/GoodsImages.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/JavaTest.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/JavaTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/MobileGoodsDAOImplTest.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/MobileGoodsDAOImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/MyTest.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/MyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/NiceBoxTest1.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/NiceBoxTest1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/SaveGoodsType.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/SaveGoodsType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/SaveMobileGoods.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/SaveMobileGoods.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/UpdateGoodsType.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/UpdateGoodsType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/HuaWeiImages.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/HuaWeiImages.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/HuaWeiNames.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/HuaWeiNames.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/MeiZuImages.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/MeiZuImages.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/MeiZuNames.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/MeiZuNames.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/OppoGoodsImages.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/OppoGoodsImages.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/OppoGoodsNames.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/OppoGoodsNames.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/XiaoMiImagesI.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/XiaoMiImagesI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/XiaoMiNamesI.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/tools/XiaoMiNamesI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/old/BSMobileGoodsController.java" afterPath="$PROJECT_DIR$/src/old/BSMobileGoodsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/resources/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/resources/hibernate.cfg.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/resources/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/oracle.jdbc.properties" afterPath="$PROJECT_DIR$/src/resources/oracle.jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/qin/hibernate/BasicTest.java" afterPath="$PROJECT_DIR$/src/test/qin/hibernate/BasicTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/qin/hibernate/Java8Test.java" afterPath="$PROJECT_DIR$/src/test/qin/hibernate/Java8Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/qin/hibernate/goods/saveData/SaveGoods.java" afterPath="$PROJECT_DIR$/src/test/qin/hibernate/goods/saveData/SaveGoods.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/HTMLBatchController.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BSMobileGoodsController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileEasyuiDAO.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileBSDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileEasyuiDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileBSDAOImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/qin/hibernate/daotest/MobileEasyuiDAOImplTest.java" afterPath="$PROJECT_DIR$/src/test/qin/hibernate/daotest/MobileBSDAOImplTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/impl/BSMobileServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/impl/MobileBSServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/mobileGoods8_bootstrap/doMainView.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/bsMobileGoods8/doMainView.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -41,7 +82,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -51,10 +91,15 @@
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
     <PATH>
       <PATH_ELEMENT>
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="orcl12" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
     <PATH>
@@ -63,8 +108,12 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="javaee8_201702@localhost" />
+        <option name="myItemId" value="orcl12" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
     </PATH>
   </component>
@@ -72,64 +121,23 @@
   <component name="FavoritesManager">
     <favorites_list name="javaee8_201702" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BSMobileServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/impl/BSMobileServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6060606">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#390#398#0" expanded="true" />
-                <element signature="n#!!doc;n#mobileBSDAO#0;n#BSMobileServiceImpl#0" expanded="false" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#759#774#0" expanded="false" />
-                <element signature="docComment;method#save#0;class#BSMobileServiceImpl#0" expanded="true" />
-                <element signature="method#save#0;class#BSMobileServiceImpl#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
         <option value="Enum" />
-        <option value="JUnit4 Test Class" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>url=</find>
-      <find />
-      <find>/userimg/55261</find>
-      <find>&quot;&gt;</find>
-      <find>qin.mobilegoods.domain.MobileGoods</find>
-      <find>MOBILE_</find>
-      <find>&quot;</find>
-      <find>{</find>
-      <find>&lt;/a&gt;</find>
-      <find>url=&quot;/userimg/55261</find>
-      <find>class=&quot;rowOut&quot;,</find>
-      <find>.jpg</find>
-      <find>huaweiNames</find>
-      <find>00ffff</find>
-      <find>#black</find>
-      <find>toS</find>
       <find>session.close();</find>
       <find>CATALINA_BASE</find>
       <find>set &quot;CATALINA_BASE</find>
@@ -144,6 +152,22 @@
       <find>\n\n</find>
       <find>kafei</find>
       <find>【京东超市】</find>
+      <find>;</find>
+      <find>textar</find>
+      <find>var</find>
+      <find>HTMLGoodsName</find>
+      <find>确定添加</find>
+      <find>btn_addGoodsType</find>
+      <find>Eas</find>
+      <find>找到相同记录</find>
+      <find>HTMLMobileGoodType</find>
+      <find>HTMLMobileGoodsType</find>
+      <find>苹果</find>
+      <find>GoodsType</find>
+      <find>HTMLGOo</find>
+      <find>out.p</find>
+      <find>&lt;option</find>
+      <find>请选择</find>
     </findStrings>
     <replaceStrings>
       <replace>log4j配置文件为空</replace>
@@ -171,8 +195,9 @@
       <replace>\n.append</replace>
       <replace>商品类型为空</replace>
       <replace>&quot;/gui</replace>
-      <replace>,</replace>
       <replace>/kafei</replace>
+      <replace>,</replace>
+      <replace>this.HTMLGoodsTypeName_</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -186,42 +211,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/MobileGoodsService.java" />
-        <option value="$PROJECT_DIR$/src/test/qin/hibernate/goodstype/saveData/SaveAllGoodsType.java" />
-        <option value="$PROJECT_DIR$/web/javascript/_1_array.html" />
-        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/SaveMobileGoods.java" />
-        <option value="$PROJECT_DIR$/src/test/qin/hibernate/goods/saveData/SaveGoods.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/mobileGoods8_bootstrap/doMainView.jsp" />
-        <option value="$PROJECT_DIR$/web/bootstrap4/example-fluid-layout.css" />
-        <option value="$PROJECT_DIR$/web/bootstrap4/_1_testBS.html" />
-        <option value="$PROJECT_DIR$/web/bsLayout/bootstrap.css" />
-        <option value="$PROJECT_DIR$/web/bootstrap/css/example-fixed-layout.css" />
-        <option value="$PROJECT_DIR$/web/bootstrap/css/example-fluid-layout.css" />
-        <option value="$PROJECT_DIR$/web/bootstrap/bootstrap-fluid-layout.html" />
-        <option value="$PROJECT_DIR$/web/bootstrapDemo/bootstrap-index-layout.html" />
-        <option value="$PROJECT_DIR$/web/easyuiDemo/easyui-layout.html" />
-        <option value="$PROJECT_DIR$/web/nicebook/jquery.nicescroll.js" />
-        <option value="$PROJECT_DIR$/web/nicebook/css/font-awesome.min.css" />
-        <option value="$PROJECT_DIR$/web/nicebook/css/ncontrol.css" />
-        <option value="$PROJECT_DIR$/web/nicebook/index.html" />
-        <option value="$PROJECT_DIR$/web/nicebook/js/ncontrol.js" />
-        <option value="$PROJECT_DIR$/web/nicebook/js/ncontrolFunction.js" />
-        <option value="$PROJECT_DIR$/web/nicebook/js/nFolder.js" />
-        <option value="$PROJECT_DIR$/web/easyui_goods/goodsIndex.css" />
-        <option value="$PROJECT_DIR$/web/easyui_goods/goods_index.html" />
-        <option value="$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/exceptions/HibernateDAOException.java" />
-        <option value="$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/exceptions/ListNULLException.java" />
-        <option value="$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/exceptions/SameResultException.java" />
-        <option value="$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/DAOSupport8.java" />
-        <option value="$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/DAOCallBack.java" />
-        <option value="$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/impl/DAOSupport8Impl.java" />
         <option value="$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/exceptions/GoodsTypeNULLException.java" />
         <option value="$PROJECT_DIR$/src/test/qin/hibernate/Java8Test.java" />
         <option value="$PROJECT_DIR$/src/test/qin/hibernate/BasicTest.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/96926a01-26f4-4549-a13f-13cf4ec42354/console.sql" />
         <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/test/TestT.java" />
         <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileEasyuiDAO.java" />
-        <option value="$PROJECT_DIR$/src/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/test/qin/hibernate/daotest/MobileEasyuiDAOImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileEasyuiDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/test/nicetest/NiceJavaTest.java" />
@@ -229,21 +223,53 @@
         <option value="$PROJECT_DIR$/web/mobileHTMLBSPage/index.css" />
         <option value="$PROJECT_DIR$/web/mobileHTMLBSPage/index.html" />
         <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BootstrapMobileGoodsController.java" />
-        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileBSDAOImpl.java" />
         <option value="$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/JavaEE8BaseSupport.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/old/BSMobileGoodsController.java" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/domain/MobileProperty.java" />
+        <option value="$PROJECT_DIR$/src/test/qin/javaee8/hibernate/testing/MobilePropertyTest.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/test/qin/javaee8/Java8HTMLTest.java" />
+        <option value="$PROJECT_DIR$/web/javascript/stringtest.html" />
+        <option value="$PROJECT_DIR$/web/javascript/bootstrapTest.html" />
+        <option value="$PROJECT_DIR$/web/javascript/addMobileGoods.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/mobileGoods8_bootstrap/addMobileGoods.jsp" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileGoodsDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/impl/MobileGoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/MobileGoodsController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/contron-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BSHTMLMobile.java" />
-        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BSMobileGoodsController.java" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/domain/hbm/oracle/mobile.goods.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/MyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/TestSessionFactory.java" />
+        <option value="$PROJECT_DIR$/src/resources/oracle.jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/BSMobileService.java" />
         <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/impl/BSMobileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/exceptions/GoodsTypeParentNULLException.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/df02eefc-2ccc-4a00-9394-07e411a701dc/console.sql" />
+        <option value="$PROJECT_DIR$/src/test/qin/javaee8/hibernate/test/MobileBSDAOImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/qin/hibernate/MobileBSDAOImplTest.java" />
+        <option value="$PROJECT_DIR$/src/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/bsMobileGoods8/css/addMobileGoodsCSS.jsp" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/MobileBSService.java" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/impl/MobileBSServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/bsMobileGoods8/addMobileGoods.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/bsMobileGoods8/js/addMobileGoodsJS.jsp" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileBSDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileBSDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BSMobileGoodsController.java" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileBatchAddGoodsTypeDAO.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/96926a01-26f4-4549-a13f-13cf4ec42354/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileBatchAddGoodsTypeDAOImpl.java" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -260,25 +286,13 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
-      <showMembers ProjectPane="false" />
+      <showMembers ProjectPane="true" />
       <showModules />
       <showLibraryContents />
       <hideEmptyPackages ProjectPane="false" />
@@ -290,8 +304,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -299,28 +313,8 @@
               <option name="myItemId" value="javaee8_201702" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="javaee8_201702" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8_201702" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8_201702" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8_201702" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,24 +329,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8_201702" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8_201702" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="old" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -383,40 +359,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hibernate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8_201702" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8_201702" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hibernate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -526,61 +468,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8_201702" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8_201702" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8_201702" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8_201702" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaee8" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.HTML" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15088384" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -592,11 +490,11 @@
     <property name="node.js.selected.package.eslint" value="" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle&#10;MySQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="full.screen.before.presentation.mode" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -607,51 +505,33 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\idea2016WK\github2017\javaee8_201702\web\html" />
       <recent name="D:\idea2016WK\github2017\javaee8_201702\web\nicebook\js" />
       <recent name="D:\idea2016WK\github2017\javaee8_201702\jdLib2017\jQuery\3.1.1" />
       <recent name="D:\idea2016WK\github2017\javaee8_201702\web\jsTest" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="qin.javaee8.hibernate.testing" />
       <recent name="qin.javaee8.core.dao.exceptions" />
       <recent name="qin.javaee8.hibernate.tools" />
       <recent name="qin.javaee8.exceptions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea2016WK\github2017\javaee8_201702\web\html" />
+      <recent name="D:\idea2016WK\github2017\javaee8_201702\web\javascript" />
       <recent name="D:\idea2016WK\github2017\javaee8_201702\src\old" />
       <recent name="D:\idea2016WK\github2017\javaee8_201702\web\bootstrap" />
       <recent name="D:\idea2016WK\github2017\javaee8_201702\web\bootstrap\img" />
-      <recent name="D:\idea2016WK\github2017\javaee8_201702\web\bsLayout" />
-      <recent name="D:\idea2016WK\github2017\javaee8_201702\web\bootstrap4" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="qin.javaee8.hibernate.dao.impl" />
       <recent name="qin.javaee8.hibernate.service.impl" />
       <recent name="qin.javaee8.hibernate.service" />
-      <recent name="qin.javaee8.hibernate.dao.impl" />
       <recent name="qin.javaee8.hibernate.dao" />
       <recent name="qin.javaee8.hibernate.controller" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.猫8">
-    <configuration default="false" name="TestT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="qin.javaee8.hibernate.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="qin.javaee8.hibernate.test.TestT" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="javaee8_201702" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="SaveGoodsType.makeGoodsType_allParent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -678,18 +558,18 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="MobileBSDAOImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestSessionFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="qin.hibernate.daotest.*" />
+          <option name="PATTERN" value="qin.javaee8.hibernate.testing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="javaee8_201702" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="qin.hibernate.daotest" />
-      <option name="MAIN_CLASS_NAME" value="qin.hibernate.daotest.MobileBSDAOImplTest" />
+      <option name="PACKAGE_NAME" value="qin.javaee8.hibernate.testing" />
+      <option name="MAIN_CLASS_NAME" value="qin.javaee8.hibernate.testing.TestSessionFactory" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -704,19 +584,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="SaveAllGoodsType.saveMobileGoodsType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SaveGoodsType.batch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="qin.hibernate.goodstype.saveData.*" />
+          <option name="PATTERN" value="qin.javaee8.hibernate.testing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="javaee8_201702" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="qin.hibernate.goodstype.saveData" />
-      <option name="MAIN_CLASS_NAME" value="qin.hibernate.goodstype.saveData.SaveAllGoodsType" />
-      <option name="METHOD_NAME" value="saveMobileGoodsType" />
+      <option name="PACKAGE_NAME" value="qin.javaee8.hibernate.testing" />
+      <option name="MAIN_CLASS_NAME" value="qin.javaee8.hibernate.testing.SaveGoodsType" />
+      <option name="METHOD_NAME" value="batch" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -730,23 +610,49 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="NiceJavaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MobileBSDAOImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="nicetest.*" />
+          <option name="PATTERN" value="qin.javaee8.hibernate.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="javaee8_201702" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="nicetest" />
-      <option name="MAIN_CLASS_NAME" value="nicetest.NiceJavaTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="PACKAGE_NAME" value="qin.javaee8.hibernate.test" />
+      <option name="MAIN_CLASS_NAME" value="qin.javaee8.hibernate.test.MobileBSDAOImplTest" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MobileBSDAOImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="qin.hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="javaee8_201702" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="qin.hibernate" />
+      <option name="MAIN_CLASS_NAME" value="qin.hibernate.MobileBSDAOImplTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -797,7 +703,66 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" web_path="">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
@@ -885,13 +850,13 @@
       <method />
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
       <setting name="vmparams" value="" />
       <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
       <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -906,27 +871,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -957,7 +901,38 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="javaee8-core-hibernate" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -1002,35 +977,8 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -1039,31 +987,10 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
+      <node-interpreter value="project" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mvnRunConfigurationType" factoryName="Mvn">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list />
-            </option>
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
@@ -1073,7 +1000,8 @@
       <method />
     </configuration>
     <configuration default="false" name="猫8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.9" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="cafca44f-6b8c-494b-8386-c48309321fe1" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/javaee8_201702/bsMobileGoods8/returnAddMobileGoodsPage.com" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
@@ -1231,30 +1159,37 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.猫8" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server._3_array_pop.html" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TestT" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.SaveGoodsType.makeGoodsType_allParent" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MobileBSDAOImplTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.SaveAllGoodsType.saveMobileGoodsType" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.NiceJavaTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SaveGoodsType.makeGoodsType_allParent" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestSessionFactory" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SaveGoodsType.batch" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.MobileBSDAOImplTest" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.MobileBSDAOImplTest (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.NiceJavaTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MobileBSDAOImplTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SaveAllGoodsType.saveMobileGoodsType" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MobileBSDAOImplTest (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SaveGoodsType.batch" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MobileBSDAOImplTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.SaveGoodsType.makeGoodsType_allParent" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TestT" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestSessionFactory" />
       </list>
     </recent_temporary>
   </component>
   <component name="RuntimeDashboard">
-    <groupers>
-      <grouper name="TypeGroupingRule" enabled="true" />
-      <grouper name="StatusGroupingRule" enabled="true" />
-      <grouper name="FolderGroupingRule" enabled="true" />
-    </groupers>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1263,6 +1198,7 @@
       <changelist id="287eff4c-00fe-481b-8ba4-ec7b85a121b0" name="Default" comment="" />
       <created>1485427346314</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1485427346314</updated>
       <workItem from="1485427357520" duration="8573000" />
       <workItem from="1485490857000" duration="16620000" />
@@ -1310,43 +1246,57 @@
       <workItem from="1486529081477" duration="29000" />
       <workItem from="1486529330925" duration="3889000" />
       <workItem from="1486533756667" duration="11145000" />
+      <workItem from="1486605800066" duration="38000" />
+      <workItem from="1486627311450" duration="71000" />
+      <workItem from="1486627445529" duration="8516000" />
+      <workItem from="1486644160077" duration="3883000" />
+      <workItem from="1486730425872" duration="6074000" />
+      <workItem from="1486802355229" duration="2017000" />
+      <workItem from="1486804572676" duration="5251000" />
+      <workItem from="1486813201209" duration="1843000" />
+      <workItem from="1486892507135" duration="7752000" />
+      <workItem from="1486979180122" duration="12572000" />
+      <workItem from="1486992269619" duration="164000" />
+      <workItem from="1486992659723" duration="1383000" />
+      <workItem from="1487067200380" duration="42000" />
+      <workItem from="1487067311794" duration="6483000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MobileEasyuiDAOImplTest - 2017.02.06 at 15h 13m 41s.xml">
-      <configuration name="MobileEasyuiDAOImplTest" configurationId="JUnit" />
+    <history-entry file="MobileBSDAOImplTest - 2017.02.13 at 17h 53m 49s.xml">
+      <configuration name="MobileBSDAOImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MobileEasyuiDAOImplTest - 2017.02.06 at 15h 18m 18s.xml">
-      <configuration name="MobileEasyuiDAOImplTest" configurationId="JUnit" />
+    <history-entry file="MobileBSDAOImplTest - 2017.02.13 at 17h 59m 02s.xml">
+      <configuration name="MobileBSDAOImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NiceJavaTest - 2017.02.06 at 16h 14m 41s.xml">
-      <configuration name="NiceJavaTest" configurationId="JUnit" />
+    <history-entry file="MobileBSDAOImplTest - 2017.02.13 at 18h 04m 00s.xml">
+      <configuration name="MobileBSDAOImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NiceJavaTest - 2017.02.06 at 16h 15m 05s.xml">
-      <configuration name="NiceJavaTest" configurationId="JUnit" />
+    <history-entry file="MobileBSDAOImplTest_(1) - 2017.02.13 at 19h 31m 35s.xml">
+      <configuration name="MobileBSDAOImplTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NiceJavaTest - 2017.02.06 at 16h 15m 47s.xml">
-      <configuration name="NiceJavaTest" configurationId="JUnit" />
+    <history-entry file="MobileBSDAOImplTest_(1) - 2017.02.13 at 19h 32m 31s.xml">
+      <configuration name="MobileBSDAOImplTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NiceJavaTest - 2017.02.06 at 16h 30m 10s.xml">
-      <configuration name="NiceJavaTest" configurationId="JUnit" />
+    <history-entry file="MobileBSDAOImplTest_(1) - 2017.02.13 at 19h 37m 12s.xml">
+      <configuration name="MobileBSDAOImplTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NiceJavaTest - 2017.02.06 at 16h 37m 39s.xml">
-      <configuration name="NiceJavaTest" configurationId="JUnit" />
+    <history-entry file="SaveGoodsType_batch - 2017.02.13 at 18h 04m 20s.xml">
+      <configuration name="SaveGoodsType.batch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SaveGoodsType_makeGoodsType_allParent - 2017.02.05 at 20h 10m 17s.xml">
-      <configuration name="SaveGoodsType.makeGoodsType_allParent" configurationId="JUnit" />
+    <history-entry file="TestSessionFactory - 2017.02.11 at 19h 51m 43s.xml">
+      <configuration name="TestSessionFactory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SaveGoodsType_makeGoodsType_allParent - 2017.02.05 at 20h 11m 35s.xml">
-      <configuration name="SaveGoodsType.makeGoodsType_allParent" configurationId="JUnit" />
+    <history-entry file="TestSessionFactory - 2017.02.11 at 19h 54m 02s.xml">
+      <configuration name="TestSessionFactory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SaveGoodsType_makeGoodsType_allParent - 2017.02.05 at 20h 20m 14s.xml">
-      <configuration name="SaveGoodsType.makeGoodsType_allParent" configurationId="JUnit" />
+    <history-entry file="TestSessionFactory_make - 2017.02.11 at 19h 50m 16s.xml">
+      <configuration name="TestSessionFactory.make" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198465000" />
+    <option name="totallyTimeSpent" value="254554000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1358,48 +1308,47 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13957307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32611832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27987897" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31844804" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22919819" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28971255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.204236" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Memory View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="YouTrack" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" x="-8" y="-8" width="1382" height="744" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" x="0" y="22" width="1366" height="706" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17019667" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14862914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46747354" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" x="0" y="22" width="1366" height="706" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5041051" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5036075" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1410,35 +1359,35 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32611832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.204236" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Memory View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="YouTrack" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22919819" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28971255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" x="-8" y="-8" width="1382" height="744" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" x="0" y="22" width="1366" height="706" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13980263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14862914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17019667" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46747354" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" x="0" y="22" width="1366" height="706" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5041051" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27987897" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5036075" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3184569" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -1462,7 +1411,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="50" />
+      <option name="time" value="80" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1471,459 +1420,370 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/javascript/_1_array.html">
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/HTMLMobileGoods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/domain/GoodsType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/GoodsImages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/qin/hibernate/goods/saveData/SaveGoods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/software/jdk1.8x64/jdk/jre/lib/rt.jar!/java/lang/Long.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/software/jdk1.8x64/jdk/src.zip!/java/lang/Comparable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/software/jdk1.8x64/jdk/src.zip!/java/lang/Long.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/software/jdk1.8x64/jdk/src.zip!/java/lang/Number.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/software/jdk1.8x64/jdk/src.zip!/java/io/Serializable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/exceptions/HibernateDAOException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/exceptions/ListNULLException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/exceptions/SameResultException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/DAOSupport8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/exceptions/GoodsTypeNULLException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/DAOCallBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/qin/hibernate/Java8Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/impl/DAOSupport8Impl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="321" column="26" selection-start-line="321" selection-start-column="26" selection-end-line="321" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/domain/SuperGoods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/SaveMobileGoods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="360" column="29" selection-start-line="63" selection-start-column="6" selection-end-line="360" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/qin/hibernate/BasicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="9" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/test/TestT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        <state relative-caret-position="60">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/mysql.jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        <state relative-caret-position="140">
+          <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileGoodsDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/impl/DAOSupport8Impl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="133" column="65" selection-start-line="133" selection-start-column="65" selection-end-line="133" selection-end-column="65" />
+        <state relative-caret-position="120">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/MyTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/domain/hbm/mysql/mobile.goods.hbm.mysql.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="82" />
+        <state relative-caret-position="160">
+          <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/test/MobileGoodsDAOImplTest1.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/oracle.jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="80">
+          <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileBSDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/TestSessionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/SaveGoodsType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="80">
+          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/qin/hibernate/goodstype/saveData/SaveAllGoodsType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        <state relative-caret-position="220">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/SaveGoodsType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        <state relative-caret-position="151">
+          <caret line="3039" column="0" lean-forward="true" selection-start-line="3039" selection-start-column="0" selection-end-line="3039" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/qin/hibernate/daotest/MobileBSDAOImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/domain/hbm/oracle/mobile.goods.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="178" column="45" selection-start-line="178" selection-start-column="45" selection-end-line="178" selection-end-column="45" />
+        <state relative-caret-position="260">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/NiceBoxTest1.java">
+    <entry file="file://$PROJECT_DIR$/web/html/addMobileGoods.old.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="366" column="30" selection-start-line="366" selection-start-column="30" selection-end-line="366" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/nicetest/guiyuan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/nicetest/NiceJavaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="510" column="43" selection-start-line="510" selection-start-column="43" selection-end-line="510" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/sectional.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/mobileHTMLBSPage/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/mobileHTMLBSPage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/MobileGoodsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        <state relative-caret-position="171">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/mobileGoods8_bootstrap/doMainView.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/MobileGoodsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="481">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/mobileGoods8/doMainView.jsp">
+    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/exceptions/GoodsTypeParentNULLException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="475">
+          <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/HTMLMobileGoods.java">
+    <entry file="jar://E:/software/jdk1.8x64/jdk/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="221">
+          <caret line="498" column="6" lean-forward="false" selection-start-line="498" selection-start-column="6" selection-end-line="498" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/JavaEE8BaseSupportImpl.java">
+    <entry file="file://E:/software/java_jars/Jar/hibernate/hibernate-release-4.3.1.Final/project/hibernate-core/src/main/java/org/hibernate/Query.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="221">
+          <caret line="282" column="16" lean-forward="false" selection-start-line="282" selection-start-column="16" selection-end-line="282" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/mobileGoods8/js/doMainViewJS.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/df02eefc-2ccc-4a00-9394-07e411a701dc/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/test/MobileGoodsDAOImplTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/MobileGoodsDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaee8/2017-2-13/MobileBSDAOImplTest.addGoodsType1.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/qin/javaee8/hibernate/test/MobileBSDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/DAOSupport8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/JavaEE8BaseSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4827586">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding>
-            <element signature="e#1205#1218#0" expanded="false" />
-            <element signature="n#!!doc;n#getObjA#0;n#JavaEE8BaseSupport#0" expanded="false" />
-            <element signature="e#1850#1863#0" expanded="false" />
-            <element signature="docComment;class#PrintWays#0;class#JavaEE8BaseSupport#0" expanded="true" />
-            <element signature="n#!!doc;n#InfoWays#0;n#JavaEE8BaseSupport#0" expanded="false" />
-            <element signature="e#3288#3299#0" expanded="false" />
-            <element signature="e#4547#4567#0" expanded="false" />
-            <element signature="e#5091#5110#0" expanded="false" />
-            <element signature="e#6040#6059#0" expanded="false" />
-            <element signature="e#7083#7100#0" expanded="false" />
-            <element signature="e#7289#7307#0" expanded="false" />
-            <element signature="e#7644#7656#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="320">
+          <caret line="254" column="27" lean-forward="true" selection-start-line="254" selection-start-column="27" selection-end-line="254" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/old/BSMobileGoodsController.java">
+    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/exceptions/LogException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="53" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#6895#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#BSMobileGoodsController#0" expanded="false" />
-            <element signature="e#603#645#0" expanded="false" />
-            <element signature="e#946#947#0" expanded="false" />
-            <element signature="e#998#999#0" expanded="false" />
-            <element signature="e#1135#1136#0" expanded="false" />
-            <element signature="e#1173#1174#0" expanded="false" />
-            <element signature="e#1262#1263#0" expanded="false" />
-            <element signature="e#1316#1317#0" expanded="false" />
-            <element signature="docComment;method#addMobileGoods#0;class#BSMobileGoodsController#0" expanded="false" />
-            <element signature="docComment;method#deleteMobileGoods#0;class#BSMobileGoodsController#0" expanded="false" />
-            <element signature="method#deleteMobileGoods#0;class#BSMobileGoodsController#0" expanded="false" />
-            <element signature="docComment;method#updateMobileGoods#0;class#BSMobileGoodsController#0" expanded="false" />
-            <element signature="method#updateMobileGoods#0;class#BSMobileGoodsController#0" expanded="false" />
-            <element signature="docComment;method#searchMobileGoodsByName#0;class#BSMobileGoodsController#0" expanded="false" />
-            <element signature="method#searchMobileGoodsByName#0;class#BSMobileGoodsController#0" expanded="false" />
-            <element signature="docComment;method#batchUpdateGoodsType#0;class#BSMobileGoodsController#0" expanded="false" />
-            <element signature="method#batchUpdateGoodsType#0;class#BSMobileGoodsController#0" expanded="false" />
-            <element signature="docComment;method#sortMobileGoods#0;class#BSMobileGoodsController#0" expanded="false" />
-            <element signature="method#sortMobileGoods#0;class#BSMobileGoodsController#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/exceptions/JavaEE8Exception.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.108892925">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="120">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/domain/MobileGoods.java">
+    <entry file="file://$PROJECT_DIR$/javaee8-core/src/main/qin/javaee8/core/dao/exceptions/HibernateDAOException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="100">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/software/jdk1.8x64/jdk/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/software/jdk1.8x64/jdk/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="214" column="29" lean-forward="true" selection-start-line="214" selection-start-column="29" selection-end-line="214" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/software/jdk1.8x64/jdk/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="1453" column="8" lean-forward="false" selection-start-line="1453" selection-start-column="8" selection-end-line="1453" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/qin/hibernate/Java8Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/qin/hibernate/MobileBSDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/bsMobileGoods8/css/addMobileGoodsCSS.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BSHTMLMobile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="n#!!doc;n#HTMLGoodsColor#0;n#BSHTMLMobile#0" expanded="false" />
-            <element signature="n#!!doc;n#HTMLGoodsROM#0;n#BSHTMLMobile#0" expanded="false" />
-            <element signature="n#!!doc;n#HTMLGoodsBattery#0;n#BSHTMLMobile#0" expanded="false" />
-            <element signature="n#!!doc;n#HTMLGoodsBackCamera#0;n#BSHTMLMobile#0" expanded="false" />
-            <element signature="n#!!doc;n#HTMLGoodsNews#0;n#BSHTMLMobile#0" expanded="false" />
-            <element signature="n#!!doc;n#HTMLGoodsFrontCamera#0;n#BSHTMLMobile#0" expanded="false" />
-            <element signature="n#!!doc;n#HTMLGoodsMemory#0;n#BSHTMLMobile#0" expanded="false" />
-            <element signature="n#!!doc;n#HTMLGoodsNumber#0;n#BSHTMLMobile#0" expanded="false" />
-            <element signature="n#!!doc;n#HTMLGoodsPrice#0;n#BSHTMLMobile#0" expanded="false" />
-            <element signature="n#!!doc;n#HTMLGoodsName#0;n#BSHTMLMobile#0" expanded="false" />
-            <element signature="n#!!doc;n#HTMLGoodsDescription#0;n#BSHTMLMobile#0" expanded="false" />
-            <element signature="n#!!doc;n#HTMLGoodsOS#0;n#BSHTMLMobile#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="44" column="44" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/BSMobileService.java">
+    <entry file="file://$PROJECT_DIR$/src/test/qin/hibernate/goods/saveData/SaveGoods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="100">
+          <caret line="47" column="35" lean-forward="false" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BSMobileGoodsController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/qin/hibernate/BasicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="219" column="34" selection-start-line="219" selection-start-column="34" selection-end-line="219" selection-end-column="34" />
-          <folding>
-            <element signature="e#944#960#0" expanded="false" />
-            <element signature="n#!!doc;n#bsMobileService#0;n#BSMobileGoodsController#0" expanded="false" />
-            <element signature="e#1811#1829#0" expanded="false" />
-            <element signature="e#1843#1868#0" expanded="false" />
-            <element signature="e#2158#2171#0" expanded="false" />
-            <element signature="e#2710#2723#0" expanded="false" />
-            <element signature="e#2832#2858#0" expanded="false" />
-            <element signature="e#3544#3557#0" expanded="false" />
-            <element signature="e#3693#3706#0" expanded="false" />
-            <element signature="e#3836#3849#0" expanded="false" />
-            <element signature="e#3987#4001#0" expanded="false" />
-            <element signature="e#4141#4152#0" expanded="false" />
-            <element signature="e#4431#4445#0" expanded="false" />
-            <element signature="e#4583#4594#0" expanded="false" />
-            <element signature="e#4732#4745#0" expanded="false" />
-            <element signature="e#4877#4890#0" expanded="false" />
-            <element signature="e#6730#6745#0" expanded="false" />
-            <element signature="e#7026#7041#0" expanded="false" />
-            <element signature="e#7322#7341#0" expanded="false" />
-            <element signature="e#7638#7655#0" expanded="false" />
-            <element signature="e#7944#7957#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/testing/MyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="37" column="30" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/bsMobileGoods8/doMainView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/bsMobileGoods8/addMobileGoods.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2900">
+          <caret line="145" column="70" lean-forward="false" selection-start-line="145" selection-start-column="57" selection-end-line="145" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/bsMobileGoods8/js/addMobileGoodsJS.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="261" column="21" lean-forward="true" selection-start-line="261" selection-start-column="21" selection-end-line="261" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/MobileBSService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="59" column="11" lean-forward="false" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileBSDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="186" column="5" lean-forward="true" selection-start-line="172" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileBSDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.115517244">
-          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+        <state relative-caret-position="295">
+          <caret line="505" column="0" lean-forward="false" selection-start-line="505" selection-start-column="0" selection-end-line="505" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/impl/MobileBSServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-409">
+          <caret line="92" column="4" lean-forward="true" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/domain/GoodsType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/96926a01-26f4-4549-a13f-13cf4ec42354/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/controller/BSMobileGoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="391" column="0" lean-forward="true" selection-start-line="391" selection-start-column="0" selection-end-line="391" selection-end-column="0" />
           <folding>
-            <element signature="method#batchAddMobileGoods#0;class#MobileBSDAOImpl#0" expanded="true" />
-            <element signature="e#2118#2155#0" expanded="false" />
-            <element signature="e#2713#2723#0" expanded="false" />
-            <element signature="e#3547#3564#0" expanded="false" />
-            <element signature="e#4377#4394#0" expanded="false" />
+            <marker date="1487040225665" expanded="false" signature="2737:2761" ph="/all/" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/service/impl/BSMobileServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/MobileBatchAddGoodsTypeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6060606">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="342">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#390#398#0" expanded="true" />
-            <element signature="n#!!doc;n#mobileBSDAO#0;n#BSMobileServiceImpl#0" expanded="false" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#759#774#0" expanded="false" />
-            <element signature="docComment;method#save#0;class#BSMobileServiceImpl#0" expanded="true" />
-            <element signature="method#save#0;class#BSMobileServiceImpl#0" expanded="true" />
+            <element signature="docComment;method#addGoodsType#0;class#MobileBatchAddGoodsTypeDAO#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/qin/javaee8/hibernate/dao/impl/MobileBatchAddGoodsTypeDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="222" column="1" lean-forward="false" selection-start-line="222" selection-start-column="1" selection-end-line="222" selection-end-column="1" />
+          <folding>
+            <element signature="e#848#864#0" expanded="false" />
+            <element signature="e#1101#1123#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1970,7 +1830,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>jdk1.8x64</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1983,6 +1843,18 @@
       <state key="ModuleStructureConfigurable.UI">
         <settings>
           <last-edited>javaee8_201702</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

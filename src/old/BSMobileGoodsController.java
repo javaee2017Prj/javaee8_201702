@@ -62,10 +62,15 @@ public class BSMobileGoodsController extends JavaEE8BaseSupportImpl
     //endregion
 
     //region 新增手机记录
-    /**新增手机记录*/
+
+    /**
+     * 新增手机记录
+     */
     @RequestMapping(value = "/addMobileGoods")
-    public void addMobileGoods(BSHTMLMobile mobile, HttpServletResponse response) {
-        try {
+    public void addMobileGoods(BSHTMLMobile mobile, HttpServletResponse response)
+    {
+        try
+        {
             MobileGoods mobileGoods = new MobileGoods();
             List<String> mobileGoodsNameList = new ArrayList<>();
 
@@ -75,12 +80,16 @@ public class BSMobileGoodsController extends JavaEE8BaseSupportImpl
             //商品编号-NOT NULL-11
             String goodsNumber = mobile.getHTMLGoodsNumber().trim();
 
-            if (goodsNumber.length() > 11) {
+            if (goodsNumber.length() > 11)
+            {
                 returnJson("商品编号不能超过11个字符!", response);
-                return ;
-            } else {
+                return;
+            }
+            else
+            {
                 //判断是否全部是数字
-                if (goodsNumber.matches("[0-9]*")) {
+                if (goodsNumber.matches("[0-9]*"))
+                {
                     //执行赋值
                     mobileGoods.setGoods_number(Integer.valueOf(goodsNumber));
                 }
@@ -91,27 +100,38 @@ public class BSMobileGoodsController extends JavaEE8BaseSupportImpl
             //手机名称-NOT NULL-80
             String goodsName = mobile.getHTMLGoodsName().trim();
 
-            if (goodsName.length() > 80 ) {
+            if (goodsName.length() > 80)
+            {
                 returnJson("商品名称不能超过80个字符!", response);
-                return ;
-            } else {
+                return;
+            }
+            else
+            {
                 //1.手机名称不能全部为数字并且不能以数字开头
-                if (goodsName.matches("[0-9]*")) {
+                if (goodsName.matches("[0-9]*"))
+                {
                     returnJson("手机名称不能全部为数字!", response);
-                    return ;
-                } else {
+                    return;
+                }
+                else
+                {
                     //2.是否含有<br>符号, 如果含有<br>则是批量添加, 然后判断每一个商品是否全部不是数字, 如果不是数字则添加
                     //并且设置商品编号
                     //region 判断是否保存多个产品
-                    if (goodsName.contains(STR_BR)) {
+                    if (goodsName.contains(STR_BR))
+                    {
                         //3.根据<br>切割并且做判断
                         String[] brGoodsName = goodsName.split(STR_BR);
                         //4.一个个地判断
-                        for (int i = 0; i < brGoodsName.length; i ++) {
-                            if (brGoodsName[i].matches("[0-9]*")) {
+                        for (int i = 0; i < brGoodsName.length; i++)
+                        {
+                            if (brGoodsName[i].matches("[0-9]*"))
+                            {
                                 returnJson("商品名称不能全部为数字!", response);
-                                return ;
-                            } else {
+                                return;
+                            }
+                            else
+                            {
                                 //5.当判断结束以后所有的字段都符合标准, 就在结尾时实现批量新增(先使用List集合存储)
                                 mobileGoodsNameList.add(brGoodsName[i]);
                             }
@@ -119,7 +139,8 @@ public class BSMobileGoodsController extends JavaEE8BaseSupportImpl
                     }
                     //endregion
                     //否则就是没有<br>操作符
-                    else {
+                    else
+                    {
                         //5.直接保存即可
                         mobileGoods.setGoods_name(goodsName);
                     }
@@ -134,7 +155,8 @@ public class BSMobileGoodsController extends JavaEE8BaseSupportImpl
 
             //1.如果手机价格里不包含.则里面全部必须都是数字
             //2.如果手机价格里包含.则要截取并且判断前后是否都是数字
-            if (goodsPrice.contains(".")) {
+            if (goodsPrice.contains("."))
+            {
                 //3.截取.的位置
                 int index = goodsPrice.indexOf(".");
                 //4.前面的数字
@@ -142,7 +164,8 @@ public class BSMobileGoodsController extends JavaEE8BaseSupportImpl
                 //5.后面的数字(index截取到的符号是.)
                 String backPrice = goodsPrice.substring(index + 1, goodsPrice.length());
                 //6.实现判断
-                if (frontPrice.matches("[0-9]*") && backPrice.matches("[0-9]*")) {
+                if (frontPrice.matches("[0-9]*") && backPrice.matches("[0-9]*"))
+                {
                     //7.正确
                     mobileGoods.setGoods_price(Double.valueOf(goodsPrice));
                 }
@@ -171,52 +194,94 @@ public class BSMobileGoodsController extends JavaEE8BaseSupportImpl
             //endregion
 
 
-        } catch (Exception ex) {
+        }
+        catch (Exception ex)
+        {
         }
     }
     //endregion
 
     //region 删除手机记录
-    /** 删除手机记录*/@RequestMapping(value = "/deleteMobileGoods")
-    public void deleteMobileGoods(BSHTMLMobile mobile, HttpServletResponse response) {
-        try {
-        } catch (Exception ex) {
+
+    /**
+     * 删除手机记录
+     */
+    @RequestMapping(value = "/deleteMobileGoods")
+    public void deleteMobileGoods(BSHTMLMobile mobile, HttpServletResponse response)
+    {
+        try
+        {
+        }
+        catch (Exception ex)
+        {
         }
     }
     //endregion
 
     //region 修改手机记录
-    /** 修改手机记录*/@RequestMapping(value = "/updateMobileGoods")
-    public void updateMobileGoods(BSHTMLMobile mobile, HttpServletResponse response) {
-        try {
-        } catch (Exception ex) {
+
+    /**
+     * 修改手机记录
+     */
+    @RequestMapping(value = "/updateMobileGoods")
+    public void updateMobileGoods(BSHTMLMobile mobile, HttpServletResponse response)
+    {
+        try
+        {
+        }
+        catch (Exception ex)
+        {
         }
     }
     //endregion
 
     //region 根据名称查询手机记录
-    /** 根据名称查询手机记录*/@RequestMapping(value = "/searchMobileGoodsByName")
-    public void searchMobileGoodsByName(BSHTMLMobile mobile, HttpServletResponse response) {
-        try {
-        } catch (Exception ex) {
+
+    /**
+     * 根据名称查询手机记录
+     */
+    @RequestMapping(value = "/searchMobileGoodsByName")
+    public void searchMobileGoodsByName(BSHTMLMobile mobile, HttpServletResponse response)
+    {
+        try
+        {
+        }
+        catch (Exception ex)
+        {
         }
     }
     //endregion
 
     //region 批量修改手机类型
-    /** 批量修改手机类型*/@RequestMapping(value = "/batchUpdateGoodsType")
-    public void batchUpdateGoodsType(BSHTMLMobile mobile, HttpServletResponse response) {
-        try {
-        } catch (Exception ex) {
+
+    /**
+     * 批量修改手机类型
+     */
+    @RequestMapping(value = "/batchUpdateGoodsType")
+    public void batchUpdateGoodsType(BSHTMLMobile mobile, HttpServletResponse response)
+    {
+        try
+        {
+        }
+        catch (Exception ex)
+        {
         }
     }
     //endregion
 
     //region 实现排序
-    /** 实现排序*/@RequestMapping(value = "/sortMobileGoods")
-    public void sortMobileGoods(BSHTMLMobile mobile, HttpServletResponse response) {
-        try {
-        } catch (Exception ex) {
+
+    /**
+     * 实现排序
+     */
+    @RequestMapping(value = "/sortMobileGoods")
+    public void sortMobileGoods(BSHTMLMobile mobile, HttpServletResponse response)
+    {
+        try
+        {
+        }
+        catch (Exception ex)
+        {
         }
     }
     //endregion
