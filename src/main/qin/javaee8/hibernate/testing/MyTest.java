@@ -4,6 +4,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import qin.javaee8.hibernate.domain.JDGoodsType;
+
+import java.util.List;
 
 /*
 drop database javaee8_201702; create database javaee8_201702 default charset utf8;
@@ -45,5 +48,9 @@ public class MyTest
     @org.junit.Test
     public void make()
     {
+        List<JDGoodsType> goodsTypeList = session
+                  .createQuery("from JDGoodsType ").list();
+
+        System.out.println(goodsTypeList.size());
     }
 }

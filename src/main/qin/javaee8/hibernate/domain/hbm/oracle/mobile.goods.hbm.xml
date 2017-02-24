@@ -94,7 +94,7 @@
             <key column="col_mobileGoodsType" foreign-key="fk_mobileGoodsType"></key>
             <many-to-one name="mobileGoodsType" cascade="delete"
                          column="col_mobileGoodsTypeMany2One" foreign-key="fk_mobileGoodsTypeMany2One"
-                         class="GoodsType"/>
+                         class="qin.javaee8.hibernate.domain.JDGoodsType"/>
         </join>
 
     </class>

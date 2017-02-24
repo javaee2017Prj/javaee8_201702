@@ -8,6 +8,49 @@ import java.util.List;
 
 public class JavaTest
 {
+    /*
+     //region 苹果
+        $('#type_apple').click(function() {
+                htmlMobileType = "apple";
+        }
+        );
+        //endregion
+     */
+    private void type(String[] id, String[] _region)
+    {
+        for (int i = 0; i < id.length; i++)
+        {
+            System.out.println
+                      (
+                                "//region " + _region[i] + "\n" +
+                                          "        $('#" + id[i] + "').click(function() {\n" +
+                                          "                htmlMobileType = \"" + _region[i] + "\";\n" +
+                                          "        }\n" +
+                                          "        );\n" +
+                                          "        //endregion\n"
+                      );
+        }
+    }
+
+    @org.junit.Test
+    public void pp()
+    {
+        type
+                  (
+                            new String[]{
+                                      "type_huawei",
+                                      "type_leshi",
+                                      "type_meizu",
+                                      "type_oppo",
+                                      "type_sanxing",
+                                      "type_vivo",
+                                      "type_xiaomi"
+                            }, new String[]{
+                                      "huawei", "leshi", "meizu", "oppo", "sanxing", "vivo", "xiaomi"
+                            }
+                  );
+    }
+
     //@org.junit.Test
     public void javaTEst1()
     {
@@ -69,7 +112,7 @@ public class JavaTest
     }
 
 
-    @org.junit.Test
+    //@org.junit.Test
     public void testPath()
     {
         System.out.println(System.getProperty("java_home"));

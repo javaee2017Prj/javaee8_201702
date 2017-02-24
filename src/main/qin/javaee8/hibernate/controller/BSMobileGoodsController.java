@@ -451,6 +451,5 @@ public class BSMobileGoodsController extends JavaEE8BaseSupportImpl
     }
     //endregion
 
-
     //endregion
 }

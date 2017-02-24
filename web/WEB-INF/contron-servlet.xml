@@ -16,8 +16,7 @@
     <mvc:annotation-driven></mvc:annotation-driven>
 
     <!-- sacn package -->
-    <context:component-scan base-package="qin.javaee8.core.dao, qin.javaee8.hibernate.dao,
-                                            qin.javaee8.hibernate.service, qin.javaee8.hibernate.controller"/>
+    <context:component-scan base-package="qin.javaee8.core.dao,qin.javaee8.hibernate.jd"/>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>

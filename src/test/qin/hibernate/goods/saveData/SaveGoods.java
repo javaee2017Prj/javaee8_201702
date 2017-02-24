@@ -2,7 +2,7 @@ package qin.hibernate.goods.saveData;
 
 import org.junit.Test;
 import qin.hibernate.BasicTest;
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 
 import java.util.Map;
@@ -60,7 +60,7 @@ public class SaveGoods extends BasicTest
     @Test
     public void saveApple()
     {
-        GoodsType apple = (GoodsType) session.get(GoodsType.class, new Integer(16));
+        JDGoodsType apple = (JDGoodsType) session.get(JDGoodsType.class, new Integer(16));
 
         //region 商品名称
         String[] goodsName = new String[]{

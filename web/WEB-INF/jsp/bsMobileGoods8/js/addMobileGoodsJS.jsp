@@ -289,7 +289,7 @@
                             HTMLGoodsColor: $('#HTMLGoodsColor').val(),
                             //------------------------------------------上述字段不能为空
                             //类型
-                            HTMLGoodsType: $('#HTMLGoodsType').val(),
+                            HTMLGoodsType: $('#HTMLGoodsType option:selected')[0].innerHTML,
                             //后置摄像头
                             HTMLGoodsBackCamera: $('#HTMLGoodsBackCamera').val(),
                             //热点
@@ -297,22 +297,23 @@
                             //前置摄像头
                             HTMLGoodsFrontCamera: $('#HTMLGoodsFrontCamera').val(),
                             //商品描述
-                            HTMLGoodsDescription: $('#HTMLGoodsDescription').val(),
-                            //------------------------------------------接收url参数
-                            addURL: 'addMobileGoods.action?HTMLGoodsType=' + this.HTMLGoodsType +
-                            "       &&HTMLGoodsColor=" + this.HTMLGoodsColor +
-                            "       &&HTMLGoodsROM=" + this.HTMLGoodsROM +
-                            "       &&HTMLGoodsBattery=" + this.HTMLGoodsBattery +
-                            "       &&HTMLGoodsBackCamera=" + this.HTMLGoodsBackCamera +
-                            "       &&HTMLGoodsNews=" + this.HTMLGoodsNews +
-                            "       &&HTMLGoodsFrontCamera=" + this.HTMLGoodsFrontCamera +
-                            "       &&HTMLGoodsMemory=" + this.HTMLGoodsMemory +
-                            "       &&HTMLGoodsNumber=" + this.HTMLGoodsNumber +
-                            "       &&HTMLGoodsPrice=" + this.HTMLGoodsPrice +
-                            "       &&HTMLGoodsName=" + this.HTMLGoodsName +
-                            "       &&HTMLGoodsDescription=" + this.HTMLGoodsDescription +
-                            "       &&HTMLGoodsOS=" + this.HTMLGoodsOS
+                            HTMLGoodsDescription: $('#HTMLGoodsDescription').val()
                         };
+
+                    addURL = 'addMobileGoods.com?HTMLGoodsType=' + HTMLMobileGoods.HTMLGoodsType +
+                        "       &&HTMLGoodsColor=" + HTMLMobileGoods.HTMLGoodsColor +
+                        "       &&HTMLGoodsROM=" + HTMLMobileGoods.HTMLGoodsROM +
+                        "       &&HTMLGoodsBattery=" + HTMLMobileGoods.HTMLGoodsBattery +
+                        "       &&HTMLGoodsBackCamera=" + HTMLMobileGoods.HTMLGoodsBackCamera +
+                        "       &&HTMLGoodsNews=" + HTMLMobileGoods.HTMLGoodsNews +
+                        "       &&HTMLGoodsFrontCamera=" + HTMLMobileGoods.HTMLGoodsFrontCamera +
+                        "       &&HTMLGoodsMemory=" + HTMLMobileGoods.HTMLGoodsMemory +
+                        "       &&HTMLGoodsNumber=" + HTMLMobileGoods.HTMLGoodsNumber +
+                        "       &&HTMLGoodsPrice=" + HTMLMobileGoods.HTMLGoodsPrice +
+                        "       &&HTMLGoodsName=" + HTMLMobileGoods.HTMLGoodsName +
+                        "       &&HTMLGoodsDescription=" + HTMLMobileGoods.HTMLGoodsDescription +
+                        "       &&HTMLGoodsOS=" + HTMLMobileGoods.HTMLGoodsOS;
+
                     //endregion
 
                     //2.调用方法判断接收的手机控件
@@ -331,10 +332,11 @@
                     $.ajax
                     (
                         {
-                            url: HTMLMobileGoods.addURL,
+                            url: addURL,
                             method: 'POST',
                             success: function (msg)
                             {
+                                alert(msg);
                             }
                         }
                     );

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="javaeeApplication" name="javaEEApplication">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="application.xml" url="file://$MODULE_DIR$/META-INF/application.xml" />
+        </descriptors>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/booksrc/access" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book_src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/access/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/access/access" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/access/netutils" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/genericsSrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qinsrc" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="jdk1.8x64" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.5.9" level="application_server_libraries" />
+    <orderEntry type="library" name="libs" level="project" />
+    <orderEntry type="module" module-name="javaee8-core" />
+    <orderEntry type="module" module-name="javaee8-core-hibernate" />
+    <orderEntry type="module" module-name="javaee8_201702" />
+  </component>
+</module>

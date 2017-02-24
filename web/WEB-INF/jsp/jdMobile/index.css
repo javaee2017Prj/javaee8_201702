@@ -1,0 +1,10 @@
+li
+{
+    float: left;
+    list-style: none;
+}
+
+.selectMobile
+{
+    border-bottom: 1px solid #DDD;
+}

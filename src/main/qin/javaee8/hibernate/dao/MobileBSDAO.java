@@ -5,7 +5,7 @@ import qin.javaee8.core.dao.exceptions.GoodsTypeNULLException;
 import qin.javaee8.core.dao.exceptions.HibernateDAOException;
 import qin.javaee8.core.dao.exceptions.SameResultException;
 import qin.javaee8.exceptions.JavaEE8Exception;
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 
 import java.io.Serializable;
@@ -76,7 +76,7 @@ public interface MobileBSDAO extends DAOSupport8<MobileGoods, Long>
      * @return
      * @throws JavaEE8Exception 抛出大异常
      */
-    Object batchUpdateMobileGoodsType(GoodsType type, MobileGoods... mobileGoods)
+    Object batchUpdateMobileGoodsType(JDGoodsType type, MobileGoods... mobileGoods)
               throws JavaEE8Exception;
 
     //endregion
@@ -105,7 +105,7 @@ public interface MobileBSDAO extends DAOSupport8<MobileGoods, Long>
      *
      * @return 类型集合
      */
-    List<GoodsType> getAllMobileGoodsType();
+    List<JDGoodsType> getAllMobileGoodsType();
     //endregion
 
     //region 获取所有手机类型名字
@@ -175,11 +175,11 @@ public interface MobileBSDAO extends DAOSupport8<MobileGoods, Long>
 
         sb.append("<option value=\"\">请选择</option>");
 
-        List<GoodsType> goodsTypeList = getAllMobileGoodsType();
+        List<JDGoodsType> goodsTypeList = getAllMobileGoodsType();
 
         for (int i = 0; i < goodsTypeList.size(); i++)
         {
-            GoodsType goodsType = goodsTypeList.get(i);
+            JDGoodsType goodsType = goodsTypeList.get(i);
             sb.append("<option value=\"\">" + goodsType.getGoods_typeName() + "</option>");
         }
 

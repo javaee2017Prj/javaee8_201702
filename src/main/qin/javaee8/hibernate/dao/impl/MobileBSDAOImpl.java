@@ -8,7 +8,7 @@ import qin.javaee8.core.dao.exceptions.SameResultException;
 import qin.javaee8.core.dao.impl.DAOSupport8Impl;
 import qin.javaee8.exceptions.JavaEE8Exception;
 import qin.javaee8.hibernate.dao.MobileBSDAO;
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 
 import java.io.Serializable;
@@ -67,8 +67,8 @@ public class MobileBSDAOImpl
             Session session = getSessionFactory().openSession();
             Transaction transaction = session.beginTransaction();
 
-            GoodsType myGoodsType = (GoodsType) session
-                      .createQuery("from GoodsType where goods_typeName='" + goodsType + "'")
+            JDGoodsType myGoodsType = (JDGoodsType) session
+                      .createQuery("from JDGoodsType where goods_typeName='" + goodsType + "'")
                       .list().get(0);
 
             //1.在新增前必须要检查一下商品类型是否为空, 如果商品类型为空抛出异常
@@ -173,7 +173,7 @@ public class MobileBSDAOImpl
      * @throws JavaEE8Exception 抛出大异常
      */
     @Override
-    public Object batchUpdateMobileGoodsType(GoodsType type, MobileGoods... mobileGoods)
+    public Object batchUpdateMobileGoodsType(JDGoodsType type, MobileGoods... mobileGoods)
               throws JavaEE8Exception
     {
         Object resultObj = "";
@@ -235,10 +235,10 @@ public class MobileBSDAOImpl
     //region 二期功能
 
     @Override
-    public List<GoodsType> getAllMobileGoodsType()
+    public List<JDGoodsType> getAllMobileGoodsType()
     {
         return getSessionFactory().openSession()
-                  .createQuery("select goods_typeName from GoodsType")
+                  .createQuery("select goods_typeName from JDGoodsType")
                   .list();
     }
 
@@ -268,17 +268,17 @@ public class MobileBSDAOImpl
             Transaction transaction = session.beginTransaction();
 
             //如果接收的上级类型不为空则查找上级类型
-            GoodsType parent = new GoodsType();
+            JDGoodsType parent = new JDGoodsType();
             if (htmlGoodsTypeParent.length() > 0)
             {
-                parent = (GoodsType) session
+                parent = (JDGoodsType) session
                           .createQuery(new StringBuilder().append("from GoodsType where goods_typeName='").append(htmlGoodsTypeParent).append("'").toString())
                           .list().get(0);
             }
 
             //1.首先比对如果商品名称在表中已有重复则报错不添加
             Integer searchSize = 0;
-            List<GoodsType> goodsTypeList = session
+            List<JDGoodsType> goodsTypeList = session
                       .createQuery(new StringBuilder().append("from GoodsType where goods_typeName='")
                                              .append(htmlGoodsTypeName_).append("'").toString())
                       .list();
@@ -370,7 +370,7 @@ public class MobileBSDAOImpl
     //region 二期添加商品类型封装功能
     @Deprecated
     private void save(boolean goodsTypeIsHasParent,
-                      GoodsType parent, Session session, String description,
+                      JDGoodsType parent, Session session, String description,
                       String... goodsTypeNames)
     {
         if (goodsTypeIsHasParent)
@@ -385,12 +385,12 @@ public class MobileBSDAOImpl
 
     @Deprecated
     private void saveOrUpdate(boolean goodsTypeIsHasParent,
-                              GoodsType parent, Session session, String description,
+                              JDGoodsType parent, Session session, String description,
                               String... goodsTypeNames)
     {
         for (int i = 0; i < goodsTypeNames.length; i++)
         {
-            GoodsType childrenGoodsTypeSet = new GoodsType(goodsTypeNames[i]);
+            JDGoodsType childrenGoodsTypeSet = new JDGoodsType(goodsTypeNames[i]);
 
             if (goodsTypeIsHasParent)
             {
@@ -430,11 +430,11 @@ public class MobileBSDAOImpl
             Session session = getSessionFactory().openSession();
             Transaction transaction = session.beginTransaction();
 
-            GoodsType childrenTypes = new GoodsType(htmlGoodsTypeName_);
+            JDGoodsType childrenTypes = new JDGoodsType(htmlGoodsTypeName_);
 
             //比对如果商品名称在表中已有重复则报错不添加
             Integer searchSize = 0;
-            List<GoodsType> goodsTypeList = session
+            List<JDGoodsType> goodsTypeList = session
                       .createQuery(new StringBuilder().append("from GoodsType where goods_typeName='")
                                              .append(htmlGoodsTypeName_).append("'").toString())
                       .list();
@@ -451,12 +451,12 @@ public class MobileBSDAOImpl
                 childrenTypes.setGoods_typeDescription(htmlGoodsTypeDescription_);
             }
 
-            GoodsType parent = new GoodsType();
+            JDGoodsType parent = new JDGoodsType();
 
             //获取上级类型
             if (isHasParent)
             {
-                parent = (GoodsType) session
+                parent = (JDGoodsType) session
                           .createQuery(new StringBuilder()
                                                  .append("from GoodsType where goods_typeName='")
                                                  .append(htmlGoodsTypeParent).append("'").toString())
@@ -497,13 +497,13 @@ public class MobileBSDAOImpl
 
         sb.append("<option value=\"\">请选择</option>");
 
-        List<GoodsType> goodsTypeList = getSessionFactory().openSession()
-                  .createQuery("from GoodsType ")
+        List<JDGoodsType> goodsTypeList = getSessionFactory().openSession()
+                  .createQuery("from JDGoodsType ")
                   .list();
 
         for (int i = 0; i < goodsTypeList.size(); i++)
         {
-            GoodsType goodsType = goodsTypeList.get(i);
+            JDGoodsType goodsType = goodsTypeList.get(i);
             sb.append("<option value=\"\">" + goodsType.getGoods_typeName() + "</option>");
         }
 

@@ -36,7 +36,7 @@ public class MobileGoods extends SuperGoods
 
     public MobileGoods(String mobile_os, String mobile_memory, String mobile_frontCamera,
                        String mobile_news, String mobile_backCamera, String mobile_battery,
-                       String mobile_rom, String mobile_color, GoodsType mobileGoodsType)
+                       String mobile_rom, String mobile_color, JDGoodsType mobileGoodsType)
     {
         this.mobile_os = mobile_os;
         this.mobile_memory = mobile_memory;
@@ -212,14 +212,14 @@ public class MobileGoods extends SuperGoods
     //endregion
 
     //region 关联商品类型
-    private GoodsType mobileGoodsType;
+    private JDGoodsType mobileGoodsType;
 
-    public GoodsType getMobileGoodsType()
+    public JDGoodsType getMobileGoodsType()
     {
         return mobileGoodsType;
     }
 
-    public void setMobileGoodsType(GoodsType mobileGoodsType)
+    public void setMobileGoodsType(JDGoodsType mobileGoodsType)
     {
         this.mobileGoodsType = mobileGoodsType;
     }

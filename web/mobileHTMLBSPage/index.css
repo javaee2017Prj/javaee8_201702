@@ -1,3 +1,9 @@
+/*region 样式1 */
+.container
+{
+    width: 99%;
+}
+
 .indexBody
 {
     font-family: 微软雅黑;
@@ -16,6 +22,9 @@
     width: 98%;
 }
 
+/*endregion*/
+
+/*region 设置登录按钮背景色*/
 /** 设置登录按钮背景色 */
 #container_index_btn_login
 {
@@ -25,3 +34,15 @@
     width: 300px;
     font-size: 16px;
 }
+
+/*endregion*/
+
+/*region 所支持的浏览器*/
+#div_supportBrowser
+{
+    font-family: Roboto, -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+    font-size: 36px;
+}
+
+/*endregion*/

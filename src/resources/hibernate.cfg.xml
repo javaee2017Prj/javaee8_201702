@@ -7,10 +7,14 @@
 
     <session-factory>
 
-        <!--<mapping class="qin.javaee8.hibernate.testing.TestDomain"/>-->
-        <mapping class="qin.javaee8.hibernate.domain.GoodsType"/>
-         <mapping resource="qin/javaee8/hibernate/domain/hbm/mysql/mobile.goods.hbm.mysql.xml"/>
+        <mapping class="qin.javaee8.hibernate.testing.TestDomain"/>
+        <!--<mapping class="qin.javaee8.hibernate.domain.JDGoodsType"/>-->
+        <!--<mapping resource="qin/javaee8/hibernate/domain/hbm/mysql/mobile.goods.hbm.mysql.xml"/>-->
         <!--<mapping resource="qin/javaee8/hibernate/domain/hbm/oracle/mobile.goods.hbm.xml"/>-->
+
+        <!-- 二期实体类改善 -->
+        <mapping resource="qin/javaee8/hibernate/jd/domain/htm/mysql.jdMobileGoods.xml"/>
+        <mapping class="qin.javaee8.hibernate.jd.domain.JDGoodsType"/>
 
     </session-factory>
 

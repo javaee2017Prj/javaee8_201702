@@ -1,7 +1,7 @@
 package qin.javaee8.hibernate.testing;
 
 import org.junit.Test;
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 
 @SuppressWarnings("all")
 public class SaveGoodsType extends MyTest
@@ -10,35 +10,35 @@ public class SaveGoodsType extends MyTest
     @Test
     public void makeGoodsType_allParent() throws Exception
     {
-        GoodsType goodsType0 = new GoodsType("家用电器");
+        JDGoodsType goodsType0 = new JDGoodsType("家用电器");
         session.save(goodsType0);
-        GoodsType goodsType1 = new GoodsType("手机/运营商/数码");
+        JDGoodsType goodsType1 = new JDGoodsType("手机/运营商/数码");
         session.save(goodsType1);
-        GoodsType goodsType2 = new GoodsType("电脑办公");
+        JDGoodsType goodsType2 = new JDGoodsType("电脑办公");
         session.save(goodsType2);
-        GoodsType goodsType3 = new GoodsType("家居/家具/家装/厨具");
+        JDGoodsType goodsType3 = new JDGoodsType("家居/家具/家装/厨具");
         session.save(goodsType3);
-        GoodsType goodsType4 = new GoodsType("男装/ 女装/ 童装/ 内衣");
+        JDGoodsType goodsType4 = new JDGoodsType("男装/ 女装/ 童装/ 内衣");
         session.save(goodsType4);
-        GoodsType goodsType5 = new GoodsType("个护化妆/ 清洁用品/ 宠物");
+        JDGoodsType goodsType5 = new JDGoodsType("个护化妆/ 清洁用品/ 宠物");
         session.save(goodsType5);
-        GoodsType goodsType6 = new GoodsType("鞋靴/ 箱包/ 珠宝/ 奢侈品");
+        JDGoodsType goodsType6 = new JDGoodsType("鞋靴/ 箱包/ 珠宝/ 奢侈品");
         session.save(goodsType6);
-        GoodsType goodsType7 = new GoodsType("运动/ 户外/ 钟表");
+        JDGoodsType goodsType7 = new JDGoodsType("运动/ 户外/ 钟表");
         session.save(goodsType7);
-        GoodsType goodsType8 = new GoodsType("汽车/ 汽车用品");
+        JDGoodsType goodsType8 = new JDGoodsType("汽车/ 汽车用品");
         session.save(goodsType8);
-        GoodsType goodsType9 = new GoodsType("母婴/ 玩具乐器");
+        JDGoodsType goodsType9 = new JDGoodsType("母婴/ 玩具乐器");
         session.save(goodsType9);
-        GoodsType goodsType10 = new GoodsType("食品/ 酒类/ 生鲜/ 特产");
+        JDGoodsType goodsType10 = new JDGoodsType("食品/ 酒类/ 生鲜/ 特产");
         session.save(goodsType10);
-        GoodsType goodsType11 = new GoodsType("医药保健");
+        JDGoodsType goodsType11 = new JDGoodsType("医药保健");
         session.save(goodsType11);
-        GoodsType goodsType12 = new GoodsType("图书/ 音像/ 电子书");
+        JDGoodsType goodsType12 = new JDGoodsType("图书/ 音像/ 电子书");
         session.save(goodsType12);
-        GoodsType goodsType13 = new GoodsType("机票/ 酒店/ 旅游/ 生活");
+        JDGoodsType goodsType13 = new JDGoodsType("机票/ 酒店/ 旅游/ 生活");
         session.save(goodsType13);
-        GoodsType goodsType14 = new GoodsType("理财/ 众筹/ 白条/ 保险");
+        JDGoodsType goodsType14 = new JDGoodsType("理财/ 众筹/ 白条/ 保险");
         session.save(goodsType14);
 
         transaction.commit();
@@ -112,7 +112,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_理财金融0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '理财'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '理财'").list().get(0);
         String[] children =
                   {
                             "京东小金库",
@@ -124,7 +124,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -137,7 +137,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_理财金融1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '众筹'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '众筹'").list().get(0);
         String[] children =
                   {
                             "智能硬件",
@@ -148,7 +148,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -161,14 +161,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_理财金融2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '东家'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '东家'").list().get(0);
         String[] children =
                   {
                             "私募股权"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -181,7 +181,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_理财金融3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '白条'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '白条'").list().get(0);
         String[] children =
                   {
                             "京东白条",
@@ -194,7 +194,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -207,14 +207,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_理财金融4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '钱包'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '钱包'").list().get(0);
         String[] children =
                   {
                             "京东钱包"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -227,7 +227,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_理财金融5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '保险'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '保险'").list().get(0);
         String[] children =
                   {
                             "车险",
@@ -237,7 +237,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -272,18 +272,18 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_图书0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '音像'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '音像'").list().get(0);
         String[] children =
                   {
-                            "音像\\音乐",
+                            "音像>>音乐",
                             "影视",
                             "教育音像",
-                            "音像\\游戏",
+                            "音像>>游戏",
                             "影视/动漫周边"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -296,7 +296,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_图书1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '少儿'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '少儿'").list().get(0);
         String[] children =
                   {
                             "0-2岁",
@@ -312,7 +312,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -325,7 +325,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_图书2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '教育'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '教育'").list().get(0);
         String[] children =
                   {
                             "教材",
@@ -336,7 +336,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -349,7 +349,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_图书3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '文艺'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '文艺'").list().get(0);
         String[] children =
                   {
                             "小说",
@@ -360,12 +360,12 @@ public class SaveGoodsType extends MyTest
                             "艺术",
                             "摄影",
                             "书法",
-                            "文艺\\音乐",
+                            "文艺>>音乐",
                             "绘画"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -378,17 +378,17 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_图书4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '经管励志'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '经管励志'").list().get(0);
         String[] children =
                   {
                             "管理",
                             "金融与投资",
                             "经济",
-                            "经管励志\\励志与成功"
+                            "经管励志>>励志与成功"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -401,7 +401,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_图书5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '人文社科'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '人文社科'").list().get(0);
         String[] children =
                   {
                             "历史",
@@ -415,7 +415,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -428,7 +428,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_图书6()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '生活'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '生活'").list().get(0);
         String[] children =
                   {
                             "育儿/家教",
@@ -444,7 +444,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -457,11 +457,11 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_图书7()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '科技'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '科技'").list().get(0);
         String[] children =
                   {
                             "计算机与互联网",
-                            "科技\\科普",
+                            "科技>>科普",
                             "建筑",
                             "工业技术",
                             "电子/通信",
@@ -471,7 +471,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -484,7 +484,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_图书8()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '刊/原版'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '刊/原版'").list().get(0);
         String[] children =
                   {
                             "杂志/期刊",
@@ -493,7 +493,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -506,14 +506,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_图书9()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '电子书'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '电子书'").list().get(0);
         String[] children =
                   {
                             "畅读VIP",
-                            "电子书\\小说",
-                            "电子书\\励志与成功",
+                            "电子书>>小说",
+                            "电子书>>励志与成功",
                             "经济金融",
-                            "电子书\\文学",
+                            "电子书>>文学",
                             "社科",
                             "婚恋两性",
                             "外文原版",
@@ -521,7 +521,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -534,7 +534,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_图书10()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '数字音乐'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '数字音乐'").list().get(0);
         String[] children =
                   {
                             "通俗流行",
@@ -546,7 +546,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -585,7 +585,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_医药保健0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '中西药品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '中西药品'").list().get(0);
         String[] children =
                   {
                             "感冒咳嗽",
@@ -606,7 +606,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -619,7 +619,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_医药保健1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '营养健康'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '营养健康'").list().get(0);
         String[] children =
                   {
                             "保健3免1",
@@ -638,7 +638,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -651,7 +651,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_医药保健2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '营养成分'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '营养成分'").list().get(0);
         String[] children =
                   {
                             "维生素/矿物质",
@@ -674,7 +674,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -687,7 +687,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_医药保健3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '滋补养生'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '滋补养生'").list().get(0);
         String[] children =
                   {
                             "阿胶",
@@ -709,7 +709,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -722,7 +722,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_医药保健4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '成人用品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '成人用品'").list().get(0);
         String[] children =
                   {
                             "安全避孕",
@@ -731,11 +731,11 @@ public class SaveGoodsType extends MyTest
                             "男用延时",
                             "男用器具",
                             "女用器具",
-                            "成人用品\\情趣内衣"
+                            "成人用品>>情趣内衣"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -748,7 +748,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_医药保健5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '保健器械'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '保健器械'").list().get(0);
         String[] children =
                   {
                             "器械3免1",
@@ -771,7 +771,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -784,12 +784,12 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_医药保健6()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '护理护具'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '护理护具'").list().get(0);
         String[] children =
                   {
                             "隐形眼镜",
                             "护理液",
-                            "护理护具\\口罩",
+                            "护理护具>>口罩",
                             "眼罩/耳塞",
                             "跌打损伤",
                             "暖贴",
@@ -799,7 +799,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -835,7 +835,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_所有食品0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '新鲜水果'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '新鲜水果'").list().get(0);
         String[] children =
                   {
                             "进口水果",
@@ -853,7 +853,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -866,7 +866,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_所有食品1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '海鲜水产'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '海鲜水产'").list().get(0);
         String[] children =
                   {
                             "虾类",
@@ -884,7 +884,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -897,7 +897,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_所有食品2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '肉禽蛋品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '肉禽蛋品'").list().get(0);
         String[] children =
                   {
                             "牛肉",
@@ -916,7 +916,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -929,7 +929,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_所有食品3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '新鲜蔬菜'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '新鲜蔬菜'").list().get(0);
         String[] children =
                   {
                             "根茎类",
@@ -944,7 +944,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -957,7 +957,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_所有食品4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '冷饮冻食'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '冷饮冻食'").list().get(0);
         String[] children =
                   {
                             "水饺",
@@ -971,7 +971,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -984,7 +984,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_所有食品5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '中外名酒'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '中外名酒'").list().get(0);
         String[] children =
                   {
                             "白酒",
@@ -996,7 +996,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1009,7 +1009,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_所有食品6()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '进口食品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '进口食品'").list().get(0);
         String[] children =
                   {
                             "牛奶",
@@ -1017,11 +1017,11 @@ public class SaveGoodsType extends MyTest
                             "糖果/巧克力",
                             "休闲零食",
                             "冲调饮品",
-                            "进口食品\\粮油调味"
+                            "进口食品>>粮油调味"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1034,22 +1034,22 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_所有食品7()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '休闲食品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '休闲食品'").list().get(0);
         String[] children =
                   {
-                            "休闲食品\\休闲零食",
+                            "休闲食品>>休闲零食",
                             "坚果炒货",
                             "肉干肉脯",
                             "熟食腊味",
                             "蜜饯果干",
-                            "休闲食品\\糖果/巧克力",
-                            "休闲食品\\饼干蛋糕",
+                            "休闲食品>>糖果/巧克力",
+                            "休闲食品>>饼干蛋糕",
                             "无糖食品",
                             "月饼"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1062,7 +1062,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_所有食品8()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '地方特产'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '地方特产'").list().get(0);
         String[] children =
                   {
                             "新疆",
@@ -1078,7 +1078,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1091,7 +1091,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_所有食品9()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '茗茶'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '茗茶'").list().get(0);
         String[] children =
                   {
                             "铁观音",
@@ -1109,7 +1109,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1122,7 +1122,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_所有食品10()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '饮料冲调'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '饮料冲调'").list().get(0);
         String[] children =
                   {
                             "饮料",
@@ -1134,7 +1134,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1147,7 +1147,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_所有食品11()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '粮油调味'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '粮油调味'").list().get(0);
         String[] children =
                   {
                             "米面杂粮",
@@ -1160,7 +1160,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1200,7 +1200,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_母婴0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '奶粉'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '奶粉'").list().get(0);
         String[] children =
                   {
                             "1段",
@@ -1213,7 +1213,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1226,7 +1226,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_母婴1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '营养辅食'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '营养辅食'").list().get(0);
         String[] children =
                   {
                             "米粉/菜粉",
@@ -1240,7 +1240,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1253,7 +1253,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_母婴2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '尿裤湿巾'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '尿裤湿巾'").list().get(0);
         String[] children =
                   {
                             "NB",
@@ -1268,7 +1268,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1281,7 +1281,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_母婴3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '喂养用品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '喂养用品'").list().get(0);
         String[] children =
                   {
                             "奶瓶奶嘴",
@@ -1296,7 +1296,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1309,7 +1309,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_母婴4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '洗护用品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '洗护用品'").list().get(0);
         String[] children =
                   {
                             "宝宝护肤",
@@ -1324,7 +1324,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1337,7 +1337,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_母婴5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '寝居服饰'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '寝居服饰'").list().get(0);
         String[] children =
                   {
                             "睡袋/抱被",
@@ -1351,7 +1351,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1364,7 +1364,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_母婴6()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '妈妈专区'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '妈妈专区'").list().get(0);
         String[] children =
                   {
                             "防辐射服",
@@ -1379,7 +1379,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1392,10 +1392,10 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_母婴7()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '童车童床'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '童车童床'").list().get(0);
         String[] children =
                   {
-                            "童车童床\\安全座椅",
+                            "童车童床>>安全座椅",
                             "婴儿推车",
                             "婴儿床",
                             "婴儿床垫",
@@ -1405,11 +1405,11 @@ public class SaveGoodsType extends MyTest
                             "自行车",
                             "扭扭车",
                             "滑板车",
-                            "童车童床\\电动车"
+                            "童车童床>>电动车"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1422,7 +1422,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_母婴8()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '玩具'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '玩具'").list().get(0);
         String[] children =
                   {
                             "适用年龄",
@@ -1439,7 +1439,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1452,7 +1452,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_母婴9()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '乐器'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '乐器'").list().get(0);
         String[] children =
                   {
                             "钢琴",
@@ -1465,7 +1465,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1503,7 +1503,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_汽车用品0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '汽车车型'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '汽车车型'").list().get(0);
         String[] children =
                   {
                             "微型车",
@@ -1518,7 +1518,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1531,7 +1531,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_汽车用品1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '汽车价格'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '汽车价格'").list().get(0);
         String[] children =
                   {
                             "5万以下",
@@ -1544,7 +1544,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1557,7 +1557,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_汽车用品2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '汽车品牌'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '汽车品牌'").list().get(0);
         String[] children =
                   {
                             "宝马",
@@ -1570,7 +1570,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1583,7 +1583,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_汽车用品3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '维修保养'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '维修保养'").list().get(0);
         String[] children =
                   {
                             "养护3免1",
@@ -1601,7 +1601,7 @@ public class SaveGoodsType extends MyTest
                             "维修配件",
                             "蓄电池",
                             "底盘装甲/护板",
-                            "车载电器\\贴膜",
+                            "车载电器>>贴膜",
                             "汽修工具",
                             "改装配件",
                             "正时皮带",
@@ -1610,7 +1610,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1623,17 +1623,17 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_汽车用品4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '车载电器'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '车载电器'").list().get(0);
         String[] children =
                   {
                             "车品3免1",
                             "行车记录仪",
                             "导航仪",
-                            "车载电器\\电源",
+                            "车载电器>>电源",
                             "电器配件",
-                            "车载电器\\净化器",
+                            "车载电器>>净化器",
                             "车载影音",
-                            "车载电器\\冰箱",
+                            "车载电器>>冰箱",
                             "安全预警仪",
                             "倒车雷达",
                             "蓝牙设备",
@@ -1646,7 +1646,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1659,7 +1659,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_汽车用品5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '美容清洗'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '美容清洗'").list().get(0);
         String[] children =
                   {
                             "车蜡",
@@ -1674,7 +1674,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1687,7 +1687,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_汽车用品6()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '汽车装饰'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '汽车装饰'").list().get(0);
         String[] children =
                   {
                             "装饰3免1",
@@ -1706,7 +1706,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1719,7 +1719,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_汽车用品7()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '安全自驾'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '安全自驾'").list().get(0);
         String[] children =
                   {
                             "安全座椅",
@@ -1735,7 +1735,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1748,7 +1748,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_汽车用品8()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '赛事改装'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '赛事改装'").list().get(0);
         String[] children =
                   {
                             "赛事服装",
@@ -1762,7 +1762,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1775,7 +1775,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_汽车用品9()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '汽车服务'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '汽车服务'").list().get(0);
         String[] children =
                   {
                             "清洗美容",
@@ -1788,7 +1788,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1826,24 +1826,24 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_户外0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '运动鞋包'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '运动鞋包'").list().get(0);
         String[] children =
                   {
-                            "运动鞋包\\跑步鞋",
-                            "运动鞋包\\休闲鞋",
-                            "运动鞋包\\篮球鞋",
-                            "运动鞋包\\帆布鞋",
-                            "运动鞋包\\板鞋",
-                            "运动鞋包\\拖鞋",
-                            "运动鞋包\\运动包",
-                            "运动鞋包\\足球鞋",
-                            "运动鞋包\\乒羽网鞋",
-                            "运动鞋包\\训练鞋",
-                            "运动鞋包\\专项运动鞋"
+                            "运动鞋包>>跑步鞋",
+                            "运动鞋包>>休闲鞋",
+                            "运动鞋包>>篮球鞋",
+                            "运动鞋包>>帆布鞋",
+                            "运动鞋包>>板鞋",
+                            "运动鞋包>>拖鞋",
+                            "运动鞋包>>运动包",
+                            "运动鞋包>>足球鞋",
+                            "运动鞋包>>乒羽网鞋",
+                            "运动鞋包>>训练鞋",
+                            "运动鞋包>>专项运动鞋"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1858,26 +1858,26 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_户外1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '运动服饰'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '运动服饰'").list().get(0);
         String[] children =
                   {
-                            "运动服饰\\运动3免1",
-                            "运动服饰\\T恤",
-                            "运动服饰\\运动裤",
-                            "运动服饰\\健身服",
-                            "运动服饰\\运动套装",
-                            "运动服饰\\运动背心",
-                            "运动服饰\\羽绒服",
-                            "运动服饰\\卫衣/套头衫",
-                            "运动服饰\\棉服",
-                            "运动服饰\\夹克/风衣",
-                            "运动服饰\\运动配饰",
-                            "运动服饰\\乒羽网服",
-                            "运动服饰\\毛衫/线衫"
+                            "运动服饰>>运动3免1",
+                            "运动服饰>>T恤",
+                            "运动服饰>>运动裤",
+                            "运动服饰>>健身服",
+                            "运动服饰>>运动套装",
+                            "运动服饰>>运动背心",
+                            "运动服饰>>羽绒服",
+                            "运动服饰>>卫衣/套头衫",
+                            "运动服饰>>棉服",
+                            "运动服饰>>夹克/风衣",
+                            "运动服饰>>运动配饰",
+                            "运动服饰>>乒羽网服",
+                            "运动服饰>>毛衫/线衫"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1892,7 +1892,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_户外2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '健身训练'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '健身训练'").list().get(0);
         String[] children =
                   {
                             "健身3免1",
@@ -1911,7 +1911,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1926,7 +1926,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_户外3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '骑行运动'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '骑行运动'").list().get(0);
         String[] children =
                   {
                             "山地车/公路车",
@@ -1939,7 +1939,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1954,7 +1954,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_户外4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '体育用品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '体育用品'").list().get(0);
         String[] children =
                   {
                             "乒乓球",
@@ -1967,11 +1967,11 @@ public class SaveGoodsType extends MyTest
                             "台球",
                             "排球",
                             "棋牌麻将",
-                            "体育用品\\其它"
+                            "体育用品>>其它"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -1986,32 +1986,32 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_户外5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '户外鞋服'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '户外鞋服'").list().get(0);
         String[] children =
                   {
-                            "户外鞋服\\户外风衣",
-                            "户外鞋服\\徒步鞋",
-                            "户外鞋服\\T恤",
-                            "户外鞋服\\冲锋衣裤",
-                            "户外鞋服\\速干衣裤",
-                            "户外鞋服\\越野跑鞋",
-                            "户外鞋服\\滑雪服",
-                            "户外鞋服\\羽绒服/棉服",
-                            "户外鞋服\\休闲衣裤",
-                            "户外鞋服\\抓绒衣裤",
-                            "户外鞋服\\溯溪鞋",
-                            "户外鞋服\\沙滩/凉拖",
-                            "户外鞋服\\休闲鞋",
-                            "户外鞋服\\软壳衣裤",
-                            "户外鞋服\\功能内衣",
-                            "户外鞋服\\军迷服饰",
-                            "户外鞋服\\登山鞋",
-                            "户外鞋服\\工装鞋",
-                            "户外鞋服\\户外袜"
+                            "户外鞋服>>户外风衣",
+                            "户外鞋服>>徒步鞋",
+                            "户外鞋服>>T恤",
+                            "户外鞋服>>冲锋衣裤",
+                            "户外鞋服>>速干衣裤",
+                            "户外鞋服>>越野跑鞋",
+                            "户外鞋服>>滑雪服",
+                            "户外鞋服>>羽绒服/棉服",
+                            "户外鞋服>>休闲衣裤",
+                            "户外鞋服>>抓绒衣裤",
+                            "户外鞋服>>溯溪鞋",
+                            "户外鞋服>>沙滩/凉拖",
+                            "户外鞋服>>休闲鞋",
+                            "户外鞋服>>软壳衣裤",
+                            "户外鞋服>>功能内衣",
+                            "户外鞋服>>军迷服饰",
+                            "户外鞋服>>登山鞋",
+                            "户外鞋服>>工装鞋",
+                            "户外鞋服>>户外袜"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2026,7 +2026,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_户外6()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '户外装备'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '户外装备'").list().get(0);
         String[] children =
                   {
                             "户外3免1",
@@ -2050,7 +2050,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2065,7 +2065,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_户外7()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '垂钓用品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '垂钓用品'").list().get(0);
         String[] children =
                   {
                             "鱼竿鱼线",
@@ -2076,7 +2076,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2091,7 +2091,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_户外8()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '游泳用品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '游泳用品'").list().get(0);
         String[] children =
                   {
                             "泳镜",
@@ -2104,7 +2104,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2119,7 +2119,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_户外9()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '钟表'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '钟表'").list().get(0);
         String[] children =
                   {
                             "钟表3免1",
@@ -2129,14 +2129,14 @@ public class SaveGoodsType extends MyTest
                             "欧美表",
                             "德表",
                             "儿童手表",
-                            "钟表\\智能手表",
+                            "钟表>>智能手表",
                             "闹钟",
                             "座钟挂钟",
                             "钟表配件"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2177,34 +2177,34 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_xx0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '时尚女鞋'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '时尚女鞋'").list().get(0);
         String[] children =
                   {
-                            "时尚女鞋\\鞋包3免1",
-                            "时尚女鞋\\女靴",
-                            "时尚女鞋\\单鞋",
-                            "时尚女鞋\\休闲鞋",
-                            "时尚女鞋\\高跟鞋",
-                            "时尚女鞋\\内增高",
-                            "时尚女鞋\\坡跟鞋",
-                            "时尚女鞋\\松糕鞋",
-                            "时尚女鞋\\防水台",
-                            "时尚女鞋\\鱼嘴鞋",
-                            "时尚女鞋\\布鞋/绣花鞋",
-                            "时尚女鞋\\拖鞋/人字拖",
-                            "时尚女鞋\\马丁靴",
-                            "时尚女鞋\\踝靴",
-                            "时尚女鞋\\雪地靴",
-                            "时尚女鞋\\妈妈鞋",
-                            "时尚女鞋\\帆布鞋",
-                            "时尚女鞋\\雨鞋/雨靴",
-                            "时尚女鞋\\凉鞋",
-                            "时尚女鞋\\鞋配件"
+                            "时尚女鞋>>鞋包3免1",
+                            "时尚女鞋>>女靴",
+                            "时尚女鞋>>单鞋",
+                            "时尚女鞋>>休闲鞋",
+                            "时尚女鞋>>高跟鞋",
+                            "时尚女鞋>>内增高",
+                            "时尚女鞋>>坡跟鞋",
+                            "时尚女鞋>>松糕鞋",
+                            "时尚女鞋>>防水台",
+                            "时尚女鞋>>鱼嘴鞋",
+                            "时尚女鞋>>布鞋/绣花鞋",
+                            "时尚女鞋>>拖鞋/人字拖",
+                            "时尚女鞋>>马丁靴",
+                            "时尚女鞋>>踝靴",
+                            "时尚女鞋>>雪地靴",
+                            "时尚女鞋>>妈妈鞋",
+                            "时尚女鞋>>帆布鞋",
+                            "时尚女鞋>>雨鞋/雨靴",
+                            "时尚女鞋>>凉鞋",
+                            "时尚女鞋>>鞋配件"
 
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2217,27 +2217,27 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_xx1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '流行男鞋'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '流行男鞋'").list().get(0);
         String[] children =
                   {
-                            "流行男鞋\\休闲鞋",
-                            "流行男鞋\\商务休闲鞋",
-                            "流行男鞋\\正装鞋",
-                            "流行男鞋\\工装鞋",
-                            "流行男鞋\\男靴",
-                            "流行男鞋\\帆布鞋",
-                            "流行男鞋\\功能鞋",
-                            "流行男鞋\\增高鞋",
-                            "流行男鞋\\定制鞋",
-                            "流行男鞋\\拖鞋/人字拖",
-                            "流行男鞋\\凉鞋/沙滩鞋",
-                            "流行男鞋\\雨鞋/雨靴",
-                            "流行男鞋\\传统布鞋",
-                            "流行男鞋\\鞋配件"
+                            "流行男鞋>>休闲鞋",
+                            "流行男鞋>>商务休闲鞋",
+                            "流行男鞋>>正装鞋",
+                            "流行男鞋>>工装鞋",
+                            "流行男鞋>>男靴",
+                            "流行男鞋>>帆布鞋",
+                            "流行男鞋>>功能鞋",
+                            "流行男鞋>>增高鞋",
+                            "流行男鞋>>定制鞋",
+                            "流行男鞋>>拖鞋/人字拖",
+                            "流行男鞋>>凉鞋/沙滩鞋",
+                            "流行男鞋>>雨鞋/雨靴",
+                            "流行男鞋>>传统布鞋",
+                            "流行男鞋>>鞋配件"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2250,17 +2250,17 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_xx2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '潮流女包'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '潮流女包'").list().get(0);
         String[] children =
                   {
                             "单肩包",
                             "手提包",
                             "斜挎包",
-                            "潮流女包\\双肩包",
-                            "潮流女包\\钱包",
+                            "潮流女包>>双肩包",
+                            "潮流女包>>钱包",
                             "手拿包",
                             "卡包/零钱包",
-                            "潮流女包\\钥匙包",
+                            "潮流女包>>钥匙包",
                             "真皮包",
                             "帆布包",
                             "小方包",
@@ -2270,7 +2270,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2283,7 +2283,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_xx3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '精品男包'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '精品男包'").list().get(0);
         String[] children =
                   {
                             "男士钱包",
@@ -2296,7 +2296,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2309,7 +2309,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_xx4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '功能箱包'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '功能箱包'").list().get(0);
         String[] children =
                   {
                             "拉杆箱",
@@ -2321,12 +2321,12 @@ public class SaveGoodsType extends MyTest
                             "登山包",
                             "腰包/胸包",
                             "旅行配件",
-                            "功能箱包\\相机包",
+                            "功能箱包>>相机包",
                             "妈咪包"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2339,12 +2339,12 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_xx5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '奢侈品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '奢侈品'").list().get(0);
         String[] children =
                   {
                             "奢品3免1",
                             "箱包",
-                            "奢侈品\\钱包",
+                            "奢侈品>>钱包",
                             "服饰",
                             "腰带",
                             "鞋靴",
@@ -2354,7 +2354,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2367,7 +2367,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_xx6()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '精选大牌'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '精选大牌'").list().get(0);
         String[] children =
                   {
                             "GUCCI",
@@ -2384,7 +2384,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2397,7 +2397,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_xx7()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '礼品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '礼品'").list().get(0);
         String[] children =
                   {
                             "电子烟",
@@ -2420,7 +2420,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2433,7 +2433,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_xx8()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '珠宝首饰'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '珠宝首饰'").list().get(0);
         String[] children =
                   {
                             "珠宝3免1",
@@ -2451,7 +2451,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2464,7 +2464,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_xx9()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '金银投资'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '金银投资'").list().get(0);
         String[] children =
                   {
                             "投资金",
@@ -2474,7 +2474,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2512,7 +2512,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_化妆0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '面部护肤'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '面部护肤'").list().get(0);
         String[] children =
                   {
                             "卸妆",
@@ -2524,11 +2524,11 @@ public class SaveGoodsType extends MyTest
                             "防晒",
                             "面膜",
                             "剃须",
-                            "面部护肤\\套装"
+                            "面部护肤>>套装"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2541,7 +2541,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_化妆1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '洗发护发'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '洗发护发'").list().get(0);
         String[] children =
                   {
                             "洗发",
@@ -2550,11 +2550,11 @@ public class SaveGoodsType extends MyTest
                             "造型",
                             "假发",
                             "美发工具",
-                            "洗发护发\\套装"
+                            "洗发护发>>套装"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2569,7 +2569,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_化妆2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '身体护理'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '身体护理'").list().get(0);
         String[] children =
                   {
                             "沐浴",
@@ -2579,11 +2579,11 @@ public class SaveGoodsType extends MyTest
                             "手足",
                             "纤体塑形",
                             "美胸",
-                            "身体护理\\套装"
+                            "身体护理>>套装"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2598,17 +2598,17 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_化妆3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '口腔护理'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '口腔护理'").list().get(0);
         String[] children =
                   {
                             "牙膏/牙粉",
                             "牙刷/牙线",
                             "漱口水",
-                            "口腔护理\\套装"
+                            "口腔护理>>套装"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2623,7 +2623,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_化妆4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '女性护理'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '女性护理'").list().get(0);
         String[] children =
                   {
                             "卫生巾",
@@ -2633,7 +2633,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2648,7 +2648,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_化妆5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '香水彩妆'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '香水彩妆'").list().get(0);
         String[] children =
                   {
                             "女士香水",
@@ -2662,11 +2662,11 @@ public class SaveGoodsType extends MyTest
                             "腮红",
                             "美甲",
                             "美妆工具",
-                            "香水彩妆\\套装"
+                            "香水彩妆>>套装"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2681,12 +2681,12 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_化妆6()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '清洁用品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '清洁用品'").list().get(0);
         String[] children =
                   {
                             "纸品湿巾",
                             "衣物清洁",
-                            "清洁用品\\清洁工具",
+                            "清洁用品>>清洁工具",
                             "家庭清洁",
                             "一次性用品",
                             "驱虫用品",
@@ -2694,7 +2694,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2709,7 +2709,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_化妆7()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '宠物生活'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '宠物生活'").list().get(0);
         String[] children =
                   {
                             "水族用品",
@@ -2726,7 +2726,7 @@ public class SaveGoodsType extends MyTest
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2764,14 +2764,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_男装女装0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '女装'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '女装'").list().get(0);
         String[] children =
                   {
-                            "女装\\女装3免1", "女装\\毛呢大衣", "女装\\羽绒服", "女装\\连衣裙", "女装\\针织衫", "女装\\卫衣", "女装\\牛仔裤", "女装\\风衣", "女装\\T恤", "女装\\衬衫", "女装\\短外套", "女装\\打底衫", "女装\\打底裤", "女装\\棉服", "女装\\皮草", "女装\\羊毛衫", "羊绒衫", "女装\\真皮皮衣", "女装\\小西装", "女装\\休闲裤", "女装\\大码女装", "女装\\中老年女装", "女装\\设计师/潮牌", "女装\\半身裙", "女装\\仿皮皮衣", "女装\\马甲", "女装\\正装裤", "女装\\加绒裤", "女装\\婚纱", "女装\\礼服", "女装\\旗袍/唐装", "女装\\雪纺衫", "女装\\吊带/背心", "女装\\短裤"
+                            "女装>>女装3免1", "女装>>毛呢大衣", "女装>>羽绒服", "女装>>连衣裙", "女装>>针织衫", "女装>>卫衣", "女装>>牛仔裤", "女装>>风衣", "女装>>T恤", "女装>>衬衫", "女装>>短外套", "女装>>打底衫", "女装>>打底裤", "女装>>棉服", "女装>>皮草", "女装>>羊毛衫", "羊绒衫", "女装>>真皮皮衣", "女装>>小西装", "女装>>休闲裤", "女装>>大码女装", "女装>>中老年女装", "女装>>设计师/潮牌", "女装>>半身裙", "女装>>仿皮皮衣", "女装>>马甲", "女装>>正装裤", "女装>>加绒裤", "女装>>婚纱", "女装>>礼服", "女装>>旗袍/唐装", "女装>>雪纺衫", "女装>>吊带/背心", "女装>>短裤"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2784,14 +2784,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_男装女装1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '男装'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '男装'").list().get(0);
         String[] children =
                   {
-                            "男装3免1", "男装\\羽绒服", "男装\\棉服", "男装\\针织衫", "男装\\夹克", "男装\\羊毛衫", "男装\\加绒裤", "男装\\真皮皮衣", "卫衣", "男装\\T恤", "男装\\马甲/背心", "男装\\西服套装", "男装\\牛仔裤", "男装\\休闲裤", "男装\\衬衫", "男装\\毛呢大衣", "男装\\风衣", "男装\\仿皮皮衣", "男装\\西服", "男装\\西裤", "男装\\卫裤/运动裤", "男装\\POLO衫", "男装\\短裤", "男装\\中老年男装", "男装\\大码男装", "男装\\羊绒衫", "男装\\设计师/潮牌", "男装\\工装", "男装\\唐装/中山装"
+                            "男装3免1", "男装>>羽绒服", "男装>>棉服", "男装>>针织衫", "男装>>夹克", "男装>>羊毛衫", "男装>>加绒裤", "男装>>真皮皮衣", "卫衣", "男装>>T恤", "男装>>马甲/背心", "男装>>西服套装", "男装>>牛仔裤", "男装>>休闲裤", "男装>>衬衫", "男装>>毛呢大衣", "男装>>风衣", "男装>>仿皮皮衣", "男装>>西服", "男装>>西裤", "男装>>卫裤/运动裤", "男装>>POLO衫", "男装>>短裤", "男装>>中老年男装", "男装>>大码男装", "男装>>羊绒衫", "男装>>设计师/潮牌", "男装>>工装", "男装>>唐装/中山装"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2804,14 +2804,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_男装女装2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '内衣'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '内衣'").list().get(0);
         String[] children =
                   {
                             "保暖内衣", "秋衣秋裤", "男式内裤", "女式内裤", "休闲棉袜", "商务男袜", "吊带/背心", "大码内衣", "打底衫", "睡衣/家居服", "文胸", "打底裤袜", "连裤袜/丝袜", "文胸套装", "情侣睡衣", "少女文胸", "抹胸", "内衣配件", "塑身美体", "美腿袜", "泳衣", "情趣内衣"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2824,14 +2824,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_男装女装3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '配饰'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '配饰'").list().get(0);
         String[] children =
                   {
                             "女士丝巾/围巾/披肩", "男士腰带/礼盒", "太阳镜", "光学镜架/镜片", "防辐射眼镜", "棒球帽", "贝雷帽", "鸭舌帽", "男士丝巾/围巾", "真皮手套", "毛线手套", "围巾/手套/帽子套装", "老花镜", "礼帽", "遮阳帽", "口罩", "游泳镜", "毛线帽", "女士腰带/礼盒", "遮阳伞/雨伞", "毛线/布面料", "领带/领结/领带夹", "耳罩/耳包", "袖扣", "钥匙扣"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2844,14 +2844,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_男装女装4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '童装童鞋'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '童装童鞋'").list().get(0);
         String[] children =
                   {
-                            "羽绒服/棉服", "套装", "上衣", "裤子", "童装童鞋\\内衣", "童装童鞋\\配饰", "运动鞋", "靴子", "皮鞋/帆布鞋", "功能鞋", "亲子装", "运动服", "演出服", "裙子", "凉鞋"
+                            "羽绒服/棉服", "套装", "上衣", "裤子", "童装童鞋>>内衣", "童装童鞋>>配饰", "运动鞋", "靴子", "皮鞋/帆布鞋", "功能鞋", "亲子装", "运动服", "演出服", "裙子", "凉鞋"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2884,14 +2884,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_家居0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '厨具'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '厨具'").list().get(0);
         String[] children =
                   {
                             "烹饪锅具", "刀剪菜板", "厨房配件", "水具酒具", "餐具", "茶具/咖啡具"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2904,14 +2904,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_家居1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '家纺'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '家纺'").list().get(0);
         String[] children =
                   {
                             "床品套件", "被子", "枕芯", "蚊帐", "凉席", "毛巾浴巾", "床单被罩", "床垫/床褥", "毯子", "抱枕靠垫", "窗帘/窗纱", "电热毯", "布艺软饰"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2924,14 +2924,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_家居2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '生活日用'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '生活日用'").list().get(0);
         String[] children =
                   {
                             "收纳用品", "雨伞雨具", "净化除味", "浴室用品", "洗晒/熨烫", "缝纫/针织用品", "清洁工具"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2944,14 +2944,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_家居3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '家装软饰'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '家装软饰'").list().get(0);
         String[] children =
                   {
                             "家居3免1", "桌布/罩件", "地毯地垫", "沙发垫套/椅垫", "装饰字画", "装饰摆件", "手工/十字绣", "相框/照片墙", "墙贴/装饰贴", "花瓶花艺", "香薰蜡烛", "节庆饰品", "钟饰", "帘艺隔断", "创意家居", "保暖防护"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2964,14 +2964,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_家居4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '灯具'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '灯具'").list().get(0);
         String[] children =
                   {
-                            "台灯", "灯具\\吸顶灯", "筒灯射灯", "LED灯", "节能灯", "落地灯", "五金电器", "应急灯/手电", "装饰灯", "吊灯", "氛围照明"
+                            "台灯", "灯具>>吸顶灯", "筒灯射灯", "LED灯", "节能灯", "落地灯", "五金电器", "应急灯/手电", "装饰灯", "吊灯", "氛围照明"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -2984,14 +2984,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_家居5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '家具'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '家具'").list().get(0);
         String[] children =
                   {
                             "卧室家具", "客厅家具", "餐厅家具", "书房家具", "儿童家具", "储物家具", "阳台/户外", "商业办公", "床", "床垫", "沙发", "电脑椅", "衣柜", "茶几", "电视柜", "餐桌", "电脑桌", "鞋架/衣帽架"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3004,14 +3004,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_家居6()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '家装建材'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '家装建材'").list().get(0);
         String[] children =
                   {
-                            "家装3免1", "灯饰照明", "厨房卫浴", "五金工具", "电工电料", "墙地面材料", "装饰材料", "装修服务", "家装建材\\吸顶灯", "淋浴花洒", "开关插座", "油漆涂料", "龙头", "智能马桶盖", "监控安防", "门铃"
+                            "家装3免1", "灯饰照明", "厨房卫浴", "五金工具", "电工电料", "墙地面材料", "装饰材料", "装修服务", "家装建材>>吸顶灯", "淋浴花洒", "开关插座", "油漆涂料", "龙头", "智能马桶盖", "监控安防", "门铃"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3064,7 +3064,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '家用电器'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '家用电器'").list().get(0);
 
         String[] children =
                   {
@@ -3073,7 +3073,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3087,7 +3087,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_手机0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '手机通讯'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '手机通讯'").list().get(0);
 
         String[] children =
                   {
@@ -3099,7 +3099,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3111,14 +3111,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_手机1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '运营商'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '运营商'").list().get(0);
         String[] children =
                   {
                             "充话费/流量", "170选号", "合约机", "办套餐", "选号码", "固话宽带", "京东通信", "中国移动", "中国联通", "中国电信"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3131,14 +3131,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_手机2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '手机配件'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '手机配件'").list().get(0);
         String[] children =
                   {
                             "手机壳", "贴膜", "手机存储卡", "数据线", "充电器", "手机耳机", "创意配件", "手机饰品", "手机电池", "苹果周边", "移动电源", "蓝牙耳机", "手机支架", "车载配件", "拍照配件"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3151,14 +3151,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_手机3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '摄影摄像'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '摄影摄像'").list().get(0);
         String[] children =
                   {
                             "数码相机", "单电/微单相机", "单反相机", "拍立得", "运动相机", "摄像机", "镜头", "户外器材", "影棚器材", "冲印服务", "数码相框"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3171,14 +3171,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_手机4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '数码配件'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '数码配件'").list().get(0);
         String[] children =
                   {
                             "存储卡", "三脚架/云台", "相机包", "滤镜", "闪光灯/手柄", "相机清洁/贴膜", "机身附件", "镜头附件", "读卡器", "支架", "电池/充电器"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3191,14 +3191,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_手机5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '影音娱乐'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '影音娱乐'").list().get(0);
         String[] children =
                   {
                             "耳机/耳麦", "音箱/音响", "便携/无线音箱", "收音机", "麦克风", "MP3/MP4", "专业音频"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3211,14 +3211,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_手机6()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '智能设备'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '智能设备'").list().get(0);
         String[] children =
                   {
                             "智能手环", "智能手表", "智能眼镜", "智能机器人", "运动跟踪器", "健康监测", "智能配饰", "智能家居", "体感车", "无人机", "其他配件"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3231,14 +3231,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_手机7()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '电子教育'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '电子教育'").list().get(0);
         String[] children =
                   {
                             "学生平板", "点读机/笔", "早教益智", "录音笔", "电纸书", "电子词典", "复读机 "
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3272,14 +3272,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_电脑0()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '电脑整机'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '电脑整机'").list().get(0);
         String[] children =
                   {
                             "笔记本", "游戏本", "平板电脑", "平板电脑配件", "台式机", "一体机", "服务器/工作站", "笔记本配件"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3292,14 +3292,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_电脑1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '电脑配件'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '电脑配件'").list().get(0);
         String[] children =
                   {
                             "显示器", "CPU", "主板", "硬盘", "内存", "机箱", "电源", "散热器", "刻录机/光驱", "声卡/扩展卡", "装机配件", "显卡", "SSD固态硬盘", "组装电脑"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3312,14 +3312,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_电脑2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '外设产品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '外设产品'").list().get(0);
         String[] children =
                   {
                             "鼠标", "键盘", "键鼠套装", "网络仪表仪器", "U盘", "移动硬盘", "鼠标垫", "摄像头", "线缆", "手写板", "硬盘盒", "电脑工具", "电脑清洁", "UPS电源", "插座"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3332,14 +3332,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_电脑3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '游戏设备'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '游戏设备'").list().get(0);
         String[] children =
                   {
                             "游戏机", "游戏耳机", "手柄/方向盘", "游戏软件", "游戏周边"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3352,14 +3352,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_电脑4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '网络产品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '网络产品'").list().get(0);
         String[] children =
                   {
                             "路由器", "网络机顶盒", "交换机", "网络存储", "网卡", "4G/3G上网", "网络配件"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3372,14 +3372,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_电脑5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '办公设备'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '办公设备'").list().get(0);
         String[] children =
                   {
                             "投影机", "投影配件", "多功能一体机", "打印机", "传真设备", "验钞/点钞机", "扫描设备", "复合机", "碎纸机", "考勤机", "收银机", "会议音频视频", "保险柜", "装订/封装机", "安防监控", "办公家具", "白板"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3392,14 +3392,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_电脑6()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '文具耗材'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '文具耗材'").list().get(0);
         String[] children =
                   {
                             "硒鼓/墨粉", "墨盒", "色带", "纸类", "办公文具", "学生文具", "文件管理", "本册/便签", "计算器", "笔类", "画具画材", "财会用品", "刻录碟片/附件"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3412,14 +3412,14 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren_电脑7()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '服务产品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '服务产品'").list().get(0);
         String[] children =
                   {
-                            "延保服务", "上门安装", "电脑\\维修保养", "电脑软件"
+                            "延保服务", "上门安装", "电脑>>维修保养", "电脑软件"
                   };
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3453,7 +3453,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren1()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '手机/运营商/数码'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '手机/运营商/数码'").list().get(0);
 
         String[] children =
                   {
@@ -3462,7 +3462,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3475,7 +3475,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren2()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '电脑办公'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '电脑办公'").list().get(0);
 
         String[] children =
                   {
@@ -3484,7 +3484,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3497,7 +3497,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren3()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '家居/家具/家装/厨具'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '家居/家具/家装/厨具'").list().get(0);
 
         String[] children =
                   {
@@ -3506,7 +3506,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3519,7 +3519,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren4()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '男装/ 女装/ 童装/ 内衣'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '男装/ 女装/ 童装/ 内衣'").list().get(0);
 
         String[] children =
                   {
@@ -3528,7 +3528,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3541,7 +3541,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren5()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '个护化妆/ 清洁用品/ 宠物'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '个护化妆/ 清洁用品/ 宠物'").list().get(0);
 
         String[] children =
                   {
@@ -3550,7 +3550,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3563,7 +3563,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren6()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '鞋靴/ 箱包/ 珠宝/ 奢侈品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '鞋靴/ 箱包/ 珠宝/ 奢侈品'").list().get(0);
 
         String[] children =
                   {
@@ -3572,7 +3572,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3585,7 +3585,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren7()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '运动/ 户外/ 钟表'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '运动/ 户外/ 钟表'").list().get(0);
 
         String[] children =
                   {
@@ -3594,7 +3594,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3607,7 +3607,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren8()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '汽车/ 汽车用品'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '汽车/ 汽车用品'").list().get(0);
 
         String[] children =
                   {
@@ -3616,7 +3616,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3629,7 +3629,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren9()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '母婴/ 玩具乐器'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '母婴/ 玩具乐器'").list().get(0);
 
         String[] children =
                   {
@@ -3638,7 +3638,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3651,7 +3651,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren10()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '食品/ 酒类/ 生鲜/ 特产'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '食品/ 酒类/ 生鲜/ 特产'").list().get(0);
 
         String[] children =
                   {
@@ -3660,7 +3660,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3673,7 +3673,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren11()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '医药保健'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '医药保健'").list().get(0);
 
         String[] children =
                   {
@@ -3688,7 +3688,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3701,7 +3701,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren12()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '图书/ 音像/ 电子书'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '图书/ 音像/ 电子书'").list().get(0);
 
         String[] children =
                   {
@@ -3710,7 +3710,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3723,7 +3723,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren13()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '机票/ 酒店/ 旅游/ 生活'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '机票/ 酒店/ 旅游/ 生活'").list().get(0);
 
         String[] children =
                   {
@@ -3732,7 +3732,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);
@@ -3745,7 +3745,7 @@ public class SaveGoodsType extends MyTest
     @Test
     public void saveChildren14()
     {
-        GoodsType parent = (GoodsType) session.createQuery("from GoodsType where goods_typeName = '理财/ 众筹/ 白条/ 保险'").list().get(0);
+        JDGoodsType parent = (JDGoodsType) session.createQuery("from JDGoodsType where goods_typeName = '理财/ 众筹/ 白条/ 保险'").list().get(0);
 
         String[] children =
                   {
@@ -3754,7 +3754,7 @@ public class SaveGoodsType extends MyTest
 
         for (int i = 0; i < children.length; i++)
         {
-            GoodsType goodsType = new GoodsType(children[i]);
+            JDGoodsType goodsType = new JDGoodsType(children[i]);
             goodsType.setParentGoodsType(parent);
             parent.getChildrenSet().add(goodsType);
             session.save(goodsType);

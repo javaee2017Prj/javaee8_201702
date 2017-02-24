@@ -1,6 +1,6 @@
 package qin.javaee8.hibernate.testing;
 
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 import qin.javaee8.hibernate.tools.HuaWeiImages;
 import qin.javaee8.hibernate.tools.HuaWeiNames;
@@ -40,6 +40,7 @@ import static qin.javaee8.hibernate.domain.MobileProperty.MOBILE_FRONT_CAMERA_BE
 import static qin.javaee8.hibernate.domain.MobileProperty.MOBILE_FRONT_CAMERA_BETWEEN_800_1599;
 import static qin.javaee8.hibernate.domain.MobileProperty.MOBILE_FRONT_CAMERA_HIGHER1600;
 import static qin.javaee8.hibernate.domain.MobileProperty.MOBILE_FRONT_CAMERA_OTHER;
+import static qin.javaee8.hibernate.domain.MobileProperty.MOBILE_OS_APPLE;
 import static qin.javaee8.hibernate.domain.MobileProperty.MOBILE_ROM_128;
 import static qin.javaee8.hibernate.domain.MobileProperty.MOBILE_ROM_16;
 import static qin.javaee8.hibernate.domain.MobileProperty.MOBILE_ROM_32;
@@ -48,6 +49,7 @@ import static qin.javaee8.hibernate.domain.MobileProperty.MOBILE_ROM_8;
 import static qin.javaee8.hibernate.domain.MobileProperty.MOBILE_ROM_NO;
 import static qin.javaee8.hibernate.domain.MobileProperty.MOBILE_ROM_OTHERS;
 import static qin.javaee8.hibernate.domain.MobileProperty.getMobilePrice;
+import static qin.javaee8.hibernate.testing.GoodsImages.images;
 
 @SuppressWarnings("all")
 public class SaveMobileGoods extends MyTest
@@ -56,9 +58,22 @@ public class SaveMobileGoods extends MyTest
           MeiZuNames, MeiZuImages,
           XiaoMiNamesI, XiaoMiImagesI
 {
-    /*
-    //@Test
-    public void save1()
+    @org.junit.Test
+    public void saveAppleType()
+    {
+        JDGoodsType goodsType = (JDGoodsType) session.get(JDGoodsType.class, new Integer(2));
+        JDGoodsType apple = new JDGoodsType("手机>>苹果");
+        apple.setParentGoodsType(goodsType);
+        goodsType.getChildrenSet().add(goodsType);
+
+        session.save(apple);
+        session.update(apple);
+
+        transaction.commit();
+    }
+
+    @org.junit.Test
+    public void saveAppleGoods()
     {
         //region 商品名称
         String[] goodsName = new String[]{
@@ -241,8 +256,8 @@ public class SaveMobileGoods extends MyTest
         //endregion
 
         //苹果手机类型
-        GoodsType apple = (GoodsType) session
-                  .createQuery("from GoodsType where goods_typeName='苹果'")
+        JDGoodsType apple = (JDGoodsType) session
+                  .createQuery("from JDGoodsType where goods_typeName='手机>>苹果'")
                   .list().get(0);
 
         for (int i = 0; i < goodsName.length; i++)
@@ -343,7 +358,7 @@ public class SaveMobileGoods extends MyTest
 
             //region 图片
             Map<Integer, String> imagesMap = new TreeMap<>();
-            for (int j = 0; j < images.length; j++)
+            for (int j = 0; j < 15; j++)
             {
                 imagesMap.put(j, images[j]);
             }
@@ -362,11 +377,11 @@ public class SaveMobileGoods extends MyTest
     }
 
     //@org.junit.Test
-    public void saveOPPOType()
+    public void saveOPPOType1()
     {
-        GoodsType oppo = new GoodsType("华为");
-        GoodsType parent = (GoodsType) session
-                  .createQuery("from GoodsType where id=149")
+        JDGoodsType oppo = new JDGoodsType("华为");
+        JDGoodsType parent = (JDGoodsType) session
+                  .createQuery("from JDGoodsType where id=149")
                   .list().get(0);
         parent.getChildrenSet().add(oppo);
         oppo.setParentGoodsType(parent);
@@ -380,8 +395,8 @@ public class SaveMobileGoods extends MyTest
     //@org.junit.Test
     public void saveOPPO()
     {
-        GoodsType apple = (GoodsType) session
-                  .createQuery("from GoodsType where goods_typeName='oppo'")
+        JDGoodsType apple = (JDGoodsType) session
+                  .createQuery("from JDGoodsType where goods_typeName='oppo'")
                   .list().get(0);
 
         for (int i = 0; i < oppoNames.length; i++)
@@ -487,13 +502,12 @@ public class SaveMobileGoods extends MyTest
 
         transaction.commit();
     }
-    */
 
     //@org.junit.Test
     public void saveHuaWei()
     {
-        GoodsType apple = (GoodsType) session
-                  .createQuery("from GoodsType where goods_typeName='华为'")
+        JDGoodsType apple = (JDGoodsType) session
+                  .createQuery("from JDGoodsType where goods_typeName='华为'")
                   .list().get(0);
 
         for (int i = 0; i < meiZuNamess.length; i++)
@@ -603,9 +617,9 @@ public class SaveMobileGoods extends MyTest
     //@org.junit.Test
     public void saveOPPOType()
     {
-        GoodsType oppo = new GoodsType("魅族");
-        GoodsType parent = (GoodsType) session
-                  .createQuery("from GoodsType where id=149")
+        JDGoodsType oppo = new JDGoodsType("魅族");
+        JDGoodsType parent = (JDGoodsType) session
+                  .createQuery("from JDGoodsType where id=149")
                   .list().get(0);
         parent.getChildrenSet().add(oppo);
         oppo.setParentGoodsType(parent);
@@ -619,8 +633,8 @@ public class SaveMobileGoods extends MyTest
     //@org.junit.Test
     public void saveMeiZu()
     {
-        GoodsType apple = (GoodsType) session
-                  .createQuery("from GoodsType where goods_typeName='魅族'")
+        JDGoodsType apple = (JDGoodsType) session
+                  .createQuery("from JDGoodsType where goods_typeName='魅族'")
                   .list().get(0);
 
         for (int i = 0; i < meiZuNamess.length; i++)
@@ -727,11 +741,11 @@ public class SaveMobileGoods extends MyTest
         transaction.commit();
     }
 
-    @org.junit.Test
+    //@org.junit.Test
     public void save_小米()
     {
-        GoodsType apple = (GoodsType) session
-                  .createQuery("from GoodsType where goods_typeName='魅族'")
+        JDGoodsType apple = (JDGoodsType) session
+                  .createQuery("from JDGoodsType where goods_typeName='魅族'")
                   .list().get(0);
 
         for (int i = 0; i < xiaomiNames.length; i++)

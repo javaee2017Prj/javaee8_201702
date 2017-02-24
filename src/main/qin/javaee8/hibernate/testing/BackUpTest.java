@@ -1,7 +1,7 @@
 package qin.javaee8.hibernate.testing;
 
 import org.junit.Test;
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 
 import java.util.Map;
@@ -50,9 +50,9 @@ public class BackUpTest extends MyTest
     @Test
     public void saveAllType()
     {
-        GoodsType parent = new GoodsType("手机");
-        GoodsType huishou = new GoodsType("其它");
-        GoodsType apple = new GoodsType("苹果");
+        JDGoodsType parent = new JDGoodsType("手机");
+        JDGoodsType huishou = new JDGoodsType("其它");
+        JDGoodsType apple = new JDGoodsType("苹果");
         apple.setParentGoodsType(parent);
         parent.getChildrenSet().add(apple);
 
@@ -62,6 +62,8 @@ public class BackUpTest extends MyTest
 
         transaction.commit();
     }
+
+    Object o = "/";
 
     @Test
     public void saveGoods()
@@ -247,8 +249,8 @@ public class BackUpTest extends MyTest
         //endregion
 
         //苹果手机类型
-        GoodsType apple = (GoodsType) session
-                  .createQuery("from GoodsType where goods_typeName='苹果'")
+        JDGoodsType apple = (JDGoodsType) session
+                  .createQuery("from JDGoodsType where goods_typeName='苹果'")
                   .list().get(0);
 
         for (int i = 0; i < goodsName.length; i++)

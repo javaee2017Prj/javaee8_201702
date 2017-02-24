@@ -1,7 +1,7 @@
 package qin.javaee8.hibernate.service.impl;
 
 import qin.javaee8.hibernate.dao.MobileGoodsDAO;
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 import qin.javaee8.hibernate.service.MobileGoodsService;
 
@@ -37,7 +37,7 @@ public class MobileGoodsServiceImpl implements MobileGoodsService
 
     //region 查询所有商品类型
     @Override
-    public List<GoodsType> findAllGoodsTypes() throws Exception
+    public List<JDGoodsType> findAllGoodsTypes() throws Exception
     {
         return mobileGoodsDAO.findAllGoodsTypes();
     }

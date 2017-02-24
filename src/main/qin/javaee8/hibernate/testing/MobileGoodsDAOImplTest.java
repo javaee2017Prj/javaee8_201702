@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import qin.javaee8.hibernate.dao.impl.MobileGoodsDAOImpl;
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 
 import java.util.Iterator;
@@ -48,7 +48,7 @@ public class MobileGoodsDAOImplTest
     @Test
     public void saveType()
     {
-        GoodsType goodsType = new GoodsType("myOthers");
+        JDGoodsType goodsType = new JDGoodsType("myOthers");
         session.save(goodsType);
         session.beginTransaction().commit();
     }
@@ -128,8 +128,8 @@ public class MobileGoodsDAOImplTest
     @Test
     public void jspTest1()
     {
-        List<GoodsType> goodsTypeList = session
-                  .createQuery("from GoodsType where parentGoodsType.id=149")
+        List<JDGoodsType> goodsTypeList = session
+                  .createQuery("from JDGoodsType where parentGoodsType.id=149")
                   .list();
         Object obj = 0;
     }
@@ -137,10 +137,10 @@ public class MobileGoodsDAOImplTest
     @Test
     public void saveType1()
     {
-        GoodsType goodsType = (GoodsType)
-                  session.get(GoodsType.class, new Integer(1326));
-        GoodsType parent = (GoodsType)
-                  session.get(GoodsType.class, new Integer(149));
+        JDGoodsType goodsType = (JDGoodsType)
+                  session.get(JDGoodsType.class, new Integer(1326));
+        JDGoodsType parent = (JDGoodsType)
+                  session.get(JDGoodsType.class, new Integer(149));
         goodsType.setParentGoodsType(parent);
         parent.getChildrenSet().add(goodsType);
 

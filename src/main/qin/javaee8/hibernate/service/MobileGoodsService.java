@@ -1,6 +1,6 @@
 package qin.javaee8.hibernate.service;
 
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.List;
 public interface MobileGoodsService
 {
     //region 查询所有商品类型
-    List<GoodsType> findAllGoodsTypes() throws Exception;
+    List<JDGoodsType> findAllGoodsTypes() throws Exception;
     //endregion
 
     //region 查询所有商品信息

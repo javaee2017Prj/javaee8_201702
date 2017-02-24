@@ -2,12 +2,12 @@ package qin.javaee8.hibernate.dao;
 
 import qin.javaee8.core.dao.DAOSupport8;
 import qin.javaee8.exceptions.JavaEE8Exception;
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 
 import java.io.Serializable;
 
 @SuppressWarnings("all")
-public interface MobileBatchAddGoodsTypeDAO extends DAOSupport8<GoodsType, Integer>
+public interface MobileBatchAddGoodsTypeDAO extends DAOSupport8<JDGoodsType, Integer>
 {
     //region 新增商品类型
 

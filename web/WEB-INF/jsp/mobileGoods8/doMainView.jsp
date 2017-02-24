@@ -1,9 +1,10 @@
 <%@ page import="org.hibernate.Session" %>
 <%@ page import="org.hibernate.SessionFactory" %>
 <%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
-<%@ page import="qin.javaee8.hibernate.domain.GoodsType" %>
+<%@ page import="qin.javaee8.hibernate.domain.JDGoodsType" %>
 <%@ page import="java.util.Iterator" %>
-<%@ page import="java.util.List" %><%--
+<%@ page import="java.util.List" %>
+<%--
     修改手机商品类型
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -38,14 +39,14 @@
                                         ClassPathXmlApplicationContext("applicationContext.xml")
                                         .getBean("sessionFactory")
                         ).openSession();
-                List<GoodsType> goodsTypes = hbSession
-                        .createQuery("from GoodsType ").list();
+                List<JDGoodsType> goodsTypes = hbSession
+                        .createQuery("from JDGoodsType ").list();
 
                 int i = 0;
 
-                for (Iterator<GoodsType> it = goodsTypes.iterator(); it.hasNext(); )
+                for (Iterator<JDGoodsType> it = goodsTypes.iterator(); it.hasNext(); )
                 {
-                    GoodsType g = it.next();
+                    JDGoodsType g = it.next();
                     i++;
                     out.println(new StringBuilder()
                                         .append("<option value='")

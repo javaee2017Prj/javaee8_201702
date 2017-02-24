@@ -7,7 +7,7 @@ import qin.javaee8.exceptions.JavaEE8Exception;
 import qin.javaee8.exceptions.LogClassException;
 import qin.javaee8.exceptions.LogException;
 import qin.javaee8.hibernate.dao.MobileGoodsDAO;
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 
 import java.util.ArrayList;
@@ -55,17 +55,17 @@ public class MobileGoodsDAOImpl
      * @throws Exception 查询失败抛出异常
      */
     @Override
-    public List<GoodsType> findAllGoodsTypes() throws Exception
+    public List<JDGoodsType> findAllGoodsTypes() throws Exception
     {
         //当什么时候抛出异常很简单, 只有当查询结果条数为0时抛出异常
         Session session = null;
-        List<GoodsType> goodsTypeList = new ArrayList<>();
+        List<JDGoodsType> goodsTypeList = new ArrayList<>();
 
         try
         {
             session = getSessionFactory().openSession();
             //查询
-            goodsTypeList = session.createQuery("from GoodsType ").list();
+            goodsTypeList = session.createQuery("from JDGoodsType ").list();
 
             //如果查询结果为空抛出异常
             if (goodsTypeList.size() == 0) throw new JavaEE8Exception("查询结果为空!查询商品类型错误!");
@@ -132,7 +132,7 @@ public class MobileGoodsDAOImpl
             session = getSessionFactory().openSession();
             Transaction transaction = session.beginTransaction();
             //1.查询商品类型
-            GoodsType mobileType = (GoodsType) session
+            JDGoodsType mobileType = (JDGoodsType) session
                       .createQuery
                                 (
                                           new StringBuilder()

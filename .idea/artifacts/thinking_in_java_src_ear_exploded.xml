@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" build-on-make="true" name="thinking_in_java_src:ear exploded">
+    <output-path>$PROJECT_DIR$/../../out/javaee8/thinkinginjava</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="thinking_in_java_src/javaeeApplication/javaEEApplication" />
+      <element id="library" level="project" name="libs" />
+      <element id="module-output" name="javaee8-core" />
+      <element id="javaee-facet-resources" facet="javaee8-core/javaeeApplication/javaEEApplication" />
+      <element id="module-output" name="javaee8-core-hibernate" />
+      <element id="javaee-facet-resources" facet="javaee8-core-hibernate/javaeeApplication/javaEEApplication" />
+      <element id="module-output" name="javaee8_201702" />
+      <element id="javaee-facet-resources" facet="javaee8_201702/web/Web" />
+      <element id="module-output" name="thinking_in_java_src" />
+    </root>
+  </artifact>
+</component>

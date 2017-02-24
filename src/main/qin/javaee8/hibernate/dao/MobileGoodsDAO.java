@@ -1,7 +1,7 @@
 package qin.javaee8.hibernate.dao;
 
 import qin.javaee8.core.dao.DAOSupport8;
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 
 import java.util.List;
@@ -23,7 +23,7 @@ public interface MobileGoodsDAO extends DAOSupport8<MobileGoods, Long>
      * @return 查询商品类型结果集合
      * @throws Exception 查询失败抛出异常
      */
-    List<GoodsType> findAllGoodsTypes() throws Exception;
+    List<JDGoodsType> findAllGoodsTypes() throws Exception;
     //endregion
 
     //region 查询所有手机商品信息

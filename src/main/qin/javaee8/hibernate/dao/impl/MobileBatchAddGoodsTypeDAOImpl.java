@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import qin.javaee8.core.dao.impl.DAOSupport8Impl;
 import qin.javaee8.exceptions.JavaEE8Exception;
 import qin.javaee8.hibernate.dao.MobileBatchAddGoodsTypeDAO;
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 
 import javax.transaction.Transactional;
 import java.io.Serializable;
@@ -21,7 +21,7 @@ import java.io.Serializable;
 @Transactional
 @SuppressWarnings("all")
 public class MobileBatchAddGoodsTypeDAOImpl
-          extends DAOSupport8Impl<GoodsType, Integer>
+          extends DAOSupport8Impl<JDGoodsType, Integer>
           implements MobileBatchAddGoodsTypeDAO
 {
     private static final long serialVersionUID = 2033726755966496881L;
@@ -35,9 +35,9 @@ public class MobileBatchAddGoodsTypeDAOImpl
     }
 
     @Override
-    public Class<GoodsType> getEntityClass()
+    public Class<JDGoodsType> getEntityClass()
     {
-        return GoodsType.class;
+        return JDGoodsType.class;
     }
     //endregion
 
@@ -117,13 +117,13 @@ public class MobileBatchAddGoodsTypeDAOImpl
 
     private void addGoodsType(String typeNames, Session session)
     {
-        GoodsType children = new GoodsType(typeNames);
+        JDGoodsType children = new JDGoodsType(typeNames);
         session.save(children);
     }
 
-    private void addGoodsType(String typeNames, GoodsType parent, Session session)
+    private void addGoodsType(String typeNames, JDGoodsType parent, Session session)
     {
-        GoodsType children = new GoodsType(typeNames);
+        JDGoodsType children = new JDGoodsType(typeNames);
         parent.getChildrenSet().add(children);
         children.setParentGoodsType(parent);
         session.save(children);
@@ -155,14 +155,14 @@ public class MobileBatchAddGoodsTypeDAOImpl
             boolean isManyNames = false;
 
             //初始化父类商品类型
-            GoodsType parent = new GoodsType();
+            JDGoodsType parent = new JDGoodsType();
 
             //如果有父类
             if (htmlGoodsTypeParent.length() > 0)
             {
                 isHasParent = true;
                 //根据父类名称来接收
-                parent = (GoodsType) session
+                parent = (JDGoodsType) session
                           .createQuery(new StringBuilder()
                                                  .append("from GoodsType where goods_typeName='")
                                                  .append(htmlGoodsTypeParent).append("'").toString())

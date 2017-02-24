@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/javaee8-core/javaee8-core.iml" filepath="$PROJECT_DIR$/javaee8-core/javaee8-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee8-core-hibernate/javaee8-core-hibernate.iml" filepath="$PROJECT_DIR$/javaee8-core-hibernate/javaee8-core-hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee8_201702.iml" filepath="$PROJECT_DIR$/javaee8_201702.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thinking_in_java_src/thinking_in_java_src.iml" filepath="$PROJECT_DIR$/thinking_in_java_src/thinking_in_java_src.iml" />
     </modules>
   </component>
 </project>

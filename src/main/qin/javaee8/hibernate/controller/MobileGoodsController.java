@@ -9,7 +9,7 @@ import qin.javaee8.core.JavaEE8BaseSupport;
 import qin.javaee8.exceptions.JavaEE8Exception;
 import qin.javaee8.exceptions.LogClassException;
 import qin.javaee8.exceptions.LogException;
-import qin.javaee8.hibernate.domain.GoodsType;
+import qin.javaee8.hibernate.domain.JDGoodsType;
 import qin.javaee8.hibernate.domain.MobileGoods;
 import qin.javaee8.hibernate.service.MobileGoodsService;
 
@@ -66,15 +66,15 @@ public class MobileGoodsController implements JavaEE8BaseSupport
         try
         {
             //查找所有商品类型
-            List<GoodsType> goodsTypeList = mobileGoodsService.findAllGoodsTypes();
+            List<JDGoodsType> goodsTypeList = mobileGoodsService.findAllGoodsTypes();
 
             //将获取到的商品类型名称写入select下拉框中
             StringBuilder ajaxSelect = new StringBuilder();
 
-            for (Iterator<GoodsType> it = goodsTypeList.iterator(); it.hasNext(); )
+            for (Iterator<JDGoodsType> it = goodsTypeList.iterator(); it.hasNext(); )
             {
                 //获取名称
-                GoodsType goodsType = it.next();
+                JDGoodsType goodsType = it.next();
                 ajaxSelect.append("<select>").append(goodsType.getGoods_typeName()).append("</select>");
             }
 
